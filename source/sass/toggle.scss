@@ -1,0 +1,24 @@
+.toggle {
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.toggle__svg {
+  padding: 24px 20px 25px 0;
+  stroke: #000000;
+
+  &:hover {
+    stroke: lighten(#000000, 50%);
+  }
+
+  &:active {
+    stroke: darken(#000000, 50%);
+  }
+
+  &:focus {
+    border: #000000;
+  }
+
+}
+

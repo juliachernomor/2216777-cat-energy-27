@@ -1,0 +1,43 @@
+@mixin font-style-description {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.programs__list {
+  max-width: 280px;
+  margin: 0;
+  margin-bottom: 20px;
+  list-style-type: none;
+  padding: 20px;
+}
+
+.programs__title {
+  padding: 30px 79px 0 91px;
+  margin: 0;
+  margin-bottom: 29px;
+  font-size: 24px;
+  line-height: 37px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+  }
+
+.programs__description {
+  @include font-style-description;
+  padding: 0 33px 0 20px;
+  margin: 0;
+  margin-bottom: 42px;
+}
+
+.programs__link {
+  margin-bottom: 22px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+}

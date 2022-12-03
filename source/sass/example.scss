@@ -1,0 +1,125 @@
+@mixin font-style-description {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.example {
+  width: 320px;
+  background-color: #eaeaea;
+}
+
+.example__title {
+  padding: 0;
+  padding-top: 25px;
+  padding-left: 20px;
+  margin: 0;
+  margin-bottom: 40px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.example__item-container {
+  min-width: 124px;
+}
+
+.example__item {
+  display: grid;
+  grid-template-columns: 124px 124px;
+  column-gap: 32px;
+  margin: 0;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.example__term {
+  padding: 14px 42px 18px 42px;
+  margin-bottom: 34px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+}
+
+.example__term--padding {
+  display: inline-block;
+  padding: 14px 21px 18px 21px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  box-sizing: border-box;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+}
+
+.term {
+  position: relative;
+
+  &--pseudoelement1::after {
+    position: absolute;
+    content: "снижение\A  веса";
+    width: 87px;
+    display: block;
+    top: calc(100% - 10px);
+    right: calc(100% - 105px);
+    white-space: pre;
+    background-color: #eaeaea;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: #444444;
+    z-index: 2;
+  }
+
+  &--pseudoelement2::after {
+    position: absolute;
+    content: "затрачено\A  времени";
+    width: 87px;
+    display: block;
+    top: calc(100% - 10px);
+    right: calc(100% - 105px);
+    white-space: pre;
+    background-color: #eaeaea;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: #444444;
+    z-index: 2;
+  }
+}
+
+.example__description {
+  @include font-style-description();
+  width: 280px;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+.example__total-cost {
+  padding: 0 66px;
+  margin: 0 auto 20px auto;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.example__list {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0 20px 0 20px;
+  list-style-type: none;
+}
+

@@ -1,0 +1,42 @@
+.nutrition {
+  min-height: 480px;
+  color: #ffffff;
+}
+
+.nutrition__wrapper {
+  width: 320px;
+  height: 302px;
+  margin-bottom: 138px;
+  background-image: url("../img/nutrition-cat.png");
+  background-color: rgba(104, 183, 56, 0.85);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-blend-mode: multiply;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+}
+
+.nutrition__title {
+  padding: 27px 35px 0 35px;
+  margin-bottom: 25px;
+  margin-top: 0;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  }
+
+.nutrition__description {
+  padding: 0 60px;
+  margin: 0 auto 29px auto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  }
+.nutrition__picture {
+  display: block;
+  margin: 0;
+  padding: 0;
+  }
+
+

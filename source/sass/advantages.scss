@@ -1,0 +1,47 @@
+@mixin font-style-description {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.advantages {
+  min-width: 320px;
+}
+
+.advantages__title {
+  padding: 0 20.5px;
+  margin: 0;
+  margin-bottom: 42px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  padding: 0 20.5px 0 20.5px;
+  margin-left: 80px;
+  margin-bottom: 20px;
+  list-style-type: none;
+}
+
+.advantages__list:last-child {
+  margin-top: 0;
+  margin-bottom: 49px;
+
+}
+
+.advantages__description {
+  @include font-style-description;
+  width: 199px;
+  margin: 0;
+  margin-bottom: 26px;
+  padding: 0;
+}
+

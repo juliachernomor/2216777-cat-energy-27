@@ -1,0 +1,26 @@
+
+.contacts {
+  display: grid;
+  grid-template-columns: 139px 139px;
+  margin: 0;
+  padding: 26px 20px;
+}
+
+.contacts__welcome-title {
+  padding: 0;
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+}
