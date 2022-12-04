@@ -1,14 +1,11 @@
 .catalog__title {
+  @include font-oswald-medium;
   display: block;
   padding: 27px 41px 41px 20px;
   margin: 0;
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
   box-sizing: border-box;
-  border-bottom: 1px solid #d9d9d9;
-  border-top: 1px solid #d9d9d9;
+  border-bottom: $border;
+  border-top: $border;
 }
 
 .catalog__list {

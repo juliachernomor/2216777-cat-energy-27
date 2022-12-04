@@ -1,0 +1,30 @@
+.form__title {
+  @include font-oswald-medium;
+  padding: 27px 20px 37px 20px;
+  margin: 0;
+  border-top: 1px solid #d9d9d9;
+}
+
+.form__description {
+  @include font-oswald-small-fsize14;
+  padding: 0 74px 0 20px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 39px;
+}
+
+.form__fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.form__headerline {
+  padding: 26px 111px 35px 20px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+}

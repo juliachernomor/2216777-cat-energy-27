@@ -1,0 +1,23 @@
+.field {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.field__label {
+  @include font-oswald-small-fsize16;
+  text-transform: uppercase;
+  margin-right: 13px;
+}
+
+.field__input {
+  padding: 14px 20px  13px 20px;
+  margin-bottom: 14px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  flex-grow: 1;
+  cursor: pointer;
+}

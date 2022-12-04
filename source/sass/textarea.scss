@@ -1,0 +1,12 @@
+.textarea{
+  padding: 2px 20px 23px 20px;
+}
+
+.textarea__text {
+  @include font-oswald-small-fsize16;
+  min-width: 280px;
+  min-height: 151px;
+  color: #444444;
+  text-transform: uppercase;
+}
+
