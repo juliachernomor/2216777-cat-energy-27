@@ -1,12 +1,16 @@
-.textarea{
+.textarea {
   padding: 2px 20px 23px 20px;
 }
 
 .textarea__text {
   @include font-oswald-small-fsize16;
   min-width: 280px;
-  min-height: 151px;
-  color: #444444;
+  padding: 9px 12px 125px 15px;
+  margin: 0;
+  box-sizing: border-box;
+  color: $special-dark-gray;
   text-transform: uppercase;
+  border: 1px solid $light-gray;
+  cursor: pointer;
 }
 

@@ -2,7 +2,8 @@
   display: grid;
   grid-template-columns: 140px 140px;
   row-gap: 25px;
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid $special-gray2;
+  box-sizing: border-box;
   padding: 0 20px 25px 20px;
 }
 
@@ -24,7 +25,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #222222;
+  color: $special-black2;
   text-transform: uppercase;
   margin-top: 19px;
   margin-bottom: 14px;
@@ -40,7 +41,7 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  color: #444444;
+  color: $special-dark-gray;
 }
 
 .card__term {
@@ -66,7 +67,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #111111;
+  color: $special-black;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
@@ -79,7 +80,7 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  color: #444444;
+  color: $special-dark-gray;
   margin: 0;
   margin-bottom: 21px;
   text-align: center;

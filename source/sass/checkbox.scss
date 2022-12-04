@@ -9,7 +9,7 @@
 .checkbox__control-label {
   @include font-oswald-small-fsize16;
   text-transform: uppercase;
-  color: #000000;
+  color: $black;
   margin: 10px  0 20px 35px;
 }
 
@@ -19,8 +19,9 @@
   left: 0;
   width: 30px;
   height: 30px;
-  background-color: #ffffff;
-  border: 1px solid #cdcdcd;
+  background-color: $white;
+  border: 1px solid $special-gray;
+  cursor: pointer;
 }
 
 .checkbox__input[type="checkbox"]:checked + .checkbox__control-mark::before {

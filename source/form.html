@@ -11,16 +11,19 @@
       <img class="logo__picture" src="img/svg/logo-image.svg" width="33" height="38" alt="Логотип меню. Кот.">
     </a>
     <a class="header__logo-text logo" href="#">
-      <img class="logo__text" src="img/svg/logo-text.svg" width="101" height="18" alt="Логотип 'CAT  ENERGY.'">
+      <img class="logo__text" src="img/svg/logo-text.svg" width="101" height="18" alt="Логотип 'CAT ENERGY.'">
     </a>
     <nav class="nav">
       <button class="nav__toggle toggle" type="button">
-        <span class="visually-hidden">Открывает и закрывает меню.</span><svg class="toggle__svg" width="24" height="18" viewBox="0 0 24 18"  aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg"><path  stroke-width="1.5" d="M0 1.25h24M0 9.25h24M0 17.25h24"/></svg>
-
+        <span class="visually-hidden">Открывает и закрывает меню.</span><svg class="toggle__svg" width="24" height="18"
+          viewBox="0 0 24 18" aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-width="1.5" d="M0 1.25h24M0 9.25h24M0 17.25h24" />
+        </svg>
       </button>
       <div class="nav__wrapper">
         <ul class="nav__list site-list">
-          <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a>
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="catalog.html">Каталог продукции</a>
@@ -60,16 +63,15 @@
         <ul class="form__list group group--intends">
           <li class="group__item radio">
             <label class="radio__label">
-              <input class="radio__input visually-hidden" type="radio" name="program" value="Похудение"
-                required checked >
+              <input class="radio__input visually-hidden" type="radio" name="program" value="Похудение" required
+                checked>
               <span class="radio__control-mark"></span>
               <span class="radio__control-label">Похудение</span>
             </label>
           </li>
           <li class="group__item radio">
             <label class="radio__label">
-              <input class="radio__input visually-hidden" type="radio" name="program"
-                value="Набор массы" >
+              <input class="radio__input visually-hidden" type="radio" name="program" value="Набор массы">
               <span class="radio__control-mark"></span>
               <span class="radio__control-label">Набор массы</span>
             </label>
@@ -79,7 +81,8 @@
               <input class="radio__input visually-hidden" type="radio" name="program"
                 value="Не знаю (Нужен ваш совет)">
               <span class="radio__control-mark"></span>
-              <span class="radio__control-label">Не знаю&nbsp;(нужен ваш совет)</span>
+              <span class="radio__control-label">Не знаю&nbsp;(нужен ваш
+                совет)</span>
             </label>
           </li>
         </ul>
@@ -102,11 +105,12 @@
       </fieldset>
       <fieldset class="form__fieldset">
         <legend class="form__headerline">Комментарий</legend>
-        <div class ="form-wrapper textarea">
-        <label class="textarea__field visually-hidden" for="feature">Дополнительная информация о питомце</label>
-        <textarea class="textarea__text" name="comment" id="feature" required>
-Расскажите обо всех повадках кота</textarea>
-</div>
+        <div class="form-wrapper textarea">
+          <label class="textarea__field visually-hidden" for="feature">Дополнительная
+            информация о питомце</label>
+          <textarea class="textarea__text" name="comment" id="feature" required>
+                Расскажите обо всех повадках кота</textarea>
+        </div>
       </fieldset>
       <fieldset class="form__fieldset">
         <legend class="form__headerline">Дополнительно</legend>
@@ -122,7 +126,7 @@
             <label class="checkbox__label">
               <input class="visually-hidden checkbox__input" type="checkbox" name="water" required>
               <span class="checkbox__control-mark"></span>
-              <span class= "checkbox__control-label">Питьевая вода</span>
+              <span class="checkbox__control-label">Питьевая вода</span>
             </label>
           </li>
           <li class="group__item checkbox">
@@ -140,11 +144,13 @@
             </label>
           </li>
         </ul>
-      </fieldset>
-      <fieldset class="form__fieldset">
-        <legend class="visually-hidden">Заявка</legend>
-        <button class="form-button button-request">Отправить заявку</button>
-        <p class="form__note">* — Обязательные поля</p>
+        <div class="form__container">
+          <h3 class="visually-hidden">Заявка</h3>
+          <button class="form__order order order--form-intends order--form-width">
+            Отправить заявку
+          </button>
+          <p class="form__note">* — Обязательные поля</p>
+        </div>
       </fieldset>
     </form>
   </main>
@@ -159,39 +165,30 @@
     </section>
     <section class="footer__map map">
       <h2 class="visually-hidden">Схема проезда</h2>
-      <a class="map__link" href="https://yandex.ru/maps/-/CCUVNNTJ8D"><img
-          class="map__static-image" src="img/map.png" width="320"
-          height="362" alt="Мы на карте города."></a>
-      <iframe class="map__interactive-map noscroll"
-        src="https://yandex.ru/map-widget/v1/-/CCUfzEvoCD"
-        width="320" height="362" style="border: 0;" allowfullscreen=""
-        loading="lazy"
+      <a class="map__link" href="https://yandex.ru/maps/-/CCUVNNTJ8D"><img class="map__static-image" src="img/map.png"
+          width="320" height="362" alt="Мы на карте города."></a>
+      <iframe class="map__interactive-map noscroll" src="https://yandex.ru/map-widget/v1/-/CCUfzEvoCD" width="320"
+        height="362" style="border: 0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
     <a class="footer__logo logo logo--big-size logo--indents logo--border" href="#">
-      <img class="logo__text logo__text--indents" src="img/svg/logo-text.svg" width="128"
-        height="24" alt=" Логотип 'CAT ENERGY.'">
+      <img class="logo__text logo__text--indents" src="img/svg/logo-text.svg" width="128" height="24"
+        alt=" Логотип 'CAT ENERGY.'">
     </a>
-    <ul class="socials__list">
+    <ul class="footer__socials socials">
       <li class="socials__item">
-        <a class="socials__link social__link--vkontakte"
-          href="https://vk.com/htmlacademy">VK</a>
+        <a class="socials__link socials__link--vkontakte" href="https://vk.com/htmlacademy">VK</a>
       </li>
       <li class="socials__item">
-        <a class="socials__link social__link--youtube"
-          href="https://www.youtube.com/user/htmlacademyru">YTube</a>
+        <a class="socials__link socials__link--youtube" href="https://www.youtube.com/user/htmlacademyru">YTube</a>
       </li>
       <li class="socials__item">
-        <a class="socials__link social__link--telegram"
-          href="https://t.me/htmlacademy">Tg</a>
+        <a class="socials__link socials__link--telegram" href="https://t.me/htmlacademy">Tg</a>
       </li>
     </ul>
-    <a class="footer__copyright copyright"
-      href="https://vk.com/htmlacademy"><span class="copyright__link">HTML
-        Academy</span><img class="copyright__picture"
-        src="img/svg/htmlacademy-logo.svg" width="27" height="34"
-        alt="Логотип создателя сайта - HTML
-        Академии."></a>
+    <a class="footer__copyright copyright" href="https://vk.com/htmlacademy"><span class="copyright__link">HTML
+        Academy</span><img class="copyright__picture" src="img/svg/htmlacademy-logo.svg" width="27" height="34" alt="Логотип создателя сайта - HTML
+            Академии."></a>
   </footer>
 </body>
 </html>

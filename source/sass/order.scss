@@ -4,30 +4,37 @@
   align-items: center;
   min-width: 62px;
   padding: 10px 109px;
-  margin: 0 auto;
+  margin: 0;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #ffffff;
-  background-color: #68b738;
+  color: $white;
+  border: none;
+  background-color: $basic-green;
   text-transform: uppercase;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .order--bacground {
-  background-color: #f2f2f2;
+  background-color: $special-white;
 }
 
 .order--color {
-  color: #444444;
-}
-
-.order--padding {
-  padding: 10px 94px;
+  color: $special-dark-gray;
 }
 
 .order--intends {
+  padding: 10px 94px;
   margin: 0;
+}
+
+.order--form-width {
+  width: 100%;
+}
+
+.order--form-intends {
+  padding: 7px 44px;
 
 }

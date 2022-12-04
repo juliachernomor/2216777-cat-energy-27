@@ -9,7 +9,7 @@
 .radio__control-label {
   @include font-oswald-small-fsize16;
   text-transform: uppercase;
-  color: #222222;
+  color: $special-black2;
   margin: 10px  0 20px 35px;
 }
 
@@ -20,8 +20,9 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #ffffff;
-  border: 1px solid #cdcdcd;
+  background-color: $white;
+  border: 1px solid $special-gray;
+  cursor: pointer;
 }
 
 .radio__input[type="radio"]:checked + .radio__control-mark::before {
@@ -29,7 +30,7 @@
   content: "";
   width: 13px;
   height: 13px;
-  background-color: #68b738;
+  background-color: $basic-green;
   border-radius: 50%;
   background-position: center;
   background-repeat: no-repeat;

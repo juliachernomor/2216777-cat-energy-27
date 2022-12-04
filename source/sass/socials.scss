@@ -1,11 +1,10 @@
-.socials__list {
+.socials {
   display: flex;
   flex-wrap: wrap-wrap;
   justify-content: space-between;
   align-items: center;
-  margin: 0 20px;
   padding: 23px 75px 23px 75px;
   list-style-type: none;
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: $border;
 }
 

@@ -1,13 +1,14 @@
 .toggle {
   padding: 0;
-  background-color: #ffffff;
+  background-color: $white;
   border: none;
   cursor: pointer;
 }
 
 .toggle__svg {
-  padding: 24px 20px 25px 0;
-  stroke: #000000;
+  padding: 24px 20px 29px 0;
+  margin-right: auto;
+  stroke: $black;
 
   &:hover {
     stroke: lighten(#000000, 50%);

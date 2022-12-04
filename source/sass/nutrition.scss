@@ -1,11 +1,11 @@
 .nutrition {
   min-height: 480px;
-  color: #ffffff;
+  color: $white;
 }
 
 .nutrition__wrapper {
   position: relative;
-  width: 320px;
+  min-width: 320px;
   height: 302px;
   margin-bottom: 138px;
   background-color: rgba(104, 183, 56, 0.85);
@@ -15,8 +15,8 @@
     position: absolute;
     content: url("../img/nutrition-cat.png");
     opacity: 0.2;
-    width: 320px;
-    height: 302px;
+    min-width: 320px;
+    min-height: 302px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -24,12 +24,10 @@
 }
 
 .nutrition__title {
+  @include font-oswald-medium;
   padding: 27px 35px 0 35px;
   margin-bottom: 25px;
   margin-top: 0;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
 }
 
 .nutrition__description {
