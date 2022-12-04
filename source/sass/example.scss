@@ -6,22 +6,26 @@
   color: #444444;
 }
 
+@mixin font-oswald-big {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+}
+
 .example {
   width: 320px;
   background-color: #eaeaea;
 }
 
 .example__title {
+  @include font-oswald-big;
   padding: 0;
   padding-top: 25px;
   padding-left: 20px;
   margin: 0;
   margin-bottom: 40px;
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 40px;
-  color: #000000;
 }
 
 .example__item-container {
