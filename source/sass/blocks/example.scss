@@ -41,44 +41,6 @@
   padding: 14px 21px 18px 21px;
 }
 
-.term {
-  position: relative;
-
-  &--pseudoelement1::after {
-    position: absolute;
-    content: "снижение\A  веса";
-    width: 87px;
-    display: block;
-    top: calc(100% - 10px);
-    right: calc(100% - 105px);
-    white-space: pre;
-    background-color: $gray;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 12px;
-    color: $dark--gray;
-    z-index: 2;
-  }
-
-  &--pseudoelement2::after {
-    position: absolute;
-    content: "затрачено\A  времени";
-    width: 87px;
-    display: block;
-    top: calc(100% - 10px);
-    right: calc(100% - 105px);
-    white-space: pre;
-    background-color: $gray;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 12px;
-    color: $dark--gray;
-    z-index: 2;
-  }
-}
-
 .example__description {
   @include font-lato;
   width: 280px;
