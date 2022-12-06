@@ -1,0 +1,23 @@
+.field {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.field__label {
+  @include font-oswald-small-fsize16;
+  text-transform: uppercase;
+  margin-right: 13px;
+  color: $special-dark-gray;
+}
+
+.field__input {
+  @include font-oswald-small-fsize16;
+  padding: 14px 20px  13px 20px;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  flex-grow: 1;
+  color: $special-dark-gray;
+  border: 1px solid $light-gray;
+  cursor: pointer;
+}

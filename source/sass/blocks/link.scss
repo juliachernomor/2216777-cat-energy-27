@@ -1,0 +1,17 @@
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 192px;
+  padding: 7px 44px;
+  margin: 0 auto;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $white;
+  background-color: $basic-green;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}

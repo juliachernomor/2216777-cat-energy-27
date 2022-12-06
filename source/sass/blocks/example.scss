@@ -1,0 +1,67 @@
+.example {
+  width: 320px;
+  background-color: $gray;
+}
+
+.example__title {
+  @include font-oswald-big;
+  padding: 0;
+  padding-top: 25px;
+  padding-left: 20px;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.example__item-container {
+  min-width: 124px;
+}
+
+.example__item {
+  display: grid;
+  grid-template-columns: 124px 124px;
+  column-gap: 32px;
+  margin: 0;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.example__term {
+  padding: 14px 42px 18px 42px;
+  margin-bottom: 34px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: $black;
+  border: 1px solid $special-gray;
+  border-radius: 3px;
+}
+
+.example__term--padding {
+  padding: 14px 21px 18px 21px;
+}
+
+.example__description {
+  @include font-lato;
+  width: 280px;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+.example__total-cost {
+  padding: 0 66px;
+  margin: 0 auto 20px auto;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.example__list {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0 20px 0 20px;
+  list-style-type: none;
+}

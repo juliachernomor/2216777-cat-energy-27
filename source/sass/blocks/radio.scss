@@ -1,0 +1,39 @@
+.radio {
+  position: relative;
+}
+
+.radio:not(:last-child) {
+  margin-bottom: 26px;
+}
+
+.radio__control-label {
+  @include font-oswald-small-fsize16;
+  text-transform: uppercase;
+  color: $special-black2;
+  margin: 10px  0 20px 35px;
+}
+
+.radio__control-mark {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: $white;
+  border: 1px solid $special-gray;
+  cursor: pointer;
+}
+
+.radio__input[type="radio"]:checked + .radio__control-mark::before {
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 13px;
+  background-color: $basic-green;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 28%;
+  left: 29%;
+}

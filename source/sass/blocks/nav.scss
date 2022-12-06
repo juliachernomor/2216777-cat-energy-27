@@ -1,0 +1,14 @@
+.nav {
+  position: relative;
+}
+
+.nav__list {
+  display: none;
+  min-width: 320px;
+  position: absolute;
+  background-color: $white;
+  z-index: 1001;
+  top: 55px;
+  right: -5px;
+  text-align: center;
+}

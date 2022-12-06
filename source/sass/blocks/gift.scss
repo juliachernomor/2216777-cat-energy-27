@@ -1,0 +1,33 @@
+.gift {
+  border-bottom: $border;
+}
+
+.gift__wrapper {
+  position: relative;
+  margin: 35px 20px 35px 20px;
+  background-color: $green;
+
+
+  &::before {
+    position: absolute;
+    content: url("../img/catalog-background.png");
+    opacity: 0.15;
+    width: 280px;
+    height: 290px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.gift__description {
+  padding: 186px 61px 43px 58px;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+  text-align: center;
+  z-index: 1000;
+}

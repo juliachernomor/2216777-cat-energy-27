@@ -1,0 +1,18 @@
+.catalog__title {
+  @include font-oswald-medium;
+  display: block;
+  padding: 27px 41px 41px 20px;
+  margin: 0;
+  box-sizing: border-box;
+  border-bottom: $border;
+  border-top: $border;
+}
+
+.catalog__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}

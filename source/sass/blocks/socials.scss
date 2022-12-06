@@ -1,0 +1,9 @@
+.socials {
+  display: flex;
+  flex-wrap: wrap-wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 23px 75px 23px 75px;
+  list-style-type: none;
+  border-bottom: $border;
+}

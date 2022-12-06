@@ -1,0 +1,39 @@
+.order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 62px;
+  padding: 10px 109px;
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+  border: none;
+  background-color: $basic-green;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.order--background {
+  background-color: $special-white;
+}
+
+.order--color {
+  color: $special-dark-gray;
+}
+
+.order--intends {
+  padding: 10px 94px;
+  margin: 0;
+}
+
+.order--form-width {
+  width: 100%;
+}
+
+.order--form-intends {
+  padding: 7px 44px;
+}
