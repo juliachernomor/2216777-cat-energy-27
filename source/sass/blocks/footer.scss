@@ -9,5 +9,55 @@
 }
 
 .footer__socials {
-  margin: 0 20px;
+  margin: 0;
+}
+
+.footer__copyright {
+  margin: 0;
+}
+
+.footer__wrapper {
+  min-height: 236px;
+  padding: 0 20px;
+}
+
+.footer__logo {
+  width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .footer {
+    width: 768px;
+  }
+
+  .footer__wrapper {
+    min-height: 34px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    padding: 58px 30px 55px 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    width: 1440px;
+    position: relative;
+    background-color: $gray;
+  }
+
+  .footer__wrapper {
+    min-height: 34px;
+    width: 1220px;
+    padding: 57px 110px 58px 110px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer__logo {
+    display: inline-block;
+    width: 128px;
+    margin-right: 414px;
+  }
 }

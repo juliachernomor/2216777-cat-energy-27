@@ -2,16 +2,17 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 <body class="page__body">
   <header class="page__header header">
     <a href="#" class="header__logo-image logo">
-      <img class="logo__picture" src="img/svg/logo-image.svg" width="33" height="38" alt="Логотип меню. Кот.">
+      <img class="logo__picture" src="img/svg/logo-image.svg" width="33" height="38"  loading="lazy" alt="Логотип меню. Кот.">
     </a>
     <a class="header__logo-text logo" href="#">
-      <img class="logo__text" src="img/svg/logo-text.svg" width="101" height="18" alt="Логотип 'CAT ENERGY.'">
+      <img class="logo__text" src="img/svg/logo-text.svg" width="101" height="18" loading="lazy"  alt="Логотип 'CAT ENERGY.'">
     </a>
     <nav class="nav">
       <button class="nav__toggle toggle" type="button">
@@ -29,7 +30,7 @@
             <a class="site-list__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item site-list__item--current">
-            <span class="site-list__current">Подбор программы</span>
+            <span class="site-list__current" aria-current="page">Подбор программы</span>
           </li>
         </ul>
       </div>
@@ -63,7 +64,7 @@
         <ul class="form__list group group--intends">
           <li class="group__item radio">
             <label class="radio__label">
-              <input class="radio__input visually-hidden" type="radio" name="program" value="Похудение" required
+              <input class="radio__input visually-hidden" type="radio" name="program" value="Похудение"
                 checked>
               <span class="radio__control-mark"></span>
               <span class="radio__control-label">Похудение</span>
@@ -99,7 +100,7 @@
           </li>
           <li class="group__item field">
             <label class="field__label" for="phone">Телефон:*</label>
-            <input class="field__input" type="text" name="weight" placeholder="8 (960) 900-60-90" id="phone" required>
+            <input class="field__input" type="tel" name="weight" placeholder="8 (960) 900-60-90" id="phone" required>
           </li>
         </ul>
       </fieldset>
@@ -116,28 +117,28 @@
         <ul class="form__list group group--intends">
           <li class="group__item checkbox">
             <label class="checkbox__label">
-              <input class="visually-hidden checkbox__input" type="checkbox" name="sweetener" required checked>
+              <input class="visually-hidden checkbox__input" type="checkbox" name="sweetener" checked>
               <span class="checkbox__control-mark"></span>
               <span class="checkbox__control-label">Сахарозаменитель</span>
             </label>
           </li>
           <li class="group__item checkbox">
             <label class="checkbox__label">
-              <input class="visually-hidden checkbox__input" type="checkbox" name="water" required>
+              <input class="visually-hidden checkbox__input" type="checkbox" name="water">
               <span class="checkbox__control-mark"></span>
               <span class="checkbox__control-label">Питьевая вода</span>
             </label>
           </li>
           <li class="group__item checkbox">
             <label class="checkbox__label">
-              <input class="visually-hidden checkbox__input" type="checkbox" name="milk" required>
+              <input class="visually-hidden checkbox__input" type="checkbox" name="milk">
               <span class="checkbox__control-mark"></span>
               <span class="checkbox__control-label">Молоко</span>
             </label>
           </li>
           <li class="group__item checkbox">
             <label class="checkbox__label">
-              <input class="visually-hidden checkbox__input" type="checkbox" name="vitamins" required>
+              <input class="visually-hidden checkbox__input" type="checkbox" name="vitamins">
               <span class="checkbox__control-mark"></span>
               <span class="checkbox__control-label">Витамины</span>
             </label>
@@ -165,13 +166,13 @@
     <section class="footer__map map">
       <h2 class="visually-hidden">Схема проезда</h2>
       <a class="map__link" href="https://yandex.ru/maps/-/CCUVNNTJ8D"><img class="map__static-image" src="img/map.png"
-          width="320" height="362" alt="Мы на карте города."></a>
+          width="320" height="362" loading="lazy" alt="Мы на карте города."></a>
       <iframe class="map__interactive-map noscroll" src="https://yandex.ru/map-widget/v1/-/CCUfzEvoCD" width="320"
         height="362" style="border: 0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
     <a class="footer__logo logo logo--big-size logo--indents logo--border" href="#">
-      <img class="logo__text logo__text--indents" src="img/svg/logo-text.svg" width="128" height="24"
+      <img class="logo__text logo__text--indents" src="img/svg/logo-text.svg" width="128" height="24" loading="lazy"
         alt=" Логотип 'CAT ENERGY.'">
     </a>
     <ul class="footer__socials socials">
@@ -186,7 +187,7 @@
       </li>
     </ul>
     <a class="footer__copyright copyright" href="https://vk.com/htmlacademy"><span class="copyright__link">HTML
-        Academy</span><img class="copyright__picture" src="img/svg/htmlacademy-logo.svg" width="27" height="34" alt="Логотип создателя сайта - HTML
+        Academy</span><img class="copyright__picture" src="img/svg/htmlacademy-logo.svg" width="27" height="34"  loading="lazy" alt="Логотип создателя сайта - HTML
             Академии."></a>
   </footer>
 </body>

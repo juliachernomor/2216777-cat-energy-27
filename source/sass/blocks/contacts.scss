@@ -20,9 +20,58 @@
 .contacts__address {
   margin: 0;
   padding: 0;
-  font-family: "Oswald", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: $special-dark-gray;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 56px 70px 63px 70px;
+    margin: 0;
+  }
+
+  .contacts__welcome-title {
+    width: 172px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .contacts__address {
+    width: 160px;
+    font-size: 16px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    position: absolute;
+    width: 405px;
+    top: 95px;
+    left: 110px;
+    background-color: $white;
+    display: flex;
+    min-height: 86px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 56px 80px 63px 80px;
+    margin: 0;
+  }
+
+  .contacts__welcome-title {
+    width: 163px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .contacts__address {
+    width: 155px;
+    font-size: 16px;
+  }
 }

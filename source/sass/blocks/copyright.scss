@@ -1,9 +1,8 @@
 .copyright {
   display: flex;
-  flex-wrap: wrap-wrap;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin: 0 20px;
   padding: 22px 0 22px 0;
   text-decoration: none;
 }
@@ -14,4 +13,11 @@
   font-size: 16px;
   line-height: 19px;
   color: $special-dark-gray;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: 163px;
+    padding: 0;
+  }
 }

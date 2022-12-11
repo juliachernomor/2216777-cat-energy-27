@@ -1,13 +1,11 @@
 .logo__picture {
   display: block;
-  padding: 10px 0 17px 16px;
+  margin: 0;
 }
 
 .logo__text {
   display: block;
-  padding: 23px 0 25px 0;
-  margin-right: 65px;
-  margin-left: 56px;
+  margin: 0;
 }
 
 .logo--big-size {
@@ -15,16 +13,48 @@
   height: 24px;
 }
 
-.logo--indents {
-  margin: 0 20px;
-  padding: 39px 75px 32px 75px;
-}
-
-.logo--border {
+.logo__text--indents {
+  padding: 39px 76px 32px 76px;
   border-bottom: 1px solid #d9d9d9;
 }
 
-.logo__text--indents {
-  margin: 0;
-  padding: 0;
+@media (min-width: $tablet-width) {
+  .logo__picture {
+    width: 72px;
+    height: 52px;
+  }
+
+  .logo__text {
+    width: 90px;
+    height: 19px;
+  }
+
+  .logo__text--indents {
+    margin: 0;
+    padding: 0;
+    width: 128px;
+    height: 24px;
+    border: none;
+    margin-right: 156px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo__picture {
+    width: 83px;
+    height: 59px;
+  }
+
+  .logo__text {
+    width: 105px;
+    height: 21px;
+  }
+
+  .logo__text--indents {
+    margin: 0;
+    padding: 0;
+    width: 128px;
+    height: 24px;
+    border: none;
+  }
 }

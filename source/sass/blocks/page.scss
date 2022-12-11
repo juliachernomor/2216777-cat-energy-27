@@ -5,8 +5,22 @@
 }
 
 .page__body {
-  min-width: 320px;
-  margin: 0;
+  width: 320px;
+  margin: 0 auto;
   padding: 0;
   font-family: "Lato", sans-serif;
 }
+
+@media (min-width: $tablet-width) {
+  .page__body {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page__body {
+    width: 1440px;
+    margin: 0 auto;
+  }
+  }

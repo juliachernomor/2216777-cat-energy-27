@@ -1,5 +1,6 @@
 .nav {
   position: relative;
+  max-height: 65px;
 }
 
 .nav__list {
@@ -11,4 +12,30 @@
   top: 55px;
   right: -5px;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .nav {
+    display: flex;
+    width: 440px;
+    justify-content: space-between;
+    margin: auto 0;
+  }
+
+  .nav__list {
+    position: static;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nav {
+    width: 478px;
+    padding: 53px 110px 42px  130.5px;
+    margin: 0;
+    background-color: $green;
+  }
+
+  .nav__list {
+    position: static;
+  }
 }

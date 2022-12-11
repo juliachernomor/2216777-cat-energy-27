@@ -1,5 +1,6 @@
 .example {
-  width: 320px;
+  width: 280px;
+  padding: 20px;
   background-color: $gray;
 }
 
@@ -7,22 +8,13 @@
   @include font-oswald-big;
   padding: 0;
   padding-top: 25px;
-  padding-left: 20px;
   margin: 0;
   margin-bottom: 40px;
 }
 
 .example__item-container {
-  min-width: 124px;
-}
-
-.example__item {
-  display: grid;
-  grid-template-columns: 124px 124px;
-  column-gap: 32px;
-  margin: 0;
-  padding: 0 20px;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 .example__term {
@@ -46,17 +38,18 @@
   width: 280px;
   margin: 0;
   margin-bottom: 20px;
-  padding: 0 20px;
 }
 
 .example__total-cost {
-  padding: 0 66px;
+  width: 188px;
+  padding: 0 36px;
   margin: 0 auto 20px auto;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .example__list {
@@ -64,4 +57,174 @@
   margin-bottom: 40px;
   padding: 0 20px 0 20px;
   list-style-type: none;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    width: 768px;
+    padding: 0;
+    background-color: $white;
+  }
+
+  .example__title {
+    padding: 0 30px;
+    margin: 43px 30px 63px 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .example__item {
+    width: 708px;
+    display: grid;
+    padding: 0 30px;
+    grid-template-columns: 366px 174px;
+    gap: 54px 167px;
+    margin-bottom: 230px;
+  }
+
+
+  .example__description {
+    width: 708px;
+    grid-column: 1/-1;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+  }
+
+  .example__item-container {
+    grid-column: 1/2;
+    width: 366px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .example__total-cost {
+    width: 174px;
+    padding: 0;
+    margin: auto 0;
+    text-align: right;
+    font-size: 20px;
+  }
+
+  .example__term {
+    font-size: 30px;
+    line-height: 37px;
+    padding: 15px 57px;
+    margin: 0;
+  }
+
+  .example__term--padding {
+    padding: 15px 30px;
+  }
+
+  .example__image {
+    width: 768px;
+    min-height: 462px;
+  }
+
+  .example__list {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+  }
+
+  .example__cat {
+    display: block;
+    margin: -151px 104px 0 104px;
+    width: 560px;
+    height: 512px;
+    object-fit: cover;
+  }
+
+  .example__toggles {
+    margin: 0;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .example {
+    width: 1440px;
+  }
+
+  .example__title {
+    padding: 0 110px;
+    margin: 0 0 76px 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .example__wrapper-color {
+    background-color: $gray;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 110px;
+  }
+
+  .example__item {
+    display: flex;
+    flex-direction: column;
+    width: 436px;
+    padding: 70px 0 75px 0;
+  }
+
+  .example__item-container {
+    width: 366px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .example__description {
+    width: 436px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .example__total-cost {
+    width: 366px;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .example__food-costs {
+    margin-right: 70px;
+  }
+
+  .example__term {
+    font-size: 30px;
+    line-height: 37px;
+    padding: 15px 57px;
+    margin: 0;
+  }
+
+  .example__term--padding {
+    padding: 15px 30px;
+  }
+
+  .example__image {
+    width: 768px;
+    min-height: 462px;
+    background-color: $gray;
+  }
+
+  .example__list {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+  }
+
+  .example__cat {
+    display: block;
+    margin: -151px 104px 0 104px;
+    width: 560px;
+    height: 512px;
+    object-fit: cover;
+  }
+
+  .example__toggles {
+    margin: 0;
+  }
 }
