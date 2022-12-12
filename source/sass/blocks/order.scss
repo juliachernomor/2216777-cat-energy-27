@@ -37,3 +37,20 @@
 .order--form-intends {
   padding: 7px 44px;
 }
+
+@media (min-width: $tablet-width) {
+  .order {
+    padding: 9px 93px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order {
+    padding: 10px 53px;
+  }
+
+  .order--modify {
+    width: 192px;
+    padding: 7px 26px;
+  }
+}

@@ -29,13 +29,22 @@
 
 @media (min-width: $desktop-width) {
   .nav {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
     width: 478px;
-    padding: 53px 110px 42px  130.5px;
+    height: 40px;
+    padding: 60px 110px 42px  130.5px;
     margin: 0;
     background-color: $green;
   }
 
   .nav__list {
     position: static;
+  }
+
+  .nav--color {
+    background-color: $white;
   }
 }

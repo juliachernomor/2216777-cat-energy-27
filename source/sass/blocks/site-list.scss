@@ -55,13 +55,27 @@
     background-color: $green;
   }
 
+  .site-list--color {
+    background-color: $white;
+  }
+
   .site-list__item {
     font-size: 20px;
     line-height: 30px;
     color: $white;
   }
 
+  // .site-list__item--color{
+  //   color: $special-black;
+  // }
+
   .site-list__link {
+    font-size: 20px;
+    line-height: 30px;
     color: $white;
+  }
+
+  .site-list__link--color {
+    color: $special-black;
   }
 }

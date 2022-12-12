@@ -16,3 +16,51 @@
   padding: 0;
   list-style-type: none;
 }
+
+@media (min-width: $tablet-width) {
+  .additional-catalog {
+    width: 708px;
+    padding: 0 30px;
+  }
+
+  .additional-catalog__title {
+    font-size: 36px;
+    line-height: 36px;
+    box-sizing: border-box;
+    border: none;
+    margin-bottom: 80px;
+    padding: 0;
+  }
+
+  .additional-catalog__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    min-height: 556px;
+    border: 2px solid $gray;
+    margin-bottom: 69px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-catalog {
+    width: 1220px;
+    padding: 0 110px;
+  }
+
+  .additional-catalog__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .additional-catalog__title {
+    margin-bottom: 81px;
+  }
+
+  .additional-catalog__list {
+    min-height: 288px;
+    border: none;
+    margin: 0;
+  }
+}
