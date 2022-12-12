@@ -39,6 +39,7 @@
     line-height: 24px;
     padding: 0;
     margin: 0;
+    font-weight: 400;
     border: none;
   }
 
@@ -65,14 +66,14 @@
     color: $white;
   }
 
-  // .site-list__item--color{
-  //   color: $special-black;
-  // }
-
   .site-list__link {
     font-size: 20px;
     line-height: 30px;
     color: $white;
+  }
+
+  .site-list__current--color {
+    color: $special-black;
   }
 
   .site-list__link--color {

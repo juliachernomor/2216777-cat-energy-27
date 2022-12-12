@@ -37,3 +37,13 @@
   top: 28%;
   left: 29%;
 }
+
+@media (min-width: $tablet-width) {
+  .radio__control-label {
+    font-size: 20px;
+    line-height: 30px;
+    color: $special-black2;
+    margin: 88px;
+    margin-left: 60px;
+  }
+}

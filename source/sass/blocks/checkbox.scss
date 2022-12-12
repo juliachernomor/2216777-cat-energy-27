@@ -36,3 +36,12 @@
   top: 28%;
   left: 24%;
 }
+
+@media (min-width: $tablet-width) {
+  .checkbox__control-label {
+    margin: 0;
+    margin-left: 60px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

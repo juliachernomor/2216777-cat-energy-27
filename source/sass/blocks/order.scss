@@ -42,6 +42,15 @@
   .order {
     padding: 9px 93px;
   }
+
+  .order--form-intends {
+    width: 282px;
+    height: 52px;
+    padding: 13px 45px;
+    font-size: 20px;
+    line-height: 20px;
+    box-sizing: border-box;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -52,5 +61,12 @@
   .order--modify {
     width: 192px;
     padding: 7px 26px;
+  }
+
+  .order--form-intends {
+    width: 568px;
+    height: 52px;
+    padding: 13px 188px;
+    margin-right: 84px;
   }
 }

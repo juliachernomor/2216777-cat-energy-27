@@ -8,3 +8,56 @@
 .group--intends {
   padding: 27px 20px 25px 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .group {
+    margin: 0;
+    padding: 0 67px 0 71px;
+  }
+
+  .group--radio {
+    padding: 25px 28px 25px 28px;
+    border: 1px solid $light-gray;
+  }
+
+  .group__radio-wrapper {
+    margin: 0 67px 0 71px;
+    width: 630px;
+    min-height: 196px;
+  }
+
+  .group--checkbox {
+    display: grid;
+    padding: 0 67px 0 70px;
+    grid-template-columns: 344px 287px;
+    row-gap: 32px;
+    margin-bottom: 54px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .group {
+    margin: 0;
+    padding: 0;
+  }
+
+  .group--radio {
+    padding: 25px 28px 25px 28px;
+    border: 1px solid $light-gray;
+  }
+
+  .group--modify {
+    padding: 0 110px;
+    display: grid;
+    grid-template-columns: 569px 572px;
+    column-gap: 78px;
+  }
+
+  .group--checkbox {
+    display: grid;
+    padding: 0 110px;
+    grid-template-columns: 305px 305px 305px 305px;
+    column-gap: 20px;
+    margin-bottom: 61px;
+  }
+}
