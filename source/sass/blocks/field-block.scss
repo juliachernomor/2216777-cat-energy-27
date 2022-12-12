@@ -5,7 +5,7 @@
 .field-block__text {
   @include font-oswald-small-fsize16;
   min-width: 280px;
-  height: 150px;
+  min-height: 150px;
   padding: 9px 12px 9px 15px;
   margin: 0;
   box-sizing: border-box;
@@ -22,11 +22,11 @@
   }
 
   .field-block__text {
-    font-size: 20px;
-    line-height: 30px;
-    padding: 10px 19px 10px 19px;
     width: 631px;
     min-height: 174px;
+    padding: 10px 19px 10px 19px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 

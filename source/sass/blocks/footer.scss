@@ -1,11 +1,10 @@
 .footer {
-  width: 320px;
+  @include ziro-intends;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-  margin: 0;
+  width: 320px;
   background-color: $white;
-  padding: 0;
 }
 
 .footer__socials {
@@ -31,11 +30,11 @@
   }
 
   .footer__wrapper {
-    min-height: 34px;
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
     align-items: center;
+    min-height: 34px;
     padding: 58px 30px 55px 30px;
   }
 
@@ -46,17 +45,17 @@
 
 @media (min-width: $desktop-width) {
   .footer {
-    width: 1440px;
     position: relative;
+    width: 1440px;
     background-color: $gray;
   }
 
   .footer__wrapper {
+    display: flex;
+    flex-wrap: wrap;
     min-height: 34px;
     width: 1220px;
     padding: 57px 110px 58px 110px;
-    display: flex;
-    flex-wrap: wrap;
   }
 
   .footer__logo {

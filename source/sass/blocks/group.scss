@@ -1,8 +1,7 @@
 .group {
   margin: 0;
-  padding: 0 20px;
+  padding: 0 20px 11px 20px;
   list-style-type: none;
-  padding-bottom: 11px;
 }
 
 .group--intends {
@@ -21,24 +20,23 @@
   }
 
   .group__radio-wrapper {
-    margin: 0 67px 0 71px;
     width: 630px;
     min-height: 196px;
+    margin: 0 67px 0 71px;
   }
 
   .group--checkbox {
     display: grid;
-    padding: 0 67px 0 70px;
     grid-template-columns: 344px 287px;
     row-gap: 32px;
+    padding: 0 67px 0 70px;
     margin-bottom: 54px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .group {
-    margin: 0;
-    padding: 0;
+    @include ziro-intends;
   }
 
   .group--radio {
@@ -47,17 +45,17 @@
   }
 
   .group--modify {
-    padding: 0 110px;
     display: grid;
     grid-template-columns: 569px 572px;
     column-gap: 78px;
+    padding: 0 110px;
   }
 
   .group--checkbox {
     display: grid;
-    padding: 0 110px;
     grid-template-columns: 305px 305px 305px 305px;
     column-gap: 20px;
+    padding: 0 110px;
     margin-bottom: 61px;
   }
 }

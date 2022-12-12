@@ -12,7 +12,9 @@
 .header__logo-wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 191px;
+  margin-bottom: 10px;
 }
 
 .header__logo-image {
@@ -27,11 +29,11 @@
   width: 101px;
   height: 18px;
   margin-top: 23px;
+  margin-right: 12px;
 }
 
 @media (min-width: $tablet-width) {
   .header {
-    display: flex;
     align-items: center;
     width: 708px;
     min-height: 52px;
@@ -45,14 +47,15 @@
   }
 
   .header__logo-text {
-    margin: 0;
-    width: 90px;
     align-self: center;
+    width: 90px;
+    margin: 0;
   }
 
   .header__logo-image {
-    margin: 0;
     width: 72px;
+    height: 52px;
+    margin: 0;
   }
 }
 
@@ -65,11 +68,11 @@
   }
 
   .header__logo-wrapper {
-    width: 610px;
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
-    padding: 46px 0 42px 110px;
+    width: 610px;
+    padding: 49px 0 42px 110px;
   }
 
   .header__logo-text {

@@ -30,12 +30,12 @@
   }
 
   .logo__text--indents {
-    margin: 0;
-    padding: 0;
     width: 128px;
     height: 24px;
-    border: none;
+    margin: 0;
     margin-right: 156px;
+    padding: 0;
+    border: none;
   }
 }
 
@@ -51,8 +51,7 @@
   }
 
   .logo__text--indents {
-    margin: 0;
-    padding: 0;
+    @include ziro-intends;
     width: 128px;
     height: 24px;
     border: none;

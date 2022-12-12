@@ -3,10 +3,10 @@
 }
 
 .gift__wrapper {
-  margin: 35px 20px 35px 20px;
-  background-image: url("../../img/catalog-background.png");
   width: 280px;
   height: 290px;
+  margin: 35px 20px 35px 20px;
+  background-image: url("../../img/catalog-background.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -31,14 +31,14 @@
   }
 
   .gift__wrapper {
-    margin: 0;
-    background-image: url("../../img/catalog-background.png");
     width: 707px;
     height: 200px;
+    margin: 0;
+    margin-bottom: 76px;
+    background-image: url("../../img/catalog-background.png");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
-    margin-bottom: 76px;
   }
 
   .gift__description {
@@ -53,15 +53,15 @@
 
 @media (min-width: $desktop-width) {
   .gift__wrapper {
-    margin: 0;
-    background-image: url("../../img/catalog-background.png");
     width: 245px;
     height: 289px;
+    margin: 0;
+    margin-bottom: 76px;
+    background-image: url("../../img/catalog-background.png");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
-    margin-bottom: 76px;
-}
+  }
 
   .gift__description {
     display: block;
@@ -70,5 +70,5 @@
     margin: 0;
     color: $white;
     text-align: center;
-}
+  }
 }

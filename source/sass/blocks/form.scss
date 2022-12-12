@@ -16,9 +16,8 @@
 }
 
 .form__fieldset {
+  @include ziro-intends;
   border: none;
-  margin: 0;
-  padding: 0;
   border-bottom: $border;
 }
 
@@ -48,24 +47,24 @@
 
 @media (min-width: $tablet-width) {
   .form__title {
-    font-size: 60px;
-    line-height: 60px;
     margin: 33px 0 54px 0;
     padding: 0 70px;
+    font-size: 60px;
+    line-height: 60px;
     border: none;
   }
 
   .form__description {
     width: 323px;
-    font-size: 20px;
-    line-height: 30px;
     margin-bottom: 66px;
     padding: 0 375px 0  70px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .form__fieldset {
-    border-bottom: none;
     margin-bottom: 72px;
+    border-bottom: none;
   }
 
   .form__fieldset--intends1 {
@@ -89,18 +88,18 @@
   }
 
   .form__container {
-    width: 626px;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    width: 626px;
     padding: 0 71px;
     margin: 0;
-    align-items: center;
   }
 
   .form__note {
     margin: 0 102px  0 64px;
-    text-align: center;
     padding: 0;
+    text-align: center;
   }
 }
 
@@ -127,9 +126,9 @@
   }
 
   .form__radio-wrapper {
-    margin: 0;
     width: 570px;
     min-height: 196px;
+    margin: 0;
   }
 
   .form__headerline {
@@ -142,17 +141,16 @@
   }
 
   .form__container {
-    width: 1220px;
     display: flex;
     flex-wrap: wrap;
-    padding: 0 110px;
-    margin: 0;
     align-items: center;
     justify-content: start;
+    width: 1220px;
+    padding: 0 110px;
+    margin: 0;
   }
 
   .form__note {
-    margin: 0;
-    padding: 0;
+    @include ziro-intends;
   }
 }

@@ -1,6 +1,6 @@
 .link {
   position: absolute;
-  top: 430px;
+  top: calc(100% + 138px);
   left: 20px;
   display: flex;
   justify-content: center;
@@ -23,9 +23,9 @@
 
 @media (min-width: $tablet-width) {
   .link {
-    width: 192px;
-    top: 265px;
+    top: calc(100% - 40px);
     left: 90px;
+    width: 192px;
     padding: 14px 26px;
     margin: 0;
     z-index: 10002;
@@ -34,9 +34,9 @@
 
 @media (min-width: $desktop-width) {
   .link {
-    width: 192px;
     top: 345px;
     left: 185px;
+    width: 192px;
     padding: 14px 26px;
     margin: 0;
     z-index: 10002;

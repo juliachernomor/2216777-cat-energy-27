@@ -8,9 +8,9 @@
 
 .checkbox__control-label {
   @include font-oswald-small-fsize16;
+  margin: 10px  0 20px 35px;
   text-transform: uppercase;
   color: $black;
-  margin: 10px  0 20px 35px;
 }
 
 .checkbox__control-mark {
@@ -27,14 +27,14 @@
 .checkbox__input[type="checkbox"]:checked + .checkbox__control-mark::before {
   position: absolute;
   content: "";
+  top: 28%;
+  left: 24%;
   width: 18px;
   height: 14px;
   background-image: url("../img/svg/checkbox-arrow.svg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  top: 28%;
-  left: 24%;
 }
 
 @media (min-width: $tablet-width) {

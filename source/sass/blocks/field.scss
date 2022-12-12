@@ -5,17 +5,17 @@
 
 .field__label {
   @include font-oswald-small-fsize16;
-  text-transform: uppercase;
   margin: 13px 13px 28px 0;
+  text-transform: uppercase;
   color: $special-dark-gray;
 }
 
 .field__input {
   @include font-oswald-small-fsize16;
+  flex-grow: 1;
   padding: 14px 20px  13px 20px;
   margin-bottom: 14px;
   text-transform: uppercase;
-  flex-grow: 1;
   color: $special-dark-gray;
   border: 1px solid $light-gray;
   cursor: pointer;
@@ -23,19 +23,18 @@
 
 @media (min-width: $tablet-width) {
   .field__label {
+    margin: 10px 13px 32px 0;
     font-size: 20px;
     line-height: 30px;
-    margin: 10px 13px 32px 0;
   }
 
   .field__input {
-    font-size: 20px;
-    line-height: 30px;
     padding: 11px 20px  11px 20px;
     margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
-
 
 @media (min-width: $desktop-width) {
   .field__label--intends {

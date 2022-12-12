@@ -1,24 +1,24 @@
 .nav {
   position: relative;
-  max-height: 65px;
+  min-height: 65px;
 }
 
 .nav__list {
-  display: none;
-  min-width: 320px;
   position: absolute;
-  background-color: $white;
-  z-index: 1001;
   top: 55px;
   right: -5px;
+  display: none;
+  min-width: 320px;
   text-align: center;
+  background-color: $white;
+  z-index: 1001;
 }
 
 @media (min-width: $tablet-width) {
   .nav {
     display: flex;
-    width: 440px;
     justify-content: space-between;
+    width: 440px;
     margin: auto 0;
   }
 
@@ -29,14 +29,14 @@
 
 @media (min-width: $desktop-width) {
   .nav {
+    width: 478px;
+    height: 40px;
+    padding: 37px 110px 42px  130.5px;
+    margin: 0;
     font-family: "Oswald", sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
-    width: 478px;
-    height: 40px;
-    padding: 60px 110px 42px  130.5px;
-    margin: 0;
     background-color: $green;
   }
 

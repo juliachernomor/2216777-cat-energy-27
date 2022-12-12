@@ -8,20 +8,20 @@
   min-width: 320px;
   height: 302px;
   margin-bottom: 138px;
-  background-color: $green;
   font-family: "Oswald", sans-serif;
+  background-color: $green;
   color: $white;
 
   &::before {
     position: absolute;
     content: url("../img/nutrition-cat.png");
-    opacity: 0.15;
+    right: 0;
     min-width: 320px;
     min-height: 302px;
+    opacity: 0.15;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    right: 0;
   }
 }
 
@@ -53,15 +53,15 @@
 
 @media (min-width: $tablet-width) {
   .nutrition {
+    width: 708px;
     min-height: 830px;
     padding: 0 30px;
-    width: 708px;
   }
 
   .nutrition__wrapper {
+    position: relative;
     width: 708px;
     background-color: $white;
-    position: relative;
 
     &::before {
       display: none;
@@ -74,11 +74,11 @@
   }
 
   .nutrition__title {
+    padding-top: 32px;
+    margin: 0 207px 41px 87px;
     color: $black;
     font-size: 60px;
     line-height: 60px;
-    padding-top: 32px;
-    margin: 0 207px 41px 87px;
     text-align: left;
   }
 
@@ -94,31 +94,31 @@
   .nutrition {
     display: block;
     width: 1440px;
-    padding: 0;
     min-height: 553px;
+    padding: 0;
     margin-bottom: 82px;
   }
 
   .nutrition__wrapper {
+    display: flex;
     width: 1440px;
     min-height: 553px;
-    display: flex;
     margin: 0;
   }
 
   .nutrition__text-wrapper {
+    position: relative;
     width: 611px;
     padding-left: 110px;
     background-color: $white;
-    position: relative;
   }
 
   .nutrition__title {
-    color: $black;
+    margin: 82px 116px 40px 80px;
     font-size: 60px;
     line-height: 60px;
-    margin: 82px 116px 40px 80px;
     text-align: left;
+    color: $black;
   }
 
   .nutrition__description {
@@ -126,38 +126,39 @@
     margin: 0 116px 52px 80px;
     font-size: 20px;
     line-height: 20px;
-    color: $black;
     text-align: left;
+    color: $black;
   }
 
   .nutrition__image-wrapper {
     display: block;
     position: relative;
-    background-color: $green;
     width: 609px;
-    min-height: 553px;
+    min-height: 554px;
     padding-right: 110px;
+    margin-top: -1px;
+    background-color: $green;
 
     &::before {
       position: absolute;
       content: url("../../img/cat-with.png");
       opacity: 0.15;
       bottom: 0;
+      right: 0;
       width: 720px;
       height: 694px;
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      right: 0;
       z-index: 200006;
     }
   }
 
   .nutrition__picture {
-    width: 552px;
-    height: 499px;
     position: absolute;
     top: 0;
     right: 304px;
+    width: 552px;
+    height: 499px;
   }
 }

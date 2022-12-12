@@ -8,11 +8,10 @@
 }
 
 .catalog__list {
+  @include ziro-intends;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
   list-style-type: none;
 }
 
@@ -23,20 +22,19 @@
   }
 
   .catalog__title {
-    border: none;
-    font-size: 60px;
-    line-height: 60px;
     padding: 0;
     margin-top: 33px;
     margin-bottom: 163px;
+    border: none;
+    font-size: 60px;
+    line-height: 60px;
   }
 
   .catalog__list {
+    @include ziro-intends;
     display: grid;
     grid-template-columns: 324px 324px;
     gap: 141px  60px;
-    margin: 0;
-    padding: 0;
     list-style-type: none;
   }
 }
@@ -48,20 +46,19 @@
   }
 
   .catalog__title {
+    padding: 0;
+    margin-top: 33px;
+    margin-bottom: 165px;
     border: none;
     font-size: 60px;
     line-height: 60px;
-    padding: 0;
-    margin-top: 32px;
-    margin-bottom: 165px;
   }
 
   .catalog__list {
+    @include ziro-intends;
     display: grid;
     grid-template-columns: 245px 245px 245px 245px;
     gap: 143px  80px;
-    margin: 0;
-    padding: 0;
     list-style-type: none;
   }
 }

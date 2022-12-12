@@ -21,22 +21,21 @@
 
 .card__title {
   width: 80px;
+  margin-top: 19px;
+  margin-bottom: 14px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: $special-black2;
   text-transform: uppercase;
-  margin-top: 19px;
-  margin-bottom: 14px;
 }
 
 .card__item {
-  width: 140px;
+  @include ziro-intends;
   display: grid;
   grid-template-columns: 70px 70px;
-  margin: 0;
-  padding: 0;
+  width: 140px;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -63,6 +62,8 @@
 
 .card__view {
   display: block;
+  margin: 78px 0 8px 0;
+  padding: 0;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -71,32 +72,30 @@
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  margin: 78px 0 8px 0;
-  padding: 0;
 }
 
 .card__text {
+  margin: 0;
+  margin-bottom: 21px;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   color: $special-dark-gray;
-  margin: 0;
-  margin-bottom: 21px;
   text-align: center;
 }
 
 .card--modify {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: start;
   gap: 0;
+  flex-grow: 1;
 }
 
 .card--intends {
-  margin: 0 auto;
-  padding: 0 20px 25px 20px;
+  margin: 0 20px;
+  padding: 0 0 25px 0;
 }
 
 .card__item--grid {
@@ -128,22 +127,21 @@
   }
 
   .card__image {
+    @include ziro-intends;
     display: block;
-    margin: 0;
-    padding: 0;
   }
 
   .card__pic {
     display: block;
     width: 161px;
-    height: 172px;
+    min-height: 172px;
     margin: -45px auto 34px auto;
   }
 
   .card__pic--big {
     display: block;
     width: 168px;
-    height: 206px;
+    min-height: 206px;
     margin: -73px auto 28px auto;
   }
 
@@ -181,15 +179,15 @@
 
   .card__description {
     display: flex;
+    justify-content: end;
     width: 126px;
     margin: 0;
-    justify-content: end;
     margin-bottom: 9px;
   }
 
   .card__view {
-    padding-top: 161px;
     width: 134px;
+    padding-top: 161px;
     margin: 0 auto 23px auto;
   }
 
@@ -199,10 +197,10 @@
   }
 
   .card--modify {
-    width: 100%;
     display: grid;
     grid-template-columns: 316px 316px;
     row-gap: 25px;
+    width: 100%;
     height: 139px;
     padding: 26px 38px 28px 38px;
     margin: 0;
@@ -216,17 +214,17 @@
   }
 
   .card__title--intends {
+    grid-column: 1/2;
     width: 316px;
     text-align: left;
     line-height: 20px;
-    grid-column: 1/2;
   }
 
   .card__item--intends {
     grid-column: 2/3;
     display: flex;
-    width: 316px;
     justify-content: flex-end;
+    width: 316px;
     margin: 0;
   }
 
@@ -241,9 +239,9 @@
 
 @media (min-width: $desktop-width) {
   .card {
-    height: 431px;
     gap: 0;
     padding: 0 30px 40px 35px;
+    height: 431px;
     background-color: $gray;
     border: none;
   }
@@ -261,7 +259,7 @@
   .card__pic--big {
     display: block;
     width: 172px;
-    height: 196px;
+    min-height: 196px;
     margin: -73px 4px 46px 4px;
   }
 
@@ -286,9 +284,9 @@
   }
 
   .card__view {
-    padding-top: 161px;
     width: 134px;
     margin: 0 auto 23px auto;
+    padding-top: 161px;
   }
 
   .card__text {
@@ -297,10 +295,10 @@
   }
 
   .card--modify {
-    width: 896px;
-    height: 72px;
     display: grid;
     grid-template-columns: 324px 328px 244px;
+    width: 896px;
+    height: 72px;
     box-sizing: border-box;
     padding: 15px 0 17px 0;
     margin: 0;
@@ -315,15 +313,15 @@
   }
 
   .card__title--intends {
-    width: 324px;
     grid-column: 1/2;
+    width: 324px;
     text-align: left;
     margin: auto 0;
   }
 
   .card__item--intends {
-    width: 328px;
     grid-column: 2/3;
+    width: 328px;
     justify-content: space-between;
     align-items: center;
     margin: auto 0;
@@ -334,9 +332,9 @@
   }
 
   .card__description--location {
-    width: 122px;
     display: flex;
     justify-content: center;
+    width: 122px;
   }
 
   .card__order {
