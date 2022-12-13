@@ -3,9 +3,37 @@
   margin: 0;
 }
 
+@media (min-width: $tablet-width) {
+  .logo__picture {
+    width: 72px;
+    height: 52px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo__picture {
+    width: 83px;
+    height: 59px;
+  }
+}
+
 .logo__text {
   display: block;
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .logo__text {
+    width: 90px;
+    height: 19px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo__text {
+    width: 105px;
+    height: 21px;
+  }
 }
 
 .logo--big-size {
@@ -19,16 +47,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .logo__picture {
-    width: 72px;
-    height: 52px;
-  }
-
-  .logo__text {
-    width: 90px;
-    height: 19px;
-  }
-
   .logo__text--indents {
     width: 128px;
     height: 24px;
@@ -40,20 +58,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .logo__picture {
-    width: 83px;
-    height: 59px;
-  }
-
-  .logo__text {
-    width: 105px;
-    height: 21px;
-  }
-
   .logo__text--indents {
     @include ziro-intends;
-    width: 128px;
-    height: 24px;
-    border: none;
   }
 }

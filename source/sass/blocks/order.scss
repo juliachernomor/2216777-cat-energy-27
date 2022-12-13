@@ -17,6 +17,25 @@
   cursor: pointer;
 }
 
+@media (min-width: $tablet-width) {
+  .order {
+    padding: 9px 93px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order {
+    padding: 10px 53px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order--modify {
+    width: 192px;
+    padding: 7px 26px;
+  }
+}
+
 .order--background {
   background-color: $special-white;
 }
@@ -30,6 +49,13 @@
   margin: 0;
 }
 
+@media (min-width: $desktop-width) {
+  .order--intends {
+    padding: 10px 39px;
+  }
+}
+
+
 .order--form-width {
   width: 100%;
 }
@@ -39,10 +65,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .order {
-    padding: 9px 93px;
-  }
-
   .order--form-intends {
     width: 282px;
     height: 52px;
@@ -54,15 +76,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .order {
-    padding: 10px 53px;
-  }
-
-  .order--modify {
-    width: 192px;
-    padding: 7px 26px;
-  }
-
   .order--form-intends {
     width: 568px;
     height: 52px;

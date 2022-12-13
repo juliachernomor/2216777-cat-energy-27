@@ -4,27 +4,38 @@
   list-style-type: none;
 }
 
+@media (min-width: $tablet-width) {
+  .group {
+    padding: 0 67px 0 71px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .group {
+    @include ziro-intends;
+  }
+}
+
 .group--intends {
   padding: 27px 20px 25px 20px;
 }
 
 @media (min-width: $tablet-width) {
-  .group {
-    margin: 0;
-    padding: 0 67px 0 71px;
-  }
-
   .group--radio {
     padding: 25px 28px 25px 28px;
     border: 1px solid $light-gray;
   }
+}
 
+@media (min-width: $tablet-width) {
   .group__radio-wrapper {
     width: 630px;
     min-height: 196px;
     margin: 0 67px 0 71px;
   }
+}
 
+@media (min-width: $tablet-width) {
   .group--checkbox {
     display: grid;
     grid-template-columns: 344px 287px;
@@ -35,27 +46,19 @@
 }
 
 @media (min-width: $desktop-width) {
-  .group {
-    @include ziro-intends;
+  .group--checkbox {
+    grid-template-columns: 305px 305px 305px 305px;
+    column-gap: 20px;
+    padding: 0 110px;
+    margin-bottom: 61px;
   }
+}
 
-  .group--radio {
-    padding: 25px 28px 25px 28px;
-    border: 1px solid $light-gray;
-  }
-
+@media (min-width: $desktop-width) {
   .group--modify {
     display: grid;
     grid-template-columns: 569px 572px;
     column-gap: 78px;
     padding: 0 110px;
-  }
-
-  .group--checkbox {
-    display: grid;
-    grid-template-columns: 305px 305px 305px 305px;
-    column-gap: 20px;
-    padding: 0 110px;
-    margin-bottom: 61px;
   }
 }

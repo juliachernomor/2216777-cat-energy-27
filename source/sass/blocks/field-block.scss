@@ -2,6 +2,19 @@
   padding: 2px 20px 23px 20px;
 }
 
+@media (min-width: $tablet-width) {
+  .field-block {
+    margin: 0 67px 0 70px;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-block {
+    margin: 0 110px 0 110px;
+  }
+}
+
 .field-block__text {
   @include font-oswald-small-fsize16;
   min-width: 280px;
@@ -16,11 +29,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .field-block {
-    margin: 0 67px 0 70px;
-    padding: 0;
-  }
-
   .field-block__text {
     width: 631px;
     min-height: 174px;
@@ -31,12 +39,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .field-block {
-    margin: 0 110px 0 110px;
-  }
-
   .field-block__text {
     width: 1220px;
-    min-height: 174px;
   }
 }

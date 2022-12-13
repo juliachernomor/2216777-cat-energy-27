@@ -10,6 +10,20 @@
   color: $special-dark-gray;
 }
 
+@media (min-width: $tablet-width) {
+  .field__label {
+    margin: 10px 13px 32px 0;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field__label--intends {
+    margin: 10px 13px 12px 0;
+  }
+}
+
 .field__input {
   @include font-oswald-small-fsize16;
   flex-grow: 1;
@@ -22,12 +36,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .field__label {
-    margin: 10px 13px 32px 0;
-    font-size: 20px;
-    line-height: 30px;
-  }
-
   .field__input {
     padding: 11px 20px  11px 20px;
     margin-bottom: 20px;
@@ -37,10 +45,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .field__label--intends {
-    margin: 10px 13px 12px 0;
-  }
-
   .field__input--intends {
     margin-bottom: 0;
   }

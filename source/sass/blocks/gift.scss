@@ -2,6 +2,12 @@
   border-bottom: $border;
 }
 
+@media (min-width: $tablet-width) {
+  .gift {
+    border-bottom: none;
+  }
+}
+
 .gift__wrapper {
   width: 280px;
   height: 290px;
@@ -12,6 +18,30 @@
   background-position: center;
 }
 
+@media (min-width: $tablet-width) {
+  .gift__wrapper {
+    width: 708px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 76px;
+    background-image: url("../../img/catalog-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gift__wrapper {
+    width: 245px;
+    height: 289px;
+    background-image: url("../../img/catalog-background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}
 
 .gift__description {
   padding: 186px 61px 43px 58px;
@@ -26,49 +56,17 @@
 }
 
 @media (min-width: $tablet-width) {
-  .gift {
-    border-bottom: none;
-  }
-
-  .gift__wrapper {
-    width: 707px;
-    height: 200px;
-    margin: 0;
-    margin-bottom: 76px;
-    background-image: url("../../img/catalog-background.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-  }
-
   .gift__description {
     display: block;
     width: 161px;
     padding: 71px 124px 69px 422px;
-    margin: 0;
-    color: $white;
-    text-align: center;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .gift__wrapper {
-    width: 245px;
-    height: 289px;
-    margin: 0;
-    margin-bottom: 76px;
-    background-image: url("../../img/catalog-background.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-  }
-
   .gift__description {
     display: block;
     width: 161px;
     padding: 184px 43px 42px 42px;
-    margin: 0;
-    color: $white;
-    text-align: center;
   }
 }

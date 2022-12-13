@@ -3,6 +3,24 @@
   text-align: center;
 }
 
+@media (min-width: $tablet-width) {
+  .nutrition {
+    width: 708px;
+    min-height: 830px;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nutrition {
+    display: block;
+    width: 1440px;
+    min-height: 553px;
+    padding: 0;
+    margin-bottom: 82px;
+  }
+}
+
 .nutrition__wrapper {
   position: relative;
   min-width: 320px;
@@ -25,10 +43,48 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .nutrition__wrapper {
+    position: relative;
+    width: 708px;
+    background-color: $white;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nutrition__wrapper {
+    display: flex;
+    width: 1440px;
+    min-height: 553px;
+    margin: 0;
+  }
+}
+
 .nutrition__title {
   @include font-oswald-medium;
   padding-top: 20px;
   margin: 0 35px 25px 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .nutrition__title {
+    padding-top: 32px;
+    margin: 0 207px 41px 87px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: $black;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nutrition__title {
+    margin: 82px 116px 40px 80px;
+  }
 }
 
 .nutrition__description {
@@ -41,47 +97,7 @@
   text-transform: uppercase;
 }
 
-.nutrition__picture {
-  display: block;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.nutrition__link {
-  margin: 0 auto;
-}
-
 @media (min-width: $tablet-width) {
-  .nutrition {
-    width: 708px;
-    min-height: 830px;
-    padding: 0 30px;
-  }
-
-  .nutrition__wrapper {
-    position: relative;
-    width: 708px;
-    background-color: $white;
-
-    &::before {
-      display: none;
-    }
-  }
-
-  .nutrition__picture {
-    width: 709px;
-    height: 609px;
-  }
-
-  .nutrition__title {
-    padding-top: 32px;
-    margin: 0 207px 41px 87px;
-    color: $black;
-    font-size: 60px;
-    line-height: 60px;
-    text-align: left;
-  }
-
   .nutrition__description {
     margin: 0 336px 20px 89px;
     font-size: 20px;
@@ -91,45 +107,50 @@
 }
 
 @media (min-width: $desktop-width) {
-  .nutrition {
+  .nutrition__description {
     display: block;
-    width: 1440px;
-    min-height: 553px;
-    padding: 0;
-    margin-bottom: 82px;
+    margin: 0 116px 52px 80px;
+    text-align: left;
   }
+}
 
-  .nutrition__wrapper {
-    display: flex;
-    width: 1440px;
-    min-height: 553px;
-    margin: 0;
+.nutrition__picture {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .nutrition__picture {
+    width: 709px;
+    height: 609px;
   }
+}
 
+@media (min-width: $desktop-width) {
+  .nutrition__picture {
+    position: absolute;
+    top: 0;
+    right: 304px;
+    width: 552px;
+    height: 499px;
+  }
+}
+
+.nutrition__link {
+  margin: 0 auto;
+}
+
+@media (min-width: $desktop-width) {
   .nutrition__text-wrapper {
     position: relative;
     width: 611px;
     padding-left: 110px;
     background-color: $white;
   }
+}
 
-  .nutrition__title {
-    margin: 82px 116px 40px 80px;
-    font-size: 60px;
-    line-height: 60px;
-    text-align: left;
-    color: $black;
-  }
-
-  .nutrition__description {
-    display: block;
-    margin: 0 116px 52px 80px;
-    font-size: 20px;
-    line-height: 20px;
-    text-align: left;
-    color: $black;
-  }
-
+@media (min-width: $desktop-width) {
   .nutrition__image-wrapper {
     display: block;
     position: relative;
@@ -152,13 +173,5 @@
       background-position: center;
       z-index: 200006;
     }
-  }
-
-  .nutrition__picture {
-    position: absolute;
-    top: 0;
-    right: 304px;
-    width: 552px;
-    height: 499px;
   }
 }

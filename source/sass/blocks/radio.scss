@@ -13,6 +13,15 @@
   color: $special-black2;
 }
 
+@media (min-width: $tablet-width) {
+  .radio__control-label {
+    margin: 88px;
+    margin-left: 60px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
 .radio__control-mark {
   position: absolute;
   top: -5px;
@@ -36,14 +45,4 @@
   border-radius: 50%;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-@media (min-width: $tablet-width) {
-  .radio__control-label {
-    margin: 88px;
-    margin-left: 60px;
-    font-size: 20px;
-    line-height: 30px;
-    color: $special-black2;
-  }
 }

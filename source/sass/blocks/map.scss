@@ -1,29 +1,5 @@
-.map__static-image {
-  display: block;
-  width: 320px;
-  min-height: 362px;
-  object-fit: contain;
-}
-
-.map__interactive-map {
-  width: 320px;
-  min-height: 362px;
-}
-
 @media (min-width: $tablet-width) {
   .map {
-    width: 768px;
-    min-height: 400px;
-  }
-
-  .map__static-image {
-    display: block;
-    width: 768px;
-    min-height: 400px;
-    object-fit: cover;
-  }
-
-  .map__interactive-map {
     width: 768px;
     min-height: 400px;
   }
@@ -34,16 +10,44 @@
     width: 1440px;
     min-height: 400px;
   }
+}
 
+.map__static-image {
+  display: block;
+  width: 320px;
+  min-height: 362px;
+  object-fit: contain;
+}
+
+@media (min-width: $tablet-width) {
   .map__static-image {
-    display: block;
-    width: 1440px;
-    height: 400px;
+    width: 768px;
+    min-height: 400px;
     object-fit: cover;
   }
+}
 
+@media (min-width: $desktop-width) {
+  .map__static-image {
+    width: 1440px;
+    height: 400px;
+  }
+}
+
+.map__interactive-map {
+  width: 320px;
+  min-height: 362px;
+}
+
+@media (min-width: $tablet-width) {
+  .map__interactive-map {
+    width: 768px;
+    min-height: 400px;
+  }
+}
+
+@media (min-width: $desktop-width) {
   .map__interactive-map {
     width: 1440px;
-    min-height: 400px;
   }
 }

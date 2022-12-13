@@ -2,6 +2,22 @@
   padding: 0 20px;
 }
 
+@media (min-width: $tablet-width) {
+  .programs {
+    width: 708px;
+    padding: 0 30px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs {
+    width: 1220px;
+    padding: 0 110px;
+  }
+}
+
+
 .programs__list {
   @include ziro-intends;
   display: grid;
@@ -9,6 +25,23 @@
   min-height: 266px;
   row-gap: 20px;
   list-style-type: none;
+}
+
+@media (min-width: $tablet-width) {
+  .programs__list {
+    @include ziro-intends;
+    grid-template-columns: 708px;
+    row-gap: 30px;
+    min-height: 372px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs__list {
+    grid-template-columns: 570px 570px;
+    column-gap: 80px;
+    margin-bottom: 71px;
+  }
 }
 
 .programs__item {
@@ -25,9 +58,36 @@
   text-transform: uppercase;
 }
 
+@media (min-width: $tablet-width) {
+  .programs__title {
+    @include font-oswald-medium;
+    margin: 77px 316px 24px  53px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs__title {
+    margin: 77px 33px 73px  214px;
+  }
+}
+
 .programs__description {
   @include font-lato;
   margin: 0 33px 23px 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .programs__description {
+    margin: 0 316px 52px  52px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs__description {
+    margin: 0 65px 23px  52px;
+  }
 }
 
 .programs__link {
@@ -43,30 +103,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .programs {
-    width: 708px;
-    padding: 0 30px;
-    margin: 0;
-  }
-
-  .programs__list {
-    @include ziro-intends;
-    grid-template-columns: 708px;
-    row-gap: 30px;
-    min-height: 372px;
-  }
-
-  .programs__title {
-    @include font-oswald-medium;
-    margin: 77px 316px 24px  53px;
-  }
-
-  .programs__description {
-    margin: 0 316px 52px  52px;
-    font-size: 16px;
-    line-height: 24px;
-  }
-
   .programs__link {
     display: block;
     margin: 0 316px 52px 52px;
@@ -76,29 +112,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .programs {
-    width: 1220px;
-    padding: 0 110px;
-  }
-
-  .programs__list {
-    display: grid;
-    grid-template-columns: 570px 570px;
-    column-gap: 80px;
-    margin-bottom: 71px;
-  }
-
-  .programs__title {
-    @include font-oswald-medium;
-    margin: 77px 33px 73px  214px;
-  }
-
-  .programs__description {
-    margin: 0 65px 23px  52px;
-    font-size: 16px;
-    line-height: 24px;
-  }
-
   .programs__link {
     display: block;
     margin: 0 33px 55px 52px;

@@ -4,6 +4,20 @@
   background-color: $gray;
 }
 
+@media (min-width: $tablet-width) {
+  .example {
+    width: 768px;
+    padding: 0;
+    background-color: $white;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    width: 1440px;
+  }
+}
+
 .example__title {
   @include font-oswald-big;
   padding: 0;
@@ -12,9 +26,60 @@
   margin-bottom: 40px;
 }
 
+@media (min-width: $tablet-width) {
+  .example__title {
+    padding: 0 30px;
+    margin: 43px 30px 63px 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__title {
+    padding: 0 110px;
+    margin: 0 0 76px 0;
+  }
+}
+
 .example__item-container {
   display: flex;
   justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .example__item-container {
+    grid-column: 1/2;
+    display: flex;
+    justify-content: space-between;
+    width: 366px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__item-container {
+    width: 366px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .example__item {
+    display: grid;
+    grid-template-columns: 366px 174px;
+    gap: 54px 167px;
+    width: 708px;
+    padding: 0 30px;
+    margin-bottom: 230px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__item {
+    display: flex;
+    flex-direction: column;
+    width: 436px;
+    padding: 70px 0 75px 0;
+  }
 }
 
 .example__term {
@@ -30,9 +95,43 @@
   border-radius: 3px;
 }
 
+@media (min-width: $tablet-width) {
+  .example__term {
+    width: 48px;
+    padding: 15px 57px;
+    margin: 0;
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__term {
+    width: 48px;
+    padding: 15px 57px;
+    margin: 0;
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
 .example__term--padding {
   width: 82px;
   padding: 14px 21px 18px 21px;
+}
+
+@media (min-width: $tablet-width) {
+  .example__term--padding {
+    width: 102px;
+    padding: 15px 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__term--padding {
+    width: 102px;
+    padding: 15px 30px;
+  }
 }
 
 .example__description {
@@ -40,6 +139,22 @@
   width: 280px;
   margin: 0;
   margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .example__description {
+    grid-column: 1/-1;
+    width: 708px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__description {
+    width: 436px;
+  }
 }
 
 .example__total-cost {
@@ -54,6 +169,25 @@
   text-align: center;
 }
 
+@media (min-width: $tablet-width) {
+  .example__total-cost {
+    width: 174px;
+    padding: 0;
+    margin: auto 0;
+    font-size: 20px;
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__total-cost {
+    @include ziro-intends;
+    display: flex;
+    width: 366px;
+    text-align: center;
+  }
+}
+
 .example__list {
   margin: 0;
   margin-bottom: 40px;
@@ -62,74 +196,34 @@
 }
 
 @media (min-width: $tablet-width) {
-  .example {
-    width: 768px;
-    padding: 0;
-    background-color: $white;
-  }
-
-  .example__title {
-    padding: 0 30px;
-    margin: 43px 30px 63px 0;
-    font-size: 60px;
-    line-height: 60px;
-  }
-
-  .example__item {
-    display: grid;
-    grid-template-columns: 366px 174px;
-    gap: 54px 167px;
-    width: 708px;
-    padding: 0 30px;
-    margin-bottom: 230px;
-  }
-
-  .example__description {
-    grid-column: 1/-1;
-    width: 708px;
-    margin: 0;
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-  .example__item-container {
-    grid-column: 1/2;
-    display: flex;
-    justify-content: space-between;
-    width: 366px;
-  }
-
-  .example__total-cost {
-    width: 174px;
-    padding: 0;
-    margin: auto 0;
-    font-size: 20px;
-    text-align: right;
-  }
-
-  .example__term {
-    width: 48px;
-    padding: 15px 57px;
-    margin: 0;
-    font-size: 30px;
-    line-height: 37px;
-  }
-
-  .example__term--padding {
-    width: 102px;
-    padding: 15px 30px;
-  }
-
-  .example__image {
-    width: 768px;
-    min-height: 462px;
-  }
-
   .example__list {
     @include ziro-intends;
     display: inline-block;
   }
+}
 
+@media (min-width: $tablet-width) {
+  .example__toggles {
+    margin: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .example__image {
+    width: 768px;
+    min-height: 462px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__image {
+    width: 768px;
+    min-height: 462px;
+    background-color: $gray;
+  }
+}
+
+@media (min-width: $tablet-width) {
   .example__cat {
     display: block;
     margin: -151px 104px 0 104px;
@@ -137,95 +231,29 @@
     height: 512px;
     object-fit: cover;
   }
+}
 
-  .example__toggles {
-    margin: 0;
+@media (min-width: $desktop-width) {
+  .example__cat {
+    display: block;
+    margin: -151px 104px 0 104px;
+    width: 560px;
+    height: 512px;
+    object-fit: cover;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .example {
-    width: 1440px;
-  }
-
-  .example__title {
-    padding: 0 110px;
-    margin: 0 0 76px 0;
-    font-size: 60px;
-    line-height: 60px;
-  }
-
   .example__wrapper-color {
     display: flex;
     justify-content: space-between;
     padding: 0 110px;
     background-color: $gray;
   }
+}
 
-  .example__item {
-    display: flex;
-    flex-direction: column;
-    width: 436px;
-    padding: 70px 0 75px 0;
-  }
-
-  .example__item-container {
-    width: 366px;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .example__description {
-    width: 436px;
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-  .example__total-cost {
-    @include ziro-intends;
-    display: flex;
-    width: 366px;
-    text-align: center;
-    font-size: 20px;
-  }
-
+@media (min-width: $desktop-width) {
   .example__food-costs {
     margin-right: 70px;
-  }
-
-  .example__term {
-    width: 48px;
-    padding: 15px 57px;
-    margin: 0;
-    font-size: 30px;
-    line-height: 37px;
-  }
-
-  .example__term--padding {
-    width: 102px;
-    padding: 15px 30px;
-  }
-
-  .example__image {
-    width: 768px;
-    min-height: 462px;
-    background-color: $gray;
-  }
-
-  .example__list {
-    @include ziro-intends;
-    display: inline-block;
-  }
-
-  .example__cat {
-    display: block;
-    margin: -151px 104px 0 104px;
-    width: 560px;
-    height: 512px;
-    object-fit: cover;
-  }
-
-  .example__toggles {
-    margin: 0;
   }
 }

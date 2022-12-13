@@ -6,6 +6,23 @@
   color: $black;
 }
 
+@media (min-width: $tablet-width) {
+  .form__title {
+    margin: 33px 0 54px 0;
+    padding: 0 70px;
+    font-size: 60px;
+    line-height: 60px;
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__title {
+    padding: 33px 110px 0 110px;
+    margin-bottom: 56px;
+  }
+}
+
 .form__description {
   @include font-oswald-small-fsize14;
   margin: 0;
@@ -15,10 +32,40 @@
   color: $black;
 }
 
+@media (min-width: $tablet-width) {
+  .form__description {
+    width: 323px;
+    margin-bottom: 66px;
+    padding: 0 375px 0  70px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__description {
+    margin-bottom: 76px;
+    padding: 0 1007px  0 110px;
+  }
+}
+
 .form__fieldset {
   @include ziro-intends;
   border: none;
   border-bottom: $border;
+}
+
+@media (min-width: $tablet-width) {
+  .form__fieldset {
+    margin-bottom: 72px;
+    border-bottom: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__fieldset {
+    margin-bottom: 69px;
+  }
 }
 
 .form__headerline {
@@ -30,9 +77,51 @@
   color: $black;
 }
 
+@media (min-width: $tablet-width) {
+  .form__headerline {
+    width: 668px;
+    padding: 0 30px 0 70px;
+    margin-bottom: 76px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form__headerline--modify {
+    margin-bottom: 57px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__headerline {
+    width: 1220px;
+    padding: 0 110px;
+  }
+}
+
 .form__container {
   width: 280px;
   margin: 24px auto 28px auto;
+}
+
+@media (min-width: $tablet-width) {
+  .form__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 626px;
+    padding: 0 71px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__container {
+    justify-content: start;
+    width: 1220px;
+    padding: 0 110px;
+  }
 }
 
 .form__note {
@@ -46,74 +135,37 @@
 }
 
 @media (min-width: $tablet-width) {
-  .form__title {
-    margin: 33px 0 54px 0;
-    padding: 0 70px;
-    font-size: 60px;
-    line-height: 60px;
-    border: none;
-  }
-
-  .form__description {
-    width: 323px;
-    margin-bottom: 66px;
-    padding: 0 375px 0  70px;
-    font-size: 20px;
-    line-height: 30px;
-  }
-
-  .form__fieldset {
-    margin-bottom: 72px;
-    border-bottom: none;
-  }
-
-  .form__fieldset--intends1 {
-    margin-bottom: 75px;
-  }
-
-  .form__fieldset--intends2 {
-    margin-bottom: 65px;
-  }
-
-  .form__headerline {
-    width: 668px;
-    padding: 0 30px 0 70px;
-    margin-bottom: 76px;
-    font-size: 36px;
-    line-height: 36px;
-  }
-
-  .form__headerline--modify {
-    margin-bottom: 57px;
-  }
-
-  .form__container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 626px;
-    padding: 0 71px;
-    margin: 0;
-  }
-
   .form__note {
     margin: 0 102px  0 64px;
     padding: 0;
-    text-align: center;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .form__title {
-    padding: 33px 110px 0 110px;
-    margin-bottom: 56px;
+  .form__note {
+    @include ziro-intends;
   }
+}
 
-  .form__description {
-    margin-bottom: 76px;
-    padding: 0 1007px  0 110px;
+@media (min-width: $tablet-width) {
+  .form__fieldset--intends1 {
+    margin-bottom: 75px;
   }
+}
 
+@media (min-width: $tablet-width) {
+  .form__fieldset--intends2 {
+    margin-bottom: 65px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__fieldset--intends2 {
+    margin-bottom: 67px;
+  }
+}
+
+@media (min-width: $desktop-width) {
   .form__fieldset-wrapper {
     display: grid;
     grid-template-columns: 596px 570px;
@@ -121,36 +173,9 @@
     padding: 0 110px;
   }
 
-  .form__fieldset {
-    margin-bottom: 69px;
-  }
-
   .form__radio-wrapper {
     width: 570px;
     min-height: 196px;
     margin: 0;
-  }
-
-  .form__headerline {
-    width: 1220px;
-    padding: 0 110px;
-  }
-
-  .form__fieldset--intends2 {
-    margin-bottom: 67px;
-  }
-
-  .form__container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: start;
-    width: 1220px;
-    padding: 0 110px;
-    margin: 0;
-  }
-
-  .form__note {
-    @include ziro-intends;
   }
 }
