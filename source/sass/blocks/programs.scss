@@ -1,4 +1,6 @@
 .programs {
+  width: 280px;
+  margin: 0 auto;
   padding: 0 20px;
 }
 
@@ -6,7 +8,7 @@
   .programs {
     width: 708px;
     padding: 0 30px;
-    margin: 0;
+    margin: 0 auto;
   }
 }
 
@@ -14,9 +16,9 @@
   .programs {
     width: 1220px;
     padding: 0 110px;
+    margin: 0 auto;
   }
 }
-
 
 .programs__list {
   @include ziro-intends;

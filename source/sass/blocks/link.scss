@@ -1,7 +1,4 @@
 .link {
-  position: absolute;
-  top: calc(100% + 138px);
-  left: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,8 +19,9 @@
 
 @media (min-width: $tablet-width) {
   .link {
-    top: calc(100% - 40px);
-    left: 90px;
+    position: absolute;
+    top: calc(100% - 570px);
+    left: calc(100% - 610px);
     padding: 14px 26px;
     margin: 0;
   }
@@ -31,8 +29,14 @@
 
 @media (min-width: $desktop-width) {
   .link {
-    top: 345px;
-    left: 185px;
-    margin: 0;
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 244px;
+    padding: 14px 26px;
+    box-sizing: border-box;
+    height: 54px;
+    order: 1;
   }
 }

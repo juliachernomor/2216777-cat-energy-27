@@ -1,7 +1,14 @@
+.catalog {
+  min-width: 320px;
+  width: 100%;
+  border-top: $border;
+}
+
 @media (min-width: $tablet-width) {
   .catalog {
-    width: 708px;
-    padding: 0 30px;
+    min-width: 768px;
+    width: 100%;
+    border: none;
   }
 }
 
@@ -9,21 +16,36 @@
   .catalog {
     width: 1220px;
     padding: 0 110px;
+    margin: 0 auto;
+  }
+}
+
+.catalog__wrapper-title {
+  min-width: 320px;
+  width: 100%;
+  border-bottom: $border;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__wrapper-title {
+    min-width: 768px;
+    width: 100%;
+    border: none;
   }
 }
 
 .catalog__title {
   @include font-oswald-medium;
+  width: 280px;
   display: block;
-  padding: 27px 41px 41px 20px;
-  margin: 0;
-  box-sizing: border-box;
-  border-bottom: $border;
+  padding: 27px 20px 41px 20px;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .catalog__title {
-    padding: 0;
+    width: 708px;
+    padding: 0 30px;
     margin-top: 33px;
     margin-bottom: 163px;
     border: none;
@@ -34,12 +56,16 @@
 
 @media (min-width: $desktop-width) {
   .catalog__title {
-    margin-bottom: 165px;
+    margin: 0 0 165px 0;
+    padding: 0;
   }
 }
 
 .catalog__list {
   @include ziro-intends;
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -48,7 +74,9 @@
 
 @media (min-width: $tablet-width) {
   .catalog__list {
-    @include ziro-intends;
+    width: 708px;
+    padding: 0 30px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 324px 324px;
     gap: 141px  60px;

@@ -6,7 +6,7 @@
 
 @media (min-width: $tablet-width) {
   .group {
-    padding: 0 67px 0 71px;
+    padding: 0;
   }
 }
 
@@ -54,11 +54,24 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .group--modify {
+    width: 630px;
+    padding: 0 70px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .group--modify {
     display: grid;
-    grid-template-columns: 569px 572px;
+    grid-template-columns: 569px 569px;
     column-gap: 78px;
     padding: 0 110px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .group--size {
+    width: 500px;
   }
 }

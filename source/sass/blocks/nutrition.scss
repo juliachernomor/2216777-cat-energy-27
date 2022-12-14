@@ -1,11 +1,10 @@
 .nutrition {
-  min-height: 495px;
+  min-height: 480px;
   text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .nutrition {
-    width: 708px;
     min-height: 830px;
     padding: 0 30px;
   }
@@ -13,54 +12,96 @@
 
 @media (min-width: $desktop-width) {
   .nutrition {
-    display: block;
-    width: 1440px;
-    min-height: 553px;
+    position: relative;
+    min-width: 1440px;
+    min-height: 550px;
     padding: 0;
     margin-bottom: 82px;
-  }
-}
-
-.nutrition__wrapper {
-  position: relative;
-  min-width: 320px;
-  height: 302px;
-  margin-bottom: 138px;
-  font-family: "Oswald", sans-serif;
-  background-color: $green;
-  color: $white;
-
-  &::before {
-    position: absolute;
-    content: url("../img/nutrition-cat.png");
-    right: 0;
-    min-width: 320px;
-    min-height: 302px;
-    opacity: 0.15;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .nutrition__wrapper {
-    position: relative;
-    width: 708px;
-    background-color: $white;
 
     &::before {
-      display: none;
+      position: absolute;
+      content: "";
+      top: calc(100% - 693px);
+      background-color: rgba(104, 183, 56, 0.85);
+      min-width: 720px;
+      min-height: 694px;
+      width: 100%;
+      z-index: 0;
     }
   }
 }
 
+.nutrition__color-wrapper {
+  width: 100%;
+  min-width: 320px;
+  background-color: rgba(104, 183, 56, 0.85);
+}
+
+@media (min-width: $tablet-width) {
+  .nutrition__color-wrapper {
+    width: 708px;
+    margin: 0 auto;
+    min-height: 250px;
+    background-color: $white;
+    background-image: none;
+  }
+}
+
 @media (min-width: $desktop-width) {
-  .nutrition__wrapper {
+  .nutrition__color-wrapper {
     display: flex;
-    width: 1440px;
-    min-height: 553px;
+    flex-direction: column;
+    width: 1220px;
+    padding: 0 110px;
+    margin: 0 auto;
+  }
+}
+
+.nutrition__text-wrapper {
+  margin: 0 auto;
+  width: 320px;
+  height: 302px;
+  margin-bottom: 0;
+  font-family: "Oswald", sans-serif;
+  background-image: url("../img/nutrition-cat.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: $white;
+}
+
+@media (min-width: $tablet-width) {
+  .nutrition__text-wrapper {
+    width: 708px;
+    min-height: 250px;
     margin: 0;
+    padding: 0;
+    background-image: none;
+    background-color: $white;
+  }
+}
+
+.nutrition__image-wrapper {
+  min-height: 178px;
+  width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .nutrition__image-wrapper {
+    position: relative;
+    width: 708px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nutrition__image-wrapper {
+    display: flex;
+    justify-content: start;
+    width: 1060px;
+    padding: 0 190px;
+    margin: 36px auto 0 auto;
   }
 }
 
@@ -83,7 +124,9 @@
 
 @media (min-width: $desktop-width) {
   .nutrition__title {
+    width: 414px;
     margin: 82px 116px 40px 80px;
+    padding: 0;
   }
 }
 
@@ -116,62 +159,32 @@
 
 .nutrition__picture {
   display: block;
-  margin: 0 auto;
+  width: 280px;
+  height: 270px;
+  margin: -135px auto 3px auto;
   padding: 0;
 }
 
 @media (min-width: $tablet-width) {
   .nutrition__picture {
-    width: 709px;
+    width: 708px;
     height: 609px;
+    margin: -70px auto 3px auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   .nutrition__picture {
-    position: absolute;
-    top: 0;
-    right: 304px;
+    display: block;
     width: 552px;
     height: 499px;
+    margin: 0;
+    margin-left: 148px;
+    margin-top: -360px;
+    order: 2;
   }
 }
 
 .nutrition__link {
   margin: 0 auto;
-}
-
-@media (min-width: $desktop-width) {
-  .nutrition__text-wrapper {
-    position: relative;
-    width: 611px;
-    padding-left: 110px;
-    background-color: $white;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .nutrition__image-wrapper {
-    display: block;
-    position: relative;
-    width: 609px;
-    min-height: 554px;
-    padding-right: 110px;
-    margin-top: -1px;
-    background-color: $green;
-
-    &::before {
-      position: absolute;
-      content: url("../../img/cat-with.png");
-      opacity: 0.15;
-      bottom: 0;
-      right: 0;
-      width: 720px;
-      height: 694px;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      z-index: 200006;
-    }
-  }
 }

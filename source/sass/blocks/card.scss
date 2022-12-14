@@ -2,9 +2,12 @@
   display: grid;
   grid-template-columns: 140px 140px;
   row-gap: 25px;
-  border-bottom: 1px solid $special-gray2;
   box-sizing: border-box;
   padding: 0 20px 25px 20px;
+}
+
+.card:not(:last-child) {
+  border-bottom: 1px solid $special-gray2;
 }
 
 @media (min-width: $tablet-width) {
@@ -35,7 +38,6 @@
     border: none;
   }
 }
-
 
 @media (min-width: $desktop-width) {
   .card:last-child {
@@ -133,6 +135,10 @@
     margin: 0 auto;
     text-align: center;
   }
+}
+
+.card__title--intends {
+  width: 170px;
 }
 
 @media (min-width: $tablet-width) {
@@ -325,7 +331,6 @@
     box-sizing: border-box;
     height: 139px;
     margin: 0;
-    margin-right: 0;
     padding: 26px 38px 28px 38px;
     background-color: $white;
     border-bottom: 1px solid $gray;

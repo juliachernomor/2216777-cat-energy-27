@@ -1,7 +1,8 @@
 .contacts {
   display: grid;
   grid-template-columns: 139px 139px;
-  margin: 0;
+  width: 280px;
+  margin: 0 auto;
   padding: 26px 20px;
 }
 
@@ -10,6 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 628px;
     padding: 56px 70px 63px 70px;
   }
 }

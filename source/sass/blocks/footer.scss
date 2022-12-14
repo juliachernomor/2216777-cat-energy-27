@@ -3,20 +3,20 @@
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-  width: 320px;
+  margin: 0 auto;
   background-color: $white;
 }
 
 @media (min-width: $tablet-width) {
   .footer {
-    width: 768px;
+    min-width: 768px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .footer {
     position: relative;
-    width: 1440px;
+    min-width: 1440px;
     background-color: $gray;
   }
 }
@@ -30,12 +30,16 @@
 }
 
 .footer__wrapper {
+  width: 280px;
+  margin: 0 auto;
   min-height: 236px;
   padding: 0 20px;
 }
 
 @media (min-width: $tablet-width) {
   .footer__wrapper {
+    width: 708px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
@@ -48,6 +52,7 @@
 @media (min-width: $desktop-width) {
   .footer__wrapper {
     width: 1220px;
+    margin: 0 auto;
     padding: 57px 110px 58px 110px;
   }
 }
@@ -65,7 +70,11 @@
 }
 
 @media (min-width: $tablet-width) {
-  .footer--color {
+  .footer--color1 {
     background-color: $special-white;
   }
+}
+
+.footer--color2 {
+  background-color: $gray;
 }

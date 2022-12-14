@@ -1,18 +1,21 @@
 .container {
   display: flex;
   flex-direction: column;
-  width: 320px;
+  width: 100%;
+  min-width: 320px;
+  padding: 0 auto;
+  margin: 0 auto;
   background-color: $white;
 }
 
 @media (min-width: $tablet-width) {
   .container {
-    width: 768px;
+    min-width: 768px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .container {
-    width: 1440px;
+    min-width: 1440px;
   }
 }
