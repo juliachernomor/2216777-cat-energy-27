@@ -211,6 +211,13 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .form__fieldset--intends1 {
+    width: 569px;
+    margin-bottom: 75px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .form__fieldset--intends2 {
     margin-bottom: 65px;

@@ -15,6 +15,7 @@
 @media (min-width: $desktop-width) {
   .group {
     @include ziro-intends;
+    width: 569px;
   }
 }
 
@@ -24,6 +25,17 @@
 
 @media (min-width: $tablet-width) {
   .group--radio {
+    width: 628px;
+    box-sizing: border-box;
+    padding: 25px 28px 25px 28px;
+    border: 1px solid $light-gray;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .group--radio {
+    width: 569px;
+    box-sizing: border-box;
     padding: 25px 28px 25px 28px;
     border: 1px solid $light-gray;
   }
@@ -31,8 +43,16 @@
 
 @media (min-width: $tablet-width) {
   .group__radio-wrapper {
-    width: 630px;
+    width: 628px;
     min-height: 196px;
+    margin: 0 67px 0 71px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .group__radio-wrapper {
+    width: 569px;
+    min-height: 200px;
     margin: 0 67px 0 71px;
   }
 }
