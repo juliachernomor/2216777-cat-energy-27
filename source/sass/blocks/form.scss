@@ -1,6 +1,7 @@
 .form {
   min-width: 320px;
   width: 100%;
+  margin: 0;
   border-top: $border;
 }
 
@@ -71,7 +72,7 @@
 
 .form__description {
   @include font-oswald-small-fsize14;
-  width: 280px;
+  width: 226px;
   margin: 0;
   margin-bottom: 39px;
   padding: 0;
@@ -98,7 +99,7 @@
 
 .form__fieldset {
   width: 280px;
-  padding: 0 20px;
+  padding: 0;
   margin: 0 auto;
   border: none;
 }
@@ -115,7 +116,7 @@
 
 @media (min-width: $desktop-width) {
   .form__fieldset {
-    width: 1440px;
+    width: 569px;
     padding: 0;
     margin: 0 auto;
     margin-bottom: 69px;
@@ -228,7 +229,7 @@
     padding: 0 110px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 596px 570px;
+    grid-template-columns: 569px 570px;
     column-gap: 80px;
   }
 }
@@ -236,7 +237,7 @@
 @media (min-width: $desktop-width) {
   .form__radio-wrapper {
     width: 570px;
-    min-height: 196px;
+    min-height: 200px;
     margin: 0;
   }
 }

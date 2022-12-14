@@ -8,6 +8,15 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .gift {
+    width: 245px;
+    height: 289px;
+    margin: 0;
+    margin-bottom: 86px;
+  }
+}
+
 .gift__wrapper {
   width: 280px;
   height: 290px;
@@ -35,6 +44,7 @@
   .gift__wrapper {
     width: 245px;
     height: 289px;
+    margin: 0;
     background-image: url("../img/catalog-background.png");
     background-repeat: no-repeat;
     background-size: contain;
