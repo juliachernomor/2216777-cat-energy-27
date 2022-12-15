@@ -1,10 +1,93 @@
 .group {
+  width: 280px;
   margin: 0;
-  padding: 0 20px;
+  padding: 0 20px 11px 20px;
   list-style-type: none;
-  padding-bottom: 11px;
+}
+
+@media (min-width: $tablet-width) {
+  .group {
+    width: 630px;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .group {
+    @include ziro-intends;
+    width: 569px;
+  }
 }
 
 .group--intends {
   padding: 27px 20px 25px 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .group--radio {
+    width: 628px;
+    box-sizing: border-box;
+    padding: 25px 28px 25px 28px;
+    border: 1px solid $light-gray;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .group--radio {
+    width: 569px;
+    box-sizing: border-box;
+    padding: 25px 28px 25px 28px;
+    border: 1px solid $light-gray;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .group__radio-wrapper {
+    width: 628px;
+    min-height: 196px;
+    margin: 0 67px 0 71px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .group__radio-wrapper {
+    width: 569px;
+    min-height: 200px;
+    margin: 0 67px 0 71px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .group--checkbox {
+    display: grid;
+    grid-template-columns: 344px 287px;
+    row-gap: 32px;
+    padding: 0 67px 0 70px;
+    margin-bottom: 54px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .group--checkbox {
+    grid-template-columns: 305px 305px 305px 305px;
+    column-gap: 20px;
+    padding: 0 110px;
+    margin-bottom: 61px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .group--modify {
+    width: 630px;
+    padding: 0 70px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .group--modify {
+    display: grid;
+    grid-template-columns: 569px 569px;
+    column-gap: 78px;
+    padding: 0 110px;
+  }
 }

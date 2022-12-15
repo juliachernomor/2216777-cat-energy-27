@@ -2,17 +2,20 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 <body class="page__body">
   <header class="page__header header">
+    <div class="header__logo-wrapper">
     <a href="#" class="header__logo-image logo">
-      <img class="logo__picture" src="img/svg/logo-image.svg" width="33" height="38" alt="Логотип меню. Кот.">
+      <img class="logo__picture" src="img/svg/logo-image.svg" width="33" height="38" loading="lazy"  alt="Логотип меню. Кот.">
     </a>
     <a class="header__logo-text logo" href="#">
-      <img class="logo__text" src="img/svg/logo-text.svg" width="101" height="18" alt="Логотип 'CAT ENERGY.'">
+      <img class="logo__text" src="img/svg/logo-text.svg" width="101" height="18" loading="lazy" alt="Логотип 'CAT ENERGY.'">
     </a>
+  </div>
     <nav class="nav">
       <button class="nav__toggle toggle" type="button">
         <span class="visually-hidden">Открывает и закрывает меню</span><svg class="toggle__svg" width="24" height="18"
@@ -21,7 +24,7 @@
         </svg>
       </button>
       <ul class="nav__list site-list">
-        <li class="site-list__item site-list__item--current"><span class="site-list__current">Главная</span></li>
+        <li class="site-list__item site-list__item--current"><span class="site-list__current" aria-current="page">Главная</span></li>
         <li class="site-list__item"><a class="site-list__link " href="catalog.html">Каталог продукции</a>
         </li>
         <li class="site-list__item"><a class="site-list__link " href="form.html">Подбор программы</a>
@@ -31,13 +34,17 @@
   </header>
   <main class="container">
     <section class="nutrition">
-      <div class="nutrition__wrapper">
-        <h1 class="nutrition__title">Функциональное питание для&nbsp;котов</h1>
+      <div class="nutrition__color-wrapper">
+        <div class="nutrition__text-wrapper">
+        <h1 class="nutrition__title">Функциональное питание&nbsp;для&nbsp;котов</h1>
         <p class="nutrition__description">Занялся собой? Займись котом!</p>
-        <img class="nutrition__picture banner-picture" src="img/food-box.png" width="280" height="270" alt="Контейнер с
-            функциональным питанием для котов.">
       </div>
-      <a class="nutrition__link link" href="#">Подобрать программу</a>
+    </div>
+        <div class="nutrition__image-wrapper">
+          <img class="nutrition__picture banner-picture" src="img/food-box.png" width="280" height="270" loading="lazy"  alt="Контейнер с
+          функциональным питанием для котов.">
+          <a class="nutrition__link link" href="#">Подобрать программу</a>
+        </div>
     </section>
     <section class="programs">
       <h2 class="visually-hidden">Программы питания для котов</h2>
@@ -59,7 +66,7 @@
       </ul>
     </section>
     <section class="advantages">
-      <h2 class="advantages__title">Как это работает</h2>
+      <h2 class="advantages__title">Как это&nbsp;работает</h2>
       <ul class="advantages__list">
         <li class="advantages__item">
           <p class="advantages__description">Функциональное питание
@@ -83,36 +90,40 @@
       </ul>
     </section>
     <section class="example">
-      <h2 class="example__title">Живой пример</h2>
-      <p class="example__description">Борис сбросил 5 кг за 2 месяца,
-        просто заменив свой обычный корм на Cat Energy Slim. Отличный
-        результат без изнуряющих тренировок! При этом он не менял своих
-        привычек и по-прежнему спит по 16 часов в день. </p>
+        <div class="example__wrapper-title">
+        <h2 class="example__title">Живой пример</h2>
+        </div>
+        <div class="example__wrapper-desktop-color">
+        <div class="example__wrapper-desktop">
       <div class="example__item">
+        <p class="example__description">Борис сбросил 5 кг за 2 месяца,
+          просто заменив свой обычный корм на Cat Energy Slim. Отличный
+          результат без изнуряющих тренировок! При этом он не менял своих
+          привычек и по-прежнему спит по 16 часов в день. </p>
         <div class="example__item-container">
           <p class="example__term term term--pseudoelement1">5&nbsp;кг</p>
-        </div>
-        <div class="example__item-container">
           <p class="example__term  example__term--padding term term--pseudoelement2">60&nbsp;дней</p>
         </div>
-      </div>
-      <p class="example__total-cost">Затраты на питание: 15 000&nbsp;руб.
+        <p class="example__total-cost"><span class="example__food-costs">Затраты на питание:</span> <span class="example__cost">15 000&nbsp;руб.</span>
       </p>
+      </div>
       <div class="example__image slider">
         <h2 class="visually-hidden">Фотослайдер</h2>
         <ul class="example__list slider__list">
-          <li class="example__item example__item--fat slider__item">
-            <img class="example__cat" src="img/fat-cat.png" width="280" height="256"
+          <li class="example__item-cat example__item-cat--fat slider__item">
+            <img class="example__cat" src="img/fat-cat.png" width="280" height="256" loading="lazy"
               alt="Фото кота до начала питания.'">
           </li>
-          <li class="example__item example__item--thin slider__item">
-            <img class="example__cat" src="img/thin-cat.png" width="280" height="256" alt="Фото кота в конце питания.">
+          <li class="example__item-cat example__item-cat--thin slider__item">
+            <img class="example__cat" src="img/thin-cat.png" width="280" height="256" loading="lazy" alt="Фото кота в конце питания.">
           </li>
         </ul>
         <p class="example__toggles slider__toggles">
           <button class="slider__toggle" type="button"><span class="visually-hidden">Кнопка перемещения горизонтальной
               полосы прокрутки фотографий слайдера</span></button>
       </div>
+    </div>
+        </div>
     </section>
   </main>
   <footer class="footer">
@@ -127,13 +138,14 @@
     <section class="footer__map map">
       <h2 class="visually-hidden">Схема проезда</h2>
       <a class="map__link" href="https://yandex.ru/maps/-/CCUVNNTJ8D"><img class="map__static-image" src="img/map.png"
-          width="320" height="362" alt="Мы на карте города."></a>
+          width="320" height="362"  loading="lazy" alt="Мы на карте города."></a>
       <iframe class="map__interactive-map noscroll" src="https://yandex.ru/map-widget/v1/-/CCUfzEvoCD" width="320"
         height="362" style="border: 0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
-    <a class="footer__logo logo logo--big-size logo--indents logo--border" href="#">
-      <img class="logo__text logo__text--indents" src="img/svg/logo-text.svg" width="128" height="24"
+    <div class="footer__wrapper">
+    <a class="footer__logo logo logo--big-size logo--indents" href="#">
+      <img class="logo__text logo__text--indents" src="img/svg/logo-text.svg" width="128" height="24" loading="lazy"
         alt=" Логотип 'CAT ENERGY.'">
     </a>
     <ul class="footer__socials socials">
@@ -148,8 +160,9 @@
       </li>
     </ul>
     <a class="footer__copyright copyright" href="https://vk.com/htmlacademy"><span class="copyright__link">HTML
-        Academy</span><img class="copyright__picture" src="img/svg/htmlacademy-logo.svg" width="27" height="34" alt="Логотип создателя сайта - HTML
+        Academy</span><img class="copyright__picture" src="img/svg/htmlacademy-logo.svg" width="27" height="34" loading="lazy"  alt="Логотип создателя сайта - HTML
             Академии."></a>
+          </div>
   </footer>
 </body>
 </html>

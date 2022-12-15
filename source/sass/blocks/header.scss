@@ -1,7 +1,96 @@
 .header {
   display: flex;
-  width: 320px;
-  margin: 0;
-  padding: 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 280px;
+  min-height: 65px;
+  margin: 0 auto;
+  padding: 0 20px;
   background-color: $white;
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    width: 708px;
+    min-height: 52px;
+    padding: 25px 30px 42px 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    width: 1440px;
+    min-height: 108px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+.header__logo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 191px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .header__logo-wrapper {
+    width: 174px;
+    min-height: 52px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header__logo-wrapper {
+    justify-content: start;
+    width: 610px;
+    padding: 49px 0 42px 110px;
+  }
+}
+
+.header__logo-image {
+  display: block;
+  width: 33px;
+  height: 38px;
+  margin-top: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .header__logo-image {
+    width: 72px;
+    height: 52px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header__logo-image {
+    width: 83px;
+    margin: 0;
+    margin-right: 14px;
+  }
+}
+
+.header__logo-text {
+  display: block;
+  width: 101px;
+  height: 18px;
+  margin-top: 23px;
+  margin-right: 12px;
+}
+
+@media (min-width: $tablet-width) {
+  .header__logo-text {
+    align-self: center;
+    width: 90px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header__logo-text {
+    width: 104px;
+  }
 }

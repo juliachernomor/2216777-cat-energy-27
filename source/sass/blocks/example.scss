@@ -1,31 +1,173 @@
 .example {
-  width: 320px;
+  width: 100%;
+  min-width: 320px;
   background-color: $gray;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    width: 100%;
+    min-width: 768px;
+    background-color: $white;
+    border-top: 1px solid #e6e6e6;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    width: 100%;
+    min-width: 1440px;
+    border: none;
+  }
+}
+
+.example__wrapper-title {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .example__wrapper-title {
+    width: 708px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__wrapper-title {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0 110px;
+  }
 }
 
 .example__title {
   @include font-oswald-big;
   padding: 0;
   padding-top: 25px;
-  padding-left: 20px;
-  margin: 0;
-  margin-bottom: 40px;
+  margin: 0 auto 40px auto;
 }
 
-.example__item-container {
-  min-width: 124px;
+@media (min-width: $tablet-width) {
+  .example__title {
+    margin: 43px 0 63px 0;
+    font-size: 60px;
+    line-height: 60px;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__title {
+    padding-top: 69px;
+    margin: 0 0 76px 0;
+  }
+}
+
+.example__wrapper-desktop-color {
+  min-width: 320px;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .example__wrapper-desktop-color {
+    min-width: 768px;
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__wrapper-desktop-color {
+    min-width: 1440px;
+    width: 100%;
+    background-color: $gray;
+  }
+}
+
+.example__wrapper-desktop {
+  min-width: 320px;
+  width: 100%;
+}
+
+@media (min-width: $desktop-width) {
+  .example__wrapper-desktop {
+    display: grid;
+    grid-template-columns: 436px 560px;
+    column-gap: 224px;
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0 110px;
+  }
 }
 
 .example__item {
-  display: grid;
-  grid-template-columns: 124px 124px;
-  column-gap: 32px;
-  margin: 0;
+  width: 280px;
+  margin: 0 auto;
   padding: 0 20px;
-  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .example__item {
+    width: 708px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: 366px 174px;
+    gap: 54px 167px;
+    margin-bottom: 230px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__item {
+    display: flex;
+    flex-direction: column;
+    width: 436px;
+    padding: 70px 0 0 0;
+  }
+}
+
+.example__description {
+  @include font-lato;
+  width: 280px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .example__description {
+    grid-column: 1/-1;
+    width: 708px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__description {
+    width: 436px;
+  }
+}
+
+.example__item-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .example__item-container {
+    grid-column: 1/2;
+    display: flex;
+    justify-content: space-between;
+    width: 366px;
+  }
 }
 
 .example__term {
+  width: 39px;
   padding: 14px 42px 18px 42px;
   margin-bottom: 34px;
   font-family: "Oswald", sans-serif;
@@ -37,26 +179,108 @@
   border-radius: 3px;
 }
 
+@media (min-width: $tablet-width) {
+  .example__term {
+    width: 48px;
+    padding: 15px 57px;
+    margin: 0;
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__term {
+    width: 48px;
+    padding: 15px 57px;
+    margin: 0;
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
 .example__term--padding {
+  width: 82px;
   padding: 14px 21px 18px 21px;
 }
 
-.example__description {
-  @include font-lato;
-  width: 280px;
-  margin: 0;
-  margin-bottom: 20px;
-  padding: 0 20px;
+@media (min-width: $tablet-width) {
+  .example__term--padding {
+    width: 102px;
+    padding: 15px 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__term--padding {
+    width: 102px;
+    padding: 15px 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__item-container {
+    width: 366px;
+  }
 }
 
 .example__total-cost {
-  padding: 0 66px;
+  width: 188px;
+  padding: 0 36px;
   margin: 0 auto 20px auto;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .example__total-cost {
+    width: 174px;
+    padding: 0;
+    margin: auto 0;
+    font-size: 20px;
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__total-cost {
+    @include ziro-intends;
+    display: flex;
+    width: 366px;
+    text-align: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .example__toggles {
+    margin: 0;
+  }
+}
+
+.example__image {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .example__image {
+    min-width: 768px;
+    width: 100%;
+    background-color: $gray;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__image {
+    width: 560px;
+    margin: 0 auto;
+  }
 }
 
 .example__list {
@@ -64,4 +288,63 @@
   margin-bottom: 40px;
   padding: 0 20px 0 20px;
   list-style-type: none;
+}
+
+@media (min-width: $tablet-width) {
+  .example__list {
+    width: 768px;
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__list {
+    width: 560px;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .example__item-cat {
+    position: relative;
+    width: 708px;
+    margin: 0 auto;
+    height: 512px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__item-cat {
+    width: 560px;
+    margin: 0;
+    height: 512px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .example__cat {
+    position: absolute;
+    display: block;
+    width: 560px;
+    margin-top: -151px;
+    height: 512px;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__cat {
+    margin-top: -135px;
+    width: 560px;
+    height: 512px;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__food-costs {
+    margin-right: 70px;
+  }
 }

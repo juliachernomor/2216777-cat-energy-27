@@ -1,15 +1,57 @@
+.programs {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .programs {
+    width: 708px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs {
+    width: 1220px;
+    padding: 0 110px;
+    margin: 0 auto;
+  }
+}
+
 .programs__list {
-  max-width: 280px;
-  margin: 0;
-  margin-bottom: 20px;
+  @include ziro-intends;
+  display: grid;
+  grid-template-columns: 280px;
+  min-height: 266px;
+  row-gap: 20px;
   list-style-type: none;
-  padding: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .programs__list {
+    @include ziro-intends;
+    grid-template-columns: 708px;
+    row-gap: 30px;
+    min-height: 372px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs__list {
+    grid-template-columns: 570px 570px;
+    column-gap: 80px;
+    margin-bottom: 71px;
+  }
+}
+
+.programs__item {
+  background-color: $special-white;
 }
 
 .programs__title {
-  padding: 30px 79px 0 91px;
-  margin: 0;
-  margin-bottom: 29px;
+  margin: 30px 79px 29px  91px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -18,15 +60,41 @@
   text-transform: uppercase;
 }
 
+@media (min-width: $tablet-width) {
+  .programs__title {
+    @include font-oswald-medium;
+    margin: 77px 316px 24px  53px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs__title {
+    margin: 77px 33px 73px  214px;
+  }
+}
+
 .programs__description {
   @include font-lato;
-  padding: 0 33px 0 20px;
-  margin: 0;
-  margin-bottom: 42px;
+  margin: 0 33px 23px 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .programs__description {
+    margin: 0 316px 52px  52px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs__description {
+    margin: 0 65px 23px  52px;
+  }
 }
 
 .programs__link {
-  margin-bottom: 22px;
+  display: block;
+  margin: 19px  20px 22px 20px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -34,4 +102,22 @@
   color: $black;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .programs__link {
+    display: block;
+    margin: 0 316px 52px 52px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs__link {
+    display: block;
+    margin: 0 33px 55px 52px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

@@ -1,21 +1,53 @@
 .gift {
-  border-bottom: $border;
+  border-bottom: none;
+}
+
+@media (min-width: $tablet-width) {
+  .gift {
+    border-bottom: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gift {
+    width: 245px;
+    height: 289px;
+    margin: 0;
+    margin-bottom: 86px;
+  }
 }
 
 .gift__wrapper {
-  position: relative;
+  width: 280px;
+  height: 290px;
   margin: 35px 20px 35px 20px;
-  background-color: $green;
+  background-image: url("../img/catalog-background.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
 
-
-  &::before {
-    position: absolute;
-    content: url("../img/catalog-background.png");
-    opacity: 0.15;
-    width: 280px;
-    height: 290px;
+@media (min-width: $tablet-width) {
+  .gift__wrapper {
+    width: 708px;
+    height: 200px;
+    margin: 0 auto 76px auto;
+    padding: 0;
+    background-image: url("../img/catalog-background.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gift__wrapper {
+    width: 245px;
+    height: 289px;
+    margin: 0;
+    background-image: url("../img/catalog-background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
     background-position: center;
   }
 }
@@ -30,4 +62,20 @@
   color: $white;
   text-align: center;
   z-index: 1000;
+}
+
+@media (min-width: $tablet-width) {
+  .gift__description {
+    display: block;
+    width: 161px;
+    padding: 71px 124px 69px 422px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gift__description {
+    display: block;
+    width: 161px;
+    padding: 184px 43px 42px 42px;
+  }
 }

@@ -4,7 +4,7 @@
   align-items: center;
   width: 192px;
   padding: 7px 44px;
-  margin: 0 auto;
+  margin-bottom: 20px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -13,5 +13,30 @@
   background-color: $basic-green;
   text-transform: uppercase;
   text-decoration: none;
+  z-index: 100002;
   cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .link {
+    position: absolute;
+    top: calc(100% - 570px);
+    left: calc(100% - 610px);
+    padding: 14px 26px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .link {
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 244px;
+    padding: 14px 26px;
+    box-sizing: border-box;
+    height: 54px;
+    order: 1;
+  }
 }

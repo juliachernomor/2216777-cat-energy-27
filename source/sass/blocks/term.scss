@@ -4,34 +4,72 @@
   &--pseudoelement1::after {
     position: absolute;
     content: "снижение\A  веса";
+    top: calc(100% - 10px);
+    right: calc(100% - 104px);
     width: 87px;
     display: block;
-    top: calc(100% - 10px);
-    right: calc(100% - 105px);
-    white-space: pre;
-    background-color: $gray;
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 12px;
     line-height: 12px;
+    white-space: pre;
+    background-color: $gray;
     color: $dark--gray;
+    text-align: center;
     z-index: 2;
   }
 
   &--pseudoelement2::after {
     position: absolute;
     content: "затрачено\A  времени";
+    top: calc(100% - 10px);
+    right: calc(100% - 104px);
     width: 87px;
     display: block;
-    top: calc(100% - 10px);
-    right: calc(100% - 105px);
-    white-space: pre;
-    background-color: $gray;
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 12px;
     line-height: 12px;
+    white-space: pre;
+    background-color: $gray;
     color: $dark--gray;
+    text-align: center;
     z-index: 2;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .term {
+    position: relative;
+
+    &--pseudoelement1::after {
+      right: calc(100% - 120px);
+      background-color: $white;
+    }
+
+    &--pseudoelement2::after {
+      right: calc(100% - 115px);
+      background-color: $white;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .term {
+    position: relative;
+
+    &--pseudoelement1::after {
+      content: "снижение  веса";
+      right: calc(100% - 135px);
+      width: 114px;
+      background-color: $gray;
+    }
+
+    &--pseudoelement2::after {
+      content: "затрачено  времени";
+      right: calc(100% - 110px);
+      width: 142 px;
+      background-color: $gray;
+    }
   }
 }

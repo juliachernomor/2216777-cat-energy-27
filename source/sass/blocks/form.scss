@@ -1,25 +1,127 @@
-.form__title {
-  @include font-oswald-medium;
-  padding: 27px 20px 37px 20px;
+.form {
+  min-width: 320px;
+  width: 100%;
   margin: 0;
   border-top: $border;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    min-width: 768px;
+    width: 100%;
+    border-top: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    min-width: 1440px;
+    width: 100%;
+  }
+}
+
+.form__wrapper-title {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .form__wrapper-title {
+    width: 628px;
+    padding: 0 70px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__wrapper-title {
+    width: 1220px;
+    padding: 0 110px;
+    margin: 0 auto;
+  }
+}
+
+.form__title {
+  @include font-oswald-medium;
+  width: 280px;
+  padding: 27px 0 37px 0;
+  margin: 0;
   color: $black;
+}
+
+@media (min-width: $tablet-width) {
+  .form__title {
+    width: 628px;
+    margin: 33px 0 54px 0;
+    padding: 0;
+    font-size: 60px;
+    line-height: 60px;
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__title {
+    width: 1220px;
+    padding: 33px 0 0 0;
+    margin: 0;
+    margin-bottom: 56px;
+  }
 }
 
 .form__description {
   @include font-oswald-small-fsize14;
+  width: 226px;
   margin: 0;
   margin-bottom: 39px;
-  padding: 0 74px 0 20px;
+  padding: 0;
   text-transform: uppercase;
   color: $black;
 }
 
+@media (min-width: $tablet-width) {
+  .form__description {
+    width: 323px;
+    margin-bottom: 66px;
+    padding: 0 305px 0  0;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__description {
+    margin-bottom: 76px;
+    padding: 0 1007px  0 0;
+  }
+}
+
 .form__fieldset {
-  border: none;
-  margin: 0;
+  width: 280px;
   padding: 0;
-  border-bottom: $border;
+  margin: 0 auto;
+  border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .form__fieldset {
+    width: 630px;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 72px;
+    border-bottom: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__fieldset {
+    width: 569px;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 69px;
+    border: none;
+  }
 }
 
 .form__headerline {
@@ -31,13 +133,127 @@
   color: $black;
 }
 
+@media (min-width: $tablet-width) {
+  .form__headerline {
+    width: 628px;
+    padding: 0 70px 0 70px;
+    margin-bottom: 76px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form__headerline--modify {
+    margin-bottom: 57px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__headerline {
+    width: 1220px;
+    padding: 0 110px;
+  }
+}
+
 .form__container {
   width: 280px;
   margin: 24px auto 28px auto;
+}
+
+@media (min-width: $tablet-width) {
+  .form__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 626px;
+    padding: 0 71px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__container {
+    justify-content: start;
+    width: 1220px;
+    padding: 0 110px;
+    margin-bottom: 72px;
+  }
 }
 
 .form__note {
   padding: 0 20px;
   margin: 21px auto 32px auto;
   text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__note {
+    margin: 0 102px  0 64px;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__note {
+    @include ziro-intends;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form__fieldset--intends1 {
+    width: 630px;
+    margin-bottom: 75px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__fieldset--intends1 {
+    width: 569px;
+    margin-bottom: 75px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form__fieldset--intends2 {
+    margin-bottom: 65px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__fieldset--intends2 {
+    margin-bottom: 67px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__fieldset-wrapper {
+    width: 1220px;
+    padding: 0 110px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 569px 570px;
+    column-gap: 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__radio-wrapper {
+    width: 570px;
+    min-height: 200px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__fieldset--modify {
+    display: block;
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0;
+  }
 }
