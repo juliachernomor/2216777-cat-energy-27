@@ -10,26 +10,25 @@
   <header class="page__header header">
     <div class="header__logo-wrapper">
     <a href="#" class="header__logo-image logo">
-      <img class="logo__picture " src="img/svg/logo-image.svg" width="33" height="38"  loading="lazy" alt="Логотип меню. Кот.">
+      <img class="logo__picture" src="img/svg/logo-image.svg" width="33" height="38" loading="lazy"  alt="Логотип меню. Кот.">
     </a>
     <a class="header__logo-text logo" href="#">
-      <img class="logo__text" src="img/svg/logo-text.svg" width="101" height="18" loading="lazy"  alt="Логотип 'CAT  ENERGY.'">
+      <img class="logo__text" src="img/svg/logo-text.svg" width="101" height="18" loading="lazy" alt="Логотип 'CAT ENERGY.'">
     </a>
-    </div>
-    <nav class="nav nav--color">
-      <button class="nav__toggle  toggle" type="button">
-        <span class="visually-hidden">Открывает и закрывает меню.</span><svg class="toggle__svg" width="24" height="18"
-          viewBox="0 0 24 18" aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path stroke-width="1.5" d="M0 1.25h24M0 9.25h24M0 17.25h24" />
-        </svg>
+  </div>
+    <nav class="nav nav--closed nav--nojs nav--color">
+      <button class="nav__toggle" type="button">
+        <span class="visually-hidden">Открывает и закрывает меню</span>
       </button>
-        <ul class="nav__list  site-list site-list--color">
-          <li class="site-list__item"><a class="site-list__link site-list__link--color" href="index.html">Главная</a></li>
-          <li class="site-list__item  site-list__item--current"><span class="site-list__current site-list__current--color" aria-current="page">Каталог продукции</span>
-          </li>
-          <li class="site-list__item"><a class="site-list__link site-list__link--color " href="form.html">Подбор программы</a>
-          </li>
-        </ul>
+      <div class="nav__wrapper">
+      <ul class="nav__list site-list">
+        <li class="site-list__item"><a class="site-list__link  site-list__link--color" href="index.html">Главная</a></li>
+        <li class="site-list__item site-list__item--current"><span class="site-list__current site-list__link--color" aria-current="page">Каталог продукции</span></li>
+        </li>
+        <li class="site-list__item"><a class="site-list__link site-list__link--color" href="form.html">Подбор программы</a>
+        </li>
+      </ul>
+    </div>
     </nav>
   </header>
   <main class="container">
@@ -246,5 +245,6 @@
             Академии."></a>
           </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
