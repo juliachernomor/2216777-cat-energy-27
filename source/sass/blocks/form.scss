@@ -230,6 +230,19 @@
   }
 }
 
+@media (max-width: $mobile-width-only) {
+  .form__fieldset-wrapper::after {
+    position: absolute;
+    content: "";
+    min-width: 320px;
+    width: 100%;
+    top: 430px;
+    height: 1px;
+    background-color: $special-gray;
+    box-shadow: 0 170px 0 0 $special-gray;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .form__fieldset-wrapper {
     width: 1220px;

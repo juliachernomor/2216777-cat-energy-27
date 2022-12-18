@@ -32,7 +32,6 @@
 .additional-catalog__wrapper-title {
   min-width: 320px;
   width: 100%;
-  border-bottom: $border;
 }
 
 @media (min-width: $tablet-width) {
@@ -53,7 +52,6 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  border-bottom: $border;
 }
 
 @media (min-width: $tablet-width) {
@@ -114,3 +112,4 @@
     margin: 0 auto;
   }
 }
+

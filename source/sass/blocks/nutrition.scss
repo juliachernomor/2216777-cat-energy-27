@@ -31,12 +31,26 @@
       z-index: 0;
     }
   }
+
+  .nutrition::after {
+    position: absolute;
+    content: "";
+    top: -26%;
+    left: 58%;
+    width: 50%;
+    height: 694px;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+  }
 }
 
 .nutrition__color-wrapper {
   width: 100%;
   min-width: 320px;
-  background-color: rgba(104, 183, 56, 0.85);
+  background-color: $basic-green;
 }
 
 @media (min-width: $tablet-width) {
@@ -65,7 +79,7 @@
   height: 302px;
   margin-bottom: 0;
   font-family: "Oswald", sans-serif;
-  background-image: url("../img/nutrition-cat.png");
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/nutrition-cat.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -82,6 +96,26 @@
     background-color: $white;
   }
 }
+
+
+// @media (min-width: $desktop-width) {
+  // .nutrition__text-wrapper {
+
+  // }
+
+//   .nutrition__text-wrapper::before {
+//     position: absolute;
+//     content: "";
+//     top: 0%;
+//     left: 73%;
+//     width: 50%;
+//     height: 694px;
+//     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/nutrition-cat.png");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center;
+//   }
+// }
 
 .nutrition__image-wrapper {
   min-height: 178px;
@@ -184,6 +218,7 @@
     margin-left: 148px;
     margin-top: -360px;
     order: 2;
+    z-index: 1;
   }
 }
 

@@ -51,6 +51,7 @@
 }
 
 .programs__title {
+  position: relative;
   margin: 30px 79px 29px  91px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -58,6 +59,93 @@
   line-height: 37px;
   color: $black;
   text-transform: uppercase;
+}
+
+.programs__title::before {
+  position: absolute;
+  content: "";
+  top: calc(100% - 42px);
+  left: calc(100% - 178px);
+  width: 50px;
+  height: 50px;
+  background-color: $green;
+  border-radius: 50%;
+}
+
+@media (min-width: $tablet-width) {
+  .programs__title::before {
+    top: calc(100% - 35px);
+    left: calc(100% + 50px);
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs__title::before {
+    top: calc(100% - 60px);
+    left: calc(100% - 480px);
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.programs__title--cat1::after {
+  position: absolute;
+  content: "";
+  top: calc(100% - 43px);
+  left: calc(100% - 167px);
+  width: 36px;
+  height: 50px;
+  background-image: url("../img/svg/cat-programs1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.programs__title--cat2::after {
+  position: absolute;
+  content: "";
+  top: calc(100% - 30px);
+  left: calc(100% - 188px);
+  width: 67px;
+  height: 28px;
+  background-image: url("../img/svg/cat-programs2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+@media (min-width: $tablet-width) {
+  .programs__title--cat1::after {
+    top: calc(100% - 50px);
+    left: calc(100% + 70px);
+    width: 140px;
+    height: 194px;
+  }
+
+  .programs__title--cat2::after {
+    top: calc(100% + 0px);
+    left: calc(100% - 0px);
+    width: 268px;
+    height: 112px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs__title--cat1::after {
+    top: calc(100% - 65px);
+    left: calc(100% - 460px);
+    width: 70px;
+    height: 97px;
+  }
+
+  .programs__title--cat2::after {
+    top: calc(100% - 35px);
+    left: calc(100% - 500px);
+    width: 134px;
+    height: 56px;
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -6,10 +6,6 @@
   padding: 0 0 25px 0;
 }
 
-.card:not(:last-child) {
-  border-bottom: 1px solid $special-gray2;
-}
-
 @media (min-width: $tablet-width) {
   .card {
     display: flex;
@@ -17,7 +13,7 @@
     height: 430px;
     gap: 0;
     padding: 0 36px 49px 36px;
-    background-color: $gray;
+    background-color: $special-white;
   }
 }
 
@@ -101,6 +97,7 @@
 
 @media (min-width: $tablet-width) {
   .card__wrapper {
+    position: relative;
     display: grid;
     grid-template-columns: 252px;
     row-gap: 21px;
@@ -168,6 +165,7 @@
 
 .card__item {
   @include ziro-intends;
+  position: relative;
   display: grid;
   grid-template-columns: 70px 70px;
   width: 140px;
@@ -184,7 +182,24 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    border-bottom: $gray;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .card__item::after {
+    position: absolute;
+    content: "";
+    width: 250px;
+    top: 20px;
+    height: 1px;
+    background-color: $special-gray;
+    box-shadow: 0 25px 0 0 $special-gray, 0 50px 0 0 $special-gray;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .card__item--intends::after {
+    display: none;
   }
 }
 
@@ -195,6 +210,24 @@
     justify-content: space-between;
     align-items: center;
     margin: auto 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card__item::after {
+    position: absolute;
+    content: "";
+    width: 169px;
+    top: 20px;
+    height: 1px;
+    background-color: $special-gray;
+    box-shadow: 0 25px 0 0 $special-gray, 0 50px 0 0 $special-gray;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card__item--intends::after {
+    display: none;
   }
 }
 
@@ -320,6 +353,11 @@
   padding-bottom: 19px;
   gap: 0;
   flex-grow: 1;
+  border-bottom: 1px solid $gray;
+}
+
+.card--modify:nth-child(1n) {
+  border-top: 1px solid $gray;
 }
 
 @media (min-width: $tablet-width) {

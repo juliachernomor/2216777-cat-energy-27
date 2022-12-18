@@ -21,6 +21,9 @@
   }
 }
 
+
+
+
 .advantages__title {
   @include font-oswald-big;
   margin: 20px 0 42px 0;
@@ -40,6 +43,10 @@
     margin: 0 0 32px 0;
   }
 }
+
+
+
+
 
 .advantages__list {
   @include ziro-intends;
@@ -66,9 +73,166 @@
   }
 }
 
+
+
+
 .advantages__item {
+  position: relative;
   width: 199px;
   margin-left: 80px;
+  z-index: 1;
+}
+
+.advantages__item--leaf::before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 28px;
+  top: calc(100% - 65px);
+  left: calc(100% - 260px);
+  background-image: url("../img/svg/leaf.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__item--leaf::before {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 28px;
+    top: calc(100% - 200px);
+    left: calc(100% - 170px);
+  }
+
+  .advantages__item--leaf::after {
+    position: absolute;
+    content: "1";
+    width: 112px;
+    height: 280px;
+    font-family: "Oswald", sans-serif;
+    font-size: 280px;
+    color: $special-white;
+    top: calc(100% - 330px);
+    left: calc(100% - 100px);
+    z-index: -1;
+  }
+}
+
+.advantages__item--tub::before {
+  position: absolute;
+  content: "";
+  width: 26px;
+  height: 29px;
+  top: calc(100% - 65px);
+  left: calc(100% - 260px);
+  background-image: url("../img/svg/tub.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__item--tub::before {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 28px;
+    top: calc(100% - 200px);
+    left: calc(100% - 170px);
+  }
+
+  .advantages__item--tub::after {
+    position: absolute;
+    content: "2";
+    width: 112px;
+    height: 280px;
+    font-family: "Oswald", sans-serif;
+    font-size: 280px;
+    color: $special-white;
+    top: calc(100% - 330px);
+    left: calc(100% - 100px);
+    z-index: -1;
+  }
+}
+
+.advantages__item--eat::before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 30px;
+  top: calc(100% - 65px);
+  left: calc(100% - 260px);
+  background-image: url("../img/svg/eat.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__item--eat::before {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 28px;
+    top: calc(100% - 200px);
+    left: calc(100% - 170px);
+  }
+
+  .advantages__item--eat::after {
+    position: absolute;
+    content: "3";
+    width: 112px;
+    height: 280px;
+    font-family: "Oswald", sans-serif;
+    font-size: 280px;
+    color: $special-white;
+    top: calc(100% - 330px);
+    left: calc(100% - 100px);
+    z-index: -1;
+  }
+}
+
+.advantages__item--alarm::before {
+  position: absolute;
+  content: "";
+  width: 26px;
+  height: 31px;
+  top: calc(100% - 65px);
+  left: calc(100% - 260px);
+  background-image: url("../img/svg/alarm.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__item--alarm::before {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 28px;
+    top: calc(100% - 200px);
+    left: calc(100% - 170px);
+  }
+
+  .advantages__item--alarm::after {
+    position: absolute;
+    content: "4";
+    width: 112px;
+    height: 280px;
+    font-family: "Oswald", sans-serif;
+    font-size: 280px;
+    color: $special-white;
+    top: calc(100% - 330px);
+    left: calc(100% - 100px);
+    z-index: -1;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -88,6 +252,9 @@
   }
 }
 
+
+
+
 .advantages__description {
   @include font-lato;
   width: 199px;
@@ -96,9 +263,34 @@
   margin-bottom: 26px;
 }
 
+.advantages__description::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -80px;
+  width: 60px;
+  height: 60px;
+  background-color: $green;
+  background-position: center;
+}
+
 @media (min-width: $tablet-width) {
   .advantages__description {
     margin: 151px  4px 57px 0;
+    z-index: 1;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__description::before {
+    position: absolute;
+    content: "";
+    top: 40px;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    background-color: $green;
+    background-position: center;
   }
 }
 
