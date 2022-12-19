@@ -18,13 +18,27 @@
 }
 
 .gift__wrapper {
+  position: relative;
   width: 280px;
   height: 290px;
   margin: 35px 20px 35px 20px;
-  background-image: url("../img/catalog-background.png");
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-background.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: calc(100% - 220px);
+    left: calc(100% - 180px);
+    width: 78px;
+    height: 80px;
+    background-image: url("../img/svg/gift.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -33,10 +47,17 @@
     height: 200px;
     margin: 0 auto 76px auto;
     padding: 0;
-    background-image: url("../img/catalog-background.png");
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-background.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    &::after {
+      top: calc(100% - 139px);
+      left: calc(100% - 630px);
+      width: 80px;
+      height: 82px;
+    }
   }
 }
 
@@ -47,8 +68,15 @@
     margin: 0;
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-background.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
+
+    &::after {
+      top: calc(100% - 232px);
+      left: calc(100% - 160px);
+      width: 80px;
+      height: 82px;
+    }
   }
 }
 

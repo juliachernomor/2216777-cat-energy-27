@@ -21,9 +21,6 @@
   }
 }
 
-
-
-
 .advantages__title {
   @include font-oswald-big;
   margin: 20px 0 42px 0;
@@ -43,10 +40,6 @@
     margin: 0 0 32px 0;
   }
 }
-
-
-
-
 
 .advantages__list {
   @include ziro-intends;
@@ -73,9 +66,6 @@
   }
 }
 
-
-
-
 .advantages__item {
   position: relative;
   width: 199px;
@@ -86,10 +76,10 @@
 .advantages__item--leaf::before {
   position: absolute;
   content: "";
-  width: 25px;
-  height: 28px;
   top: calc(100% - 65px);
   left: calc(100% - 260px);
+  width: 25px;
+  height: 28px;
   background-image: url("../img/svg/leaf.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -101,22 +91,22 @@
   .advantages__item--leaf::before {
     position: absolute;
     content: "";
-    width: 25px;
-    height: 28px;
     top: calc(100% - 200px);
     left: calc(100% - 170px);
+    width: 25px;
+    height: 28px;
   }
 
   .advantages__item--leaf::after {
     position: absolute;
     content: "1";
+    top: calc(100% - 330px);
+    left: calc(100% - 100px);
     width: 112px;
     height: 280px;
     font-family: "Oswald", sans-serif;
     font-size: 280px;
     color: $special-white;
-    top: calc(100% - 330px);
-    left: calc(100% - 100px);
     z-index: -1;
   }
 }
@@ -124,10 +114,10 @@
 .advantages__item--tub::before {
   position: absolute;
   content: "";
-  width: 26px;
-  height: 29px;
   top: calc(100% - 65px);
   left: calc(100% - 260px);
+  width: 26px;
+  height: 29px;
   background-image: url("../img/svg/tub.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -139,22 +129,22 @@
   .advantages__item--tub::before {
     position: absolute;
     content: "";
-    width: 25px;
-    height: 28px;
     top: calc(100% - 200px);
     left: calc(100% - 170px);
+    width: 25px;
+    height: 28px;
   }
 
   .advantages__item--tub::after {
     position: absolute;
     content: "2";
+    top: calc(100% - 330px);
+    left: calc(100% - 100px);
     width: 112px;
     height: 280px;
     font-family: "Oswald", sans-serif;
     font-size: 280px;
     color: $special-white;
-    top: calc(100% - 330px);
-    left: calc(100% - 100px);
     z-index: -1;
   }
 }
@@ -162,10 +152,10 @@
 .advantages__item--eat::before {
   position: absolute;
   content: "";
-  width: 25px;
-  height: 30px;
   top: calc(100% - 65px);
   left: calc(100% - 260px);
+  width: 25px;
+  height: 30px;
   background-image: url("../img/svg/eat.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -177,22 +167,22 @@
   .advantages__item--eat::before {
     position: absolute;
     content: "";
-    width: 25px;
-    height: 28px;
     top: calc(100% - 200px);
     left: calc(100% - 170px);
+    width: 25px;
+    height: 28px;
   }
 
   .advantages__item--eat::after {
     position: absolute;
     content: "3";
+    top: calc(100% - 330px);
+    left: calc(100% - 100px);
     width: 112px;
     height: 280px;
     font-family: "Oswald", sans-serif;
     font-size: 280px;
     color: $special-white;
-    top: calc(100% - 330px);
-    left: calc(100% - 100px);
     z-index: -1;
   }
 }
@@ -200,10 +190,10 @@
 .advantages__item--alarm::before {
   position: absolute;
   content: "";
-  width: 26px;
-  height: 31px;
   top: calc(100% - 65px);
   left: calc(100% - 260px);
+  width: 26px;
+  height: 31px;
   background-image: url("../img/svg/alarm.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -215,22 +205,22 @@
   .advantages__item--alarm::before {
     position: absolute;
     content: "";
-    width: 25px;
-    height: 28px;
     top: calc(100% - 200px);
     left: calc(100% - 170px);
+    width: 25px;
+    height: 28px;
   }
 
   .advantages__item--alarm::after {
     position: absolute;
     content: "4";
+    top: calc(100% - 330px);
+    left: calc(100% - 100px);
     width: 112px;
     height: 280px;
     font-family: "Oswald", sans-serif;
     font-size: 280px;
     color: $special-white;
-    top: calc(100% - 330px);
-    left: calc(100% - 100px);
     z-index: -1;
   }
 }
@@ -252,15 +242,12 @@
   }
 }
 
-
-
-
 .advantages__description {
   @include font-lato;
   width: 199px;
   margin: 0;
-  padding: 0;
   margin-bottom: 26px;
+  padding: 0;
 }
 
 .advantages__description::before {

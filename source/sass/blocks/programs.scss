@@ -59,17 +59,17 @@
   line-height: 37px;
   color: $black;
   text-transform: uppercase;
-}
 
-.programs__title::before {
-  position: absolute;
-  content: "";
-  top: calc(100% - 42px);
-  left: calc(100% - 178px);
-  width: 50px;
-  height: 50px;
-  background-color: $green;
-  border-radius: 50%;
+  &::before {
+    position: absolute;
+    content: "";
+    top: calc(100% - 42px);
+    left: calc(100% - 178px);
+    width: 50px;
+    height: 50px;
+    background-color: $green;
+    border-radius: 50%;
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -110,13 +110,13 @@
 
 @media (min-width: $tablet-width) {
   .example__item {
-    width: 708px;
-    margin: 0 auto;
-    padding: 0 30px;
     display: grid;
     grid-template-columns: 366px 174px;
     gap: 54px 167px;
+    width: 708px;
+    margin: 0 auto;
     margin-bottom: 230px;
+    padding: 0 30px;
   }
 }
 
@@ -310,16 +310,16 @@
   .example__item-cat {
     position: relative;
     width: 708px;
-    margin: 0 auto;
     height: 512px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   .example__item-cat {
     width: 560px;
-    margin: 0;
     height: 512px;
+    margin: 0;
   }
 }
 
@@ -328,8 +328,8 @@
     position: absolute;
     display: block;
     width: 560px;
-    margin-top: -151px;
     height: 512px;
+    margin-top: -151px;
     object-fit: cover;
   }
 }

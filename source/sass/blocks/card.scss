@@ -19,17 +19,17 @@
 
 @media (min-width: $tablet-width) {
   .card:last-child {
-    background-color: $white;
-    border: 2px solid $gray;
     margin-bottom: 68px;
+    background-color: $white;
+    border: 1px solid $gray;
   }
 }
 
 @media (min-width: $desktop-width) {
   .card {
+    height: 431px;
     gap: 0;
     padding: 0 30px 40px 35px;
-    height: 431px;
     background-color: $gray;
     border: none;
   }
@@ -37,15 +37,15 @@
 
 @media (min-width: $desktop-width) {
   .card:last-child {
-    background-color: $white;
-    border: 2px solid $gray;
     margin-bottom: 75px;
+    background-color: $white;
+    border: 1px solid $gray;
   }
 }
 
 .card__image {
-  grid-column: 1/2;
   display: block;
+  grid-column: 1/2;
   margin: 33px 36px 0 36px;
 }
 
@@ -189,8 +189,8 @@
   .card__item::after {
     position: absolute;
     content: "";
-    width: 250px;
     top: 20px;
+    width: 250px;
     height: 1px;
     background-color: $special-gray;
     box-shadow: 0 25px 0 0 $special-gray, 0 50px 0 0 $special-gray;
@@ -217,8 +217,8 @@
   .card__item::after {
     position: absolute;
     content: "";
-    width: 169px;
     top: 20px;
+    width: 169px;
     height: 1px;
     background-color: $special-gray;
     box-shadow: 0 25px 0 0 $special-gray, 0 50px 0 0 $special-gray;
@@ -239,14 +239,15 @@
   .card__term {
     width: 126px;
     margin: 0;
-    border-bottom: $gray;
     margin-bottom: 9px;
+    border-bottom: $gray;
   }
 }
 
 @media (min-width: $tablet-width) {
   .card__term--modify {
     width: 225px;
+    text-align: right;
   }
 }
 
@@ -259,6 +260,7 @@
 @media (min-width: $desktop-width) {
   .card__term--modify {
     width: 206px;
+    text-align: left;
   }
 }
 
@@ -294,7 +296,32 @@
 }
 
 .card--other {
+  position: relative;
   display: block;
+
+  &::after {
+    position: absolute;
+    content: "";
+    right: 50%;
+    top: calc(100% - 183px);
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/svg/plus.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .card--other {
+    position: relative;
+
+    &::after {
+      right: 45%;
+      top: calc(100% - 348px);
+    }
+  }
 }
 
 .card__view {
@@ -347,12 +374,12 @@
   display: flex;
   flex-direction: column;
   align-items: start;
+  gap: 0;
+  flex-grow: 1;
   width: 280px;
   margin: 0 20px;
   padding: 0;
   padding-bottom: 19px;
-  gap: 0;
-  flex-grow: 1;
   border-bottom: 1px solid $gray;
 }
 
@@ -366,10 +393,10 @@
     grid-template-columns: 316px 316px;
     row-gap: 25px;
     min-width: 704px;
-    box-sizing: border-box;
     height: 139px;
     margin: 0;
     padding: 26px 38px 28px 38px;
+    box-sizing: border-box;
     background-color: $white;
     border-bottom: 1px solid $gray;
   }
@@ -387,8 +414,8 @@
     grid-template-columns: 324px 328px 244px;
     width: 896px;
     height: 72px;
-    box-sizing: border-box;
     padding: 15px 0 17px 0;
+    box-sizing: border-box;
     border-top: 1px solid $gray;
   }
 }

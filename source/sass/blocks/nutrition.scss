@@ -30,20 +30,21 @@
       width: 100%;
       z-index: 0;
     }
-  }
 
-  .nutrition::after {
-    position: absolute;
-    content: "";
-    top: -26%;
-    left: 58%;
-    width: 50%;
-    height: 694px;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-desktop.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    z-index: 0;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: -26%;
+      left: 58%;
+      width: 50%;
+      height: 694px;
+      background-image: linear-gradient(#68b738, #68b738 85%, #68b738 85%, #68b738), url("../img/cat-desktop.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      z-index: 0;
+    }
   }
 }
 
@@ -56,8 +57,8 @@
 @media (min-width: $tablet-width) {
   .nutrition__color-wrapper {
     width: 708px;
-    margin: 0 auto;
     min-height: 250px;
+    margin: 0 auto;
     background-color: $white;
     background-image: none;
   }
@@ -74,10 +75,9 @@
 }
 
 .nutrition__text-wrapper {
-  margin: 0 auto;
   width: 320px;
   height: 302px;
-  margin-bottom: 0;
+  margin: 0 auto;
   font-family: "Oswald", sans-serif;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/nutrition-cat.png");
   background-repeat: no-repeat;
@@ -96,26 +96,6 @@
     background-color: $white;
   }
 }
-
-
-// @media (min-width: $desktop-width) {
-  // .nutrition__text-wrapper {
-
-  // }
-
-//   .nutrition__text-wrapper::before {
-//     position: absolute;
-//     content: "";
-//     top: 0%;
-//     left: 73%;
-//     width: 50%;
-//     height: 694px;
-//     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/nutrition-cat.png");
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     background-position: center;
-//   }
-// }
 
 .nutrition__image-wrapper {
   min-height: 178px;

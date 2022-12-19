@@ -23,7 +23,6 @@
   }
 }
 
-
 .map__link {
   grid-column: 1/2;
   grid-row: 1/2;
@@ -39,20 +38,11 @@
   margin: 0 auto;
 }
 
-
 @media (min-width: $tablet-width) {
   .map__link {
     max-height: 400px;
   }
 }
-
-// @media (min-width: $tablet-width) {
-//   .map__static-image {
-//     min-width: 768px;
-//     h
-//     object-fit: cover;
-//   }
-// }
 
 @media (min-width: $desktop-width) {
   .map__static-image {
