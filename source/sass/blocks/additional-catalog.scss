@@ -45,9 +45,9 @@
 .additional-catalog__title {
   position: relative;
   display: block;
-  width: 280px;
+  width: 320px;
   margin: 0 auto;
-  padding: 25px 40px 36px 0;
+  padding: 25px 74px 36px 20px;
   box-sizing: border-box;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -61,7 +61,7 @@
     height: 2px;
     width: 100000%;
     background-color: $basic-green;
-    left: calc(100% - 33px);
+    left: calc(100% - 54px);
   }
 
   &::before {
@@ -71,7 +71,7 @@
     height: 2px;
     width: 100000%;
     background-color: $basic-green;
-    right: calc(100% + 20px);
+    right: calc(100% + 0px);
   }
 }
 
