@@ -124,7 +124,9 @@
     padding: 0;
     margin: 0 auto 69px auto;
     box-sizing: border-box;
-    border: 1px solid $gray;
+    border-left: 1px solid $gray;
+    border-bottom: 1px solid $gray;
+    border-right: 1px solid $gray;
   }
 }
 

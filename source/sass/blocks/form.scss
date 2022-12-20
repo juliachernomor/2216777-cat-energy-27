@@ -21,14 +21,15 @@
 }
 
 .form__wrapper-title {
-  width: 280px;
+  width: 320px;
+  box-sizing: border-box;
   padding: 0 20px;
   margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .form__wrapper-title {
-    width: 628px;
+    width: 768px;
     padding: 0 70px;
     margin: 0 auto;
   }
@@ -36,7 +37,7 @@
 
 @media (min-width: $desktop-width) {
   .form__wrapper-title {
-    width: 1220px;
+    width: 1440px;
     padding: 0 110px;
     margin: 0 auto;
   }
@@ -98,10 +99,24 @@
 }
 
 .form__fieldset {
-  width: 280px;
-  padding: 0;
+  position: relative;
+  width: 320px;
+  box-sizing: border-box;
+  padding: 0 20px;
   margin: 0 auto;
   border: none;
+}
+
+@media (max-width: $mobile-width-only) {
+  .form__fieldset--line::after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: -500px;
+    height: 1px;
+    width: 100000%;
+    background-color: $gray;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -125,7 +140,9 @@
 }
 
 .form__headerline {
-  padding: 26px 111px 35px 20px;
+  width: 320px;
+  box-sizing: border-box;
+  padding: 26px 111px 35px 0;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -140,20 +157,20 @@
     position: absolute;
     content: "";
     top: 50%;
-    left: calc(100% - 100px);
     height: 2px;
     width: 100000%;
     background-color: $basic-green;
+    left: calc(100% - 99px);
   }
 
   &::before {
     position: absolute;
     content: "";
     top: 50%;
-    right: calc(100% + 20px);
     height: 2px;
     width: 100000%;
     background-color: $basic-green;
+    right: calc(100% + 20px);
   }
 }
 
@@ -164,20 +181,20 @@
     position: absolute;
     content: "";
     top: 50%;
-    left: calc(100% - 87px);
     height: 2px;
     width: 100000%;
     background-color: $basic-green;
+    left: calc(100% - 158px);
   }
 
   &::before {
     position: absolute;
     content: "";
     top: 50%;
-    right: calc(100% + 20px);
     height: 2px;
     width: 100000%;
     background-color: $basic-green;
+    right: calc(100% + 20px);
   }
 }
 
@@ -188,20 +205,20 @@
     position: absolute;
     content: "";
     top: 50%;
-    left: calc(100% - 80px);
     height: 2px;
     width: 100000%;
     background-color: $basic-green;
+    left: calc(100% - 136px);
   }
 
   &::before {
     position: absolute;
     content: "";
     top: 50%;
-    right: calc(100% + 20px);
     height: 2px;
     width: 100000%;
     background-color: $basic-green;
+    right: calc(100% + 20px);
   }
 }
 
@@ -209,6 +226,7 @@
   .form__headerline {
     width: 628px;
     padding: 0 70px 0 70px;
+    box-sizing: content-box;
     margin-bottom: 76px;
     font-size: 36px;
     line-height: 36px;
@@ -220,22 +238,7 @@
     position: relative;
 
     &::after {
-      left: calc(100% - 140px);
-    }
-
-    &::before {
-      right: calc(100% - 30px);
-    }
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .form__headerline--modify {
-    margin-bottom: 57px;
-    position: relative;
-
-    &::after {
-      left: calc(100% - 448px);
+      left: calc(100% - 145px);
     }
 
     &::before {
@@ -258,6 +261,21 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .form__headerline--modify {
+    margin-bottom: 57px;
+    position: relative;
+
+    &::after {
+      left: calc(100% - 446px);
+    }
+
+    &::before {
+      right: calc(100% - 30px);
+    }
+  }
+}
+
 @media (min-width: $desktop-width) {
   .form__headerline {
     width: 1220px;
@@ -270,7 +288,7 @@
     position: relative;
 
     &::after {
-      left: calc(100% - 780px);
+      left: calc(100% - 778px);
     }
 
     &::before {
@@ -309,7 +327,7 @@
 
 .form__container {
   width: 280px;
-  margin: 24px auto 28px auto;
+  margin: 24px 0 28px 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -378,19 +396,6 @@
 @media (min-width: $desktop-width) {
   .form__fieldset--intends2 {
     margin-bottom: 67px;
-  }
-}
-
-@media (max-width: $mobile-width-only) {
-  .form__fieldset-wrapper::after {
-    position: absolute;
-    content: "";
-    min-width: 320px;
-    width: 100%;
-    top: 430px;
-    height: 1px;
-    background-color: $special-gray;
-    box-shadow: 0 170px 0 0 $special-gray;
   }
 }
 

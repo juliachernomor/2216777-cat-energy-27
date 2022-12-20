@@ -15,35 +15,23 @@
 @media (min-width: $desktop-width) {
   .nutrition {
     position: relative;
-    min-width: 1440px;
+    width: 1440px;
     min-height: 550px;
     padding: 0;
+    margin: 0 auto;
     margin-bottom: 82px;
-
-    &::before {
-      position: absolute;
-      content: "";
-      top: calc(100% - 693px);
-      background-color: rgba(104, 183, 56, 0.85);
-      min-width: 720px;
-      min-height: 694px;
-      width: 100%;
-      z-index: 0;
-    }
-
 
     &::after {
       position: absolute;
       content: "";
       top: -26%;
-      left: 58%;
-      width: 50%;
-      height: 694px;
-      background-image: linear-gradient(#68b738, #68b738 85%, #68b738 85%, #68b738), url("../img/cat-desktop.png");
+      left: 50%;
+      width: 1044px;
+      height: 696px;
+      background-image: url("../img/cat-desktop.png");
       background-repeat: no-repeat;
-      background-size: cover;
       background-position: center;
-      z-index: 0;
+      background-size: 1044px 696px;
     }
   }
 }
@@ -51,7 +39,7 @@
 .nutrition__color-wrapper {
   width: 100%;
   min-width: 320px;
-  background-color: $basic-green;
+  background-image: linear-gradient(to right, #64a73c calc(50%), #63a63a calc(100%));
 }
 
 @media (min-width: $tablet-width) {
@@ -79,9 +67,9 @@
   height: 302px;
   margin: 0 auto;
   font-family: "Oswald", sans-serif;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/nutrition-cat.png");
+  background-image: url("../img/nutrition-cat.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 320px 302px;
   background-position: center;
   color: $white;
 }

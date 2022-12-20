@@ -2,20 +2,7 @@
   position: relative;
   min-width: 320px;
   width: 100%;
-  border-top: $border;
-}
-
-@media (max-width: $mobile-width-only) {
-  .catalog::after {
-    content: "";
-    position: absolute;
-    min-width: 320px;
-    width: 100%;
-    top: 310px;
-    height: 1px;
-    background-color: $gray;
-    box-shadow: 0 226px 0 0 $gray, 0 438px 0 0 $gray, 0 665px 0 0 $gray, 0 877px 0 0 $gray, 0 1103px 0 0 $gray, 0 1317px 0 0 $gray;
-  }
+  border-top: 1px solid #d9d9d9;
 }
 
 @media (min-width: $tablet-width) {
@@ -37,7 +24,6 @@
 .catalog__wrapper-title {
   min-width: 320px;
   width: 100%;
-  border-bottom: $border;
 }
 
 @media (min-width: $tablet-width) {
