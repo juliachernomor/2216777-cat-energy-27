@@ -16,20 +16,19 @@
       <img class="logo__text" src="img/svg/logo-text.svg" width="101" height="18" loading="lazy" alt="Логотип 'CAT ENERGY.'">
     </a>
   </div>
-    <nav class="nav">
-      <button class="nav__toggle toggle" type="button">
-        <span class="visually-hidden">Открывает и закрывает меню</span><svg class="toggle__svg" width="24" height="18"
-          viewBox="0 0 24 18" aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path stroke-width="1.5" d="M0 1.25h24M0 9.25h24M0 17.25h24" />
-        </svg>
+    <nav class="nav nav--closed nav--nojs">
+      <button class="nav__toggle" type="button">
+        <span class="visually-hidden">Открывает и закрывает меню</span>
       </button>
-      <ul class="nav__list site-list">
-        <li class="site-list__item site-list__item--current"><span class="site-list__current" aria-current="page">Главная</span></li>
-        <li class="site-list__item"><a class="site-list__link " href="catalog.html">Каталог продукции</a>
+      <div class="nav__wrapper">
+      <ul class="nav__list site-list site-list--color">
+        <li class="site-list__item"><span class="site-list__link  site-list__link--color1 site-list__link--current1">Главная</span></li>
+        <li class="site-list__item"><a class="site-list__link site-list__link--color1" href="catalog.html">Каталог продукции</a>
         </li>
-        <li class="site-list__item"><a class="site-list__link " href="form.html">Подбор программы</a>
+        <li class="site-list__item"><a class="site-list__link site-list__link--color1" href="form.html">Подбор программы</a>
         </li>
       </ul>
+      </div>
     </nav>
   </header>
   <main class="container">
@@ -49,14 +48,14 @@
     <section class="programs">
       <h2 class="visually-hidden">Программы питания для котов</h2>
       <ul class="programs__list">
-        <li class="programs__item">
+        <li class="programs__item programs__item--cat1">
           <h3 class="programs__title">Похудение</h3>
           <p class="programs__description">Ваш кот весит больше собаки и
             почти утратил способность лазить по деревьям? Пора на диету!
             Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <a class="programs__link" href="#">Каталог Slim</a>
         </li>
-        <li class="programs__item">
+        <li class="programs__item programs__item--cat2">
           <h3 class="programs__title">Набор&nbsp;массы</h3>
           <p class="programs__description">Заработать авторитет среди
             дворовых котов и даже собак? Серия Cat Energy Pro поможет
@@ -68,22 +67,22 @@
     <section class="advantages">
       <h2 class="advantages__title">Как это&nbsp;работает</h2>
       <ul class="advantages__list">
-        <li class="advantages__item">
+        <li class="advantages__item advantages__item--leaf">
           <p class="advantages__description">Функциональное питание
             содержит только полезные
             питательные вещества.</p>
         </li>
-        <li class="advantages__item">
+        <li class="advantages__item advantages__item--tub">
           <p class="advantages__description">Выпускается в виде порошка,
             который нужно лишь залить
             кипятком и готово.</p>
         </li>
-        <li class="advantages__item">
+        <li class="advantages__item advantages__item--eat">
           <p class="advantages__description">Замените один-два приема
             обычной еды на наше
             функциональное питание.</p>
         </li>
-        <li class="advantages__item">
+        <li class="advantages__item advantages__item--alarm">
           <p class="advantages__description">Уже через месяц наслаждайтесь
             изменениями к лучшему вашего питомца!</p>
         </li>
@@ -164,5 +163,6 @@
             Академии."></a>
           </div>
   </footer>
+<script src="js/script.js"></script>
 </body>
 </html>

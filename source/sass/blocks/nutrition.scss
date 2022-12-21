@@ -15,20 +15,23 @@
 @media (min-width: $desktop-width) {
   .nutrition {
     position: relative;
-    min-width: 1440px;
+    width: 1440px;
     min-height: 550px;
     padding: 0;
+    margin: 0 auto;
     margin-bottom: 82px;
 
-    &::before {
+    &::after {
       position: absolute;
       content: "";
-      top: calc(100% - 693px);
-      background-color: rgba(104, 183, 56, 0.85);
-      min-width: 720px;
-      min-height: 694px;
-      width: 100%;
-      z-index: 0;
+      top: -26%;
+      left: 50%;
+      width: 1044px;
+      height: 696px;
+      background-image: url("../img/cat-desktop.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 1044px 696px;
     }
   }
 }
@@ -36,14 +39,14 @@
 .nutrition__color-wrapper {
   width: 100%;
   min-width: 320px;
-  background-color: rgba(104, 183, 56, 0.85);
+  background-image: linear-gradient(to right, #64a73c calc(50%), #63a63a calc(100%));
 }
 
 @media (min-width: $tablet-width) {
   .nutrition__color-wrapper {
     width: 708px;
-    margin: 0 auto;
     min-height: 250px;
+    margin: 0 auto;
     background-color: $white;
     background-image: none;
   }
@@ -60,14 +63,13 @@
 }
 
 .nutrition__text-wrapper {
-  margin: 0 auto;
   width: 320px;
   height: 302px;
-  margin-bottom: 0;
+  margin: 0 auto;
   font-family: "Oswald", sans-serif;
   background-image: url("../img/nutrition-cat.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 320px 302px;
   background-position: center;
   color: $white;
 }
@@ -184,6 +186,7 @@
     margin-left: 148px;
     margin-top: -360px;
     order: 2;
+    z-index: 1;
   }
 }
 

@@ -1,7 +1,8 @@
 .catalog {
+  position: relative;
   min-width: 320px;
   width: 100%;
-  border-top: $border;
+  border-top: 1px solid #d9d9d9;
 }
 
 @media (min-width: $tablet-width) {
@@ -23,7 +24,6 @@
 .catalog__wrapper-title {
   min-width: 320px;
   width: 100%;
-  border-bottom: $border;
 }
 
 @media (min-width: $tablet-width) {
@@ -36,8 +36,8 @@
 
 .catalog__title {
   @include font-oswald-medium;
-  width: 280px;
   display: block;
+  width: 280px;
   padding: 27px 20px 41px 20px;
   margin: 0 auto;
 }

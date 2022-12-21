@@ -21,18 +21,17 @@
 
 @media (min-width: $desktop-width) {
   .additional-catalog__wrapper {
+    display: flex;
+    justify-content: space-between;
     width: 1220px;
     padding: 0 110px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
   }
 }
 
 .additional-catalog__wrapper-title {
   min-width: 320px;
   width: 100%;
-  border-bottom: $border;
 }
 
 @media (min-width: $tablet-width) {
@@ -44,16 +43,36 @@
 }
 
 .additional-catalog__title {
-  width: 280px;
-  margin: 0 auto;
+  position: relative;
   display: block;
-  padding: 25px 20px 36px 20px;
+  width: 320px;
+  margin: 0 auto;
+  padding: 25px 74px 36px 20px;
   box-sizing: border-box;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  border-bottom: $border;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    height: 2px;
+    width: 100000%;
+    background-color: $basic-green;
+    left: calc(100% - 54px);
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    height: 2px;
+    width: 100000%;
+    background-color: $basic-green;
+    right: calc(100% + 0px);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -64,6 +83,14 @@
     font-size: 36px;
     line-height: 36px;
     border: none;
+
+    &::after {
+      left: calc(100% - 300px);
+    }
+
+    &::before {
+      right: calc(100% + 0px);
+    }
   }
 }
 
@@ -72,24 +99,34 @@
     width: 1220px;
     margin-bottom: 81px;
     padding: 0;
+
+    &::after {
+      left: calc(100% - 845px);
+    }
+
+    &::before {
+      right: calc(100% + 40px);
+    }
   }
 }
 
 .additional-catalog__list {
   width: 320px;
-  list-style-type: none;
   margin: 0 auto;
   padding: 0;
+  list-style-type: none;
 }
 
 @media (min-width: $tablet-width) {
   .additional-catalog__list {
     width: 708px;
-    padding: 0;
     min-height: 556px;
+    padding: 0;
     margin: 0 auto 69px auto;
-    border: 2px solid $gray;
     box-sizing: border-box;
+    border-left: 1px solid $gray;
+    border-bottom: 1px solid $gray;
+    border-right: 1px solid $gray;
   }
 }
 

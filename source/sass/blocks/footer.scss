@@ -38,13 +38,13 @@
 
 @media (min-width: $tablet-width) {
   .footer__wrapper {
-    width: 708px;
-    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
     align-items: center;
+    width: 708px;
     min-height: 34px;
+    margin: 0 auto;
     padding: 58px 30px 55px 30px;
   }
 }
