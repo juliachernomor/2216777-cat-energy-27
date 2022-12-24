@@ -28,10 +28,27 @@
       left: 50%;
       width: 1044px;
       height: 696px;
-      background-image: url("../img/cat-desktop.png");
+      background-image: url("../img/nutrition-cat-desktop.png");
       background-repeat: no-repeat;
       background-position: center;
       background-size: 1044px 696px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/nutrition-cat-desktop@2x.png");
+        background-size: 1044px auto;
+      }
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -26%;
+      left: 50%;
+      min-width: 1044px;
+      width: 10000px;
+      height: 696px;
+      background-color: #62a53a;
+      overflow: hidden;
     }
   }
 }
@@ -67,12 +84,18 @@
   height: 302px;
   margin: 0 auto;
   font-family: "Oswald", sans-serif;
-  background-image: url("../img/nutrition-cat.png");
+  background-image: url("../img/nutrition-cat-mobile.png");
   background-repeat: no-repeat;
   background-size: 320px 302px;
   background-position: center;
   color: $white;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/nutrition-cat-mobile@2x.png");
+    background-size: 320px auto;
+  }
 }
+
 
 @media (min-width: $tablet-width) {
   .nutrition__text-wrapper {
@@ -86,9 +109,12 @@
 }
 
 .nutrition__image-wrapper {
+  display: flex;
+  flex-direction: column;
   min-height: 178px;
   width: 280px;
   margin: 0 auto;
+  z-index: 1;
 }
 
 @media (min-width: $tablet-width) {
@@ -102,6 +128,7 @@
 @media (min-width: $desktop-width) {
   .nutrition__image-wrapper {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: start;
     width: 1060px;
     padding: 0 190px;
@@ -183,10 +210,8 @@
     width: 552px;
     height: 499px;
     margin: 0;
-    margin-left: 148px;
+    margin-left: 125px;
     margin-top: -360px;
-    order: 2;
-    z-index: 1;
   }
 }
 
