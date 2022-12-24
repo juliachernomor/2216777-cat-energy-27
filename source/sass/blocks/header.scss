@@ -83,14 +83,12 @@
 
 @media (min-width: $tablet-width) {
   .header__logo-text {
-    align-self: center;
-    width: 90px;
-    margin: 0;
+    display: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .header__logo-text {
-    width: 104px;
+    display: none;
   }
 }
