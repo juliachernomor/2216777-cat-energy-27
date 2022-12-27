@@ -19,6 +19,7 @@
 @media (min-width: $desktop-width) {
   .contacts {
     position: absolute;
+    content: "";
     top: 95px;
     left: 110px;
     width: 405px;
@@ -26,6 +27,7 @@
     margin: 0;
     background-color: $white;
     min-height: 86px;
+    z-index: 5;
   }
 }
 

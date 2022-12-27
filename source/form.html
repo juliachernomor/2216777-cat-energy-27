@@ -17,11 +17,11 @@
       <picture>
         <source media="(min-width: 1440px)" srcset="img/svg/logo-image-desktop.svg">
         <source media="(min-width: 768px)" srcset="img/svg/logo-image-tablet.svg">
-        <img class="logo__picture" src="img/svg/logo-image-mobile.svg" srcset="img/logo-image-mobile.jpg 1x, img/logo-image-mobile@2x.jpg 2x" width="33" height="38" loading="lazy"  alt="Логотип меню. Кот.">
+        <img class="logo__picture" src="img/svg/logo-image-mobile.svg" width="33" height="38" loading="lazy"  alt="Логотип меню. Кот.">
       </picture>
     </a>
     <a class="header__logo-text logo" href="#">
-      <img class="logo__text" src="img/svg/logo-text-mobile.svg" srcset="img/logo-text-mobile.jpg 1x, img/logo-text-mobile@2x.jpg 2x"  width="101" height="18" loading="lazy" alt="Логотип 'CAT ENERGY.'">
+      <img class="logo__text" src="img/svg/logo-text-mobile.svg" width="101" height="18" loading="lazy" alt="Логотип 'CAT ENERGY.'">
     </a>
   </div>
     <nav class="nav nav--closed nav--nojs nav--color">
@@ -177,16 +177,17 @@
         <picture>
           <source media="(min-width:1440px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg  2x">
           <source media="(min-width:768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg  2x">
-          <img class="map__static-image" src="img/map.png"
+          <img class="map__static-image" src="img/map-mobile.jpg"
           width="320" height="362"  srcset = "img/map-mobile@2x.jpg" loading="lazy" alt="Мы на карте города.">
-      </picture></a>
+      </picture>
+    </a>
       <iframe class="map__interactive-map noscroll" src="https://yandex.ru/map-widget/v1/-/CCUfzEvoCD" width="320"
         height="362" style="border: 0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
     <div class="footer__wrapper">
       <a class="footer__logo logo logo--big-size logo--indents" href="#">
-        <img class="logo__text logo__text--indents" src="img/svg/logo-text-mobile.svg" srcset="img/logo-text-mobile.jpg 1x, img/logo-text-mobile@2x.jpg 2x"  width="101" height="18" loading="lazy" alt="Логотип 'CAT ENERGY.'">
+        <img class="logo__text logo__text--indents" src="img/svg/logo-text-mobile.svg"  width="101" height="18" loading="lazy" alt="Логотип 'CAT ENERGY.'">
       </a>
     <ul class="footer__socials socials">
       <li class="socials__item">
@@ -199,9 +200,13 @@
         <a class="socials__link socials__link--telegram" href="https://t.me/htmlacademy">Tg</a>
       </li>
     </ul>
-    <a class="footer__copyright copyright" href="https://vk.com/htmlacademy"><span class="copyright__link">HTML
-        Academy</span><img class="copyright__picture" src="img/svg/htmlacademy-logo.svg" width="27" height="34" loading="lazy"  alt="Логотип создателя сайта - HTML
-            Академии."></a>
+    <a class="footer__copyright copyright" href="https://vk.com/htmlacademy" aria-label="Сайт HTML
+    Academy">HTML
+        Academy
+        <svg class="copyright__picture" role="img" width="27" height="34">
+        <use href="img/sprite.svg#htmlacademy-logo"></use>
+      </svg>
+    </a>
           </div>
   </footer>
   <script src="js/script.js"></script>
