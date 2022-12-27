@@ -1,8 +1,10 @@
 .order {
   display: flex;
+  flex: 0 0 auto;
   justify-content: center;
   align-items: center;
   min-width: 62px;
+  min-height: 20px;
   padding: 10px 109px;
   margin: 0;
   font-family: "Oswald", sans-serif;

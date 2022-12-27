@@ -2,7 +2,7 @@
   position: relative;
   display: grid;
   grid-template-columns: 140px 140px;
-  row-gap: 25px;
+  grid-template-rows: 74px 70px 40px;
   box-sizing: border-box;
   padding: 0 0 25px 0;
 }
@@ -59,7 +59,9 @@
 .card__image {
   display: block;
   grid-column: 1/2;
-  margin: 33px 36px 0 36px;
+  grid-row: 1/3;
+  padding-top: 33px;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
@@ -89,6 +91,8 @@
 
 @media (min-width: $desktop-width) {
   .card__pic {
+    width: 161px;
+    min-height: 172px;
     margin: -52px 11px 42px 8px;
   }
 }
@@ -98,36 +102,16 @@
     display: block;
     width: 172px;
     min-height: 196px;
-    margin: -73px 4px 46px 4px;
-  }
-}
-
-.card__wrapper {
-  grid-column: 2/3;
-  display: flex;
-  flex-direction: column;
-}
-
-@media (min-width: $tablet-width) {
-  .card__wrapper {
-    position: relative;
-    display: grid;
-    grid-template-columns: 252px;
-    row-gap: 21px;
-    margin-bottom: 24px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .card__wrapper {
-    grid-template-columns: 180px;
-    margin-bottom: 33px;
+    margin: -80px 4px 46px 4px;
   }
 }
 
 .card__title {
+  grid-column: 2/3;
+  grid-row: 1/2;
   width: 80px;
-  margin-top: 19px;
+  padding-top: 19px;
+  margin: 0;
   margin-bottom: 14px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -142,13 +126,16 @@
     width: 170px;
     font-size: 20px;
     line-height: 24px;
-    margin: 0 auto;
+    margin: 0 auto 21px auto;
+    padding-top: 0;
     text-align: center;
   }
 }
 
 .card__title--intends {
   width: 170px;
+  padding-top: 12px;
+  margin-bottom: 13px;
 }
 
 @media (min-width: $tablet-width) {
@@ -172,15 +159,18 @@
     grid-column: 1/2;
     width: 324px;
     text-align: left;
-    margin: auto 0;
+    margin: 0;
   }
 }
 
 .card__item {
   @include ziro-intends;
+  grid-column: 2/3;
+  grid-row: 2/3;
   position: relative;
   display: grid;
   grid-template-columns: 70px 70px;
+  grid-template-rows: 16px 16px 16px;
   width: 140px;
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -189,34 +179,18 @@
   color: $special-dark-gray;
 }
 
+.card__item--grid {
+  grid-template-rows: 16px;
+  grid-template-columns: 140px 140px;
+}
+
 @media (min-width: $tablet-width) {
   .card__item {
+    margin-bottom: 32px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .card__item--intends::after {
-    display: none;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .card__item--intends {
-    grid-column: 2/3;
-    width: 328px;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .card__item--intends::after {
-    display: none;
   }
 }
 
@@ -248,6 +222,7 @@
   .card__term--modify {
     width: 225px;
     text-align: right;
+    margin: auto;
 
     &::after {
       display: none;
@@ -274,7 +249,7 @@
 
 .card__description {
   grid-column: 2/3;
-  margin-left: 20px;
+  margin-left: auto;
 }
 
 @media (min-width: $tablet-width) {
@@ -295,11 +270,13 @@
 
 .card__order {
   grid-column: 1/-1;
+  grid-row: 3/4;
 }
 
 @media (min-width: $desktop-width) {
   .card__order {
     grid-column: 3/4;
+    grid-row: 1/2;
   }
 }
 
@@ -425,7 +402,7 @@
   .card--modify {
     display: grid;
     grid-template-columns: 316px 316px;
-    row-gap: 25px;
+    grid-template-rows: none;
     min-width: 704px;
     height: 139px;
     margin: 0;
@@ -447,6 +424,7 @@
 @media (min-width: $desktop-width) {
   .card--modify {
     grid-template-columns: 324px 328px 244px;
+    grid-template-rows: none;
     width: 896px;
     height: 72px;
     padding: 15px 0 17px 0;
@@ -463,10 +441,6 @@
   }
 }
 
-.card__item--grid {
-  grid-template-columns: 140px 140px;
-}
-
 .card__item--intends {
   margin-bottom: 15px;
 }
@@ -474,16 +448,38 @@
 @media (min-width: $tablet-width) {
   .card__item--intends {
     grid-column: 2/3;
+    grid-row: 1/2;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     flex-wrap: nowrap;
     width: 316px;
-    margin: 0;
+    margin: auto;
+  }
+
+  .card__item--intends::after {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card__item--intends {
+    grid-column: 2/3;
+    width: 328px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card__item--intends::after {
+    display: none;
   }
 }
 
 .card__description--location {
-  margin: auto;
+  margin-left: auto;
 }
 
 @media (min-width: $tablet-width) {
