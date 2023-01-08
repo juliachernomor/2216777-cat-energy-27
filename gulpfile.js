@@ -11,6 +11,7 @@ import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import { deleteAsync } from 'del';
+import { stacksvg } from 'gulp-stacksvg';
 
 // styles
 export const styles = () => {
@@ -63,13 +64,19 @@ const createWebp = () => {
 
 //svg
 const svg  = () => {
-  return gulp.src('source/img/**/*.svg')
+  return gulp.src('source/img/svg/*.svg')
   .pipe(svgo())
-  .pipe(gulp.dest('build/img'))
+  .pipe(gulp.dest('build/img/svg'))
 }
 
 //svg-stack
-
+const stack = () => {
+  return gulp.src('source/img/svg/stack/*.svg')
+  .pipe(svgo())
+  .pipe(stacksvg())
+  .pipe(rename('stack.svg'))
+  .pipe(gulp.dest('build/img/svg/stack'))
+}
 
 //copy
 const copy =(done)=> {
@@ -125,6 +132,7 @@ export const build = gulp.series(
     html,
     scripts,
     svg,
+    stack,
     createWebp
   ),
 );
@@ -138,6 +146,7 @@ export default gulp.series(
     html,
     scripts,
     svg,
+    stack,
     createWebp
   ),
   gulp.series(
