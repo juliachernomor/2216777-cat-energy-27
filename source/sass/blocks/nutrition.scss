@@ -31,15 +31,10 @@
       height: 696px;
       background-image: url("../img/nutrition-cat-desktop.jpg");
       background-repeat: no-repeat;
-      background-position: center;
+      background-position: left;
       background-size: 1044px 696px;
-      background-color: ;
+      background-color: rgb(97, 164, 57);
       overflow: hidden;
-    }
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/nutrition-cat-desktop@2x.png");
-      background-size: 1044px auto;
     }
   }
 }
