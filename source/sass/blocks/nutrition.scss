@@ -35,6 +35,10 @@
       background-size: 1044px 696px;
       background-color: rgb(97, 164, 57);
       overflow: hidden;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/nutrition-cat-desktop@2x.jpg");
+      }
     }
   }
 }
@@ -75,6 +79,10 @@
   background-size: 320px 302px;
   background-position: center;
   color: $white;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/nutrition-cat-mobile@2x.png");
+  }
 }
 
 @media (min-width: $tablet-width) {
