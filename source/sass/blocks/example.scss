@@ -290,9 +290,10 @@
 }
 
 .example__list {
+  --cat-progress-mobile: 138px;
   position: relative;
   display: grid;
-  grid-template-columns: 138px 4px 138px;
+  grid-template-columns: var(--cat-progress-mobile) 4px 1fr;
   grid-template-rows: 256px;
 
   &::after {
@@ -309,9 +310,10 @@
 
 @media (min-width: $tablet-width) {
   .example__list {
+    --cat-progress-tablet: 278px;
     width: 560px;
     display: grid;
-    grid-template-columns: 278px 4px 278px;
+    grid-template-columns: var(--cat-progress-tablet) 4px 1fr;
     grid-template-rows: 512px;
 
     &::after {
@@ -385,14 +387,13 @@
   content: "";
   width: 40px;
   height: 40px;
-  background-image: url("../img/svg/thumb.svg");
+  background-image: url("../img/svg/stack/stack.svg#thumb");
   background-color: $white;
   border-radius: 100%;
   top: 37%;
   left: 44%;
   z-index: 5;
 }
-
 
 @media (min-width: $tablet-width) {
   .example__button {

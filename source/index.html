@@ -3,11 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/lato/lato-regular.woff2" as="style">
+  <link rel="preload" href="fonts/oswald/oswald-regular.woff2" as="style">
+  <link rel="preload" href="fonts/oswald/oswald-medium.woff2" as="style">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 <body class="page__body">
@@ -30,7 +33,7 @@
       </button>
       <div class="nav__wrapper">
       <ul class="nav__list site-list site-list--color">
-        <li class="site-list__item"><span class="site-list__link  site-list__link--color1 site-list__link--current1">Главная</span></li>
+        <li class="site-list__item"><span class="site-list__link  site-list__link--color1 site-list__link--current site-list__link--current1">Главная</span></li>
         <li class="site-list__item"><a class="site-list__link site-list__link--color1" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="site-list__item"><a class="site-list__link site-list__link--color1" href="form.html">Подбор программы</a>
@@ -52,9 +55,9 @@
             <source type="image/webp" media="(min-width: 1440px)" srcset="img/food-box-desktop.webp 1x, img/food-box-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/food-box-tablet.webp 1x, img/food-box-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/food-box-mobile.webp 1x, img/food-box-mobile@2x.webp 2x">
-            <source media="(min-width:1440px)" srcset="img/food-box-desktop.png 1x, img/food-box-desktop@2x.png  2x">
-            <source media="(min-width:768px)" srcset="img/food-box-tablet.png 1x, img/food-box-tablet@2x.png  2x">
-            <img class="nutrition__picture" src="img/food-box-mobile.png"  srcset = "img/food-box-mobile@2x.png" width="280" height="270" loading="lazy"  alt="Контейнер с
+            <source type="image/png" media="(min-width:1440px)" srcset="img/food-box-desktop.png 1x, img/food-box-desktop@2x.png 2x">
+            <source type="image/png" media="(min-width:768px)" srcset="img/food-box-tablet.png 1x, img/food-box-tablet@2x.png 2x">
+            <img class="nutrition__picture" src="img/food-box-mobile.png"  srcset = "img/food-box-mobile@2x.png 2x" width="280" height="270" loading="lazy"  alt="Контейнер с
           функциональным питанием для котов.">
         </picture>
           <a class="nutrition__link link" href="#">Подобрать программу</a>
@@ -121,9 +124,9 @@
           <div class="example__container">
             <h2 class="visually-hidden">Фотослайдер</h2>
               <div class="example__list slider">
-                <img class="example__fat-cat slider__image" src="img/fat-cat.png" width="280" height="256" loading="lazy"
+                <img class="example__fat-cat slider__image" src="img/fat-cat-mobile.png" width="280" height="256" loading="lazy"
                 alt="Фото кота до начала питания.'">
-                <img class="example__thin-cat slider__image" src="img/thin-cat.png" width="280" height="256" loading="lazy" alt="Фото кота в конце питания.">
+                <img class="example__thin-cat slider__image" src="img/thin-cat-mobile.png" width="280" height="256" loading="lazy" alt="Фото кота в конце питания.">
               </div>
               <input class="example__range" type="range" min="0" max="100" value="50" aria-label="процент видимости">
               <div class="example__button" aria-hidden="true">
@@ -150,8 +153,11 @@
       <h2 class="visually-hidden">Схема проезда</h2>
       <a class="map__link" href="https://yandex.ru/maps/-/CCUVNNTJ8D">
         <picture>
-          <source media="(min-width:1440px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg  2x">
-          <source media="(min-width:768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg  2x">
+          <source type="image/webp" media="(min-width: 1440px)" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
+          <source type="image/jpg" media="(min-width:1440px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg  2x">
+          <source type="image/jpg" media="(min-width:768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg  2x">
           <img class="map__static-image" src="img/map-mobile.jpg"
           width="320" height="362"  srcset = "img/map-mobile@2x.jpg" loading="lazy" alt="Мы на карте города.">
       </picture>
@@ -168,21 +174,21 @@
       <li class="socials__item">
         <a class="socials__link socials__link--vkontakte" href="https://vk.com/htmlacademy">
           <svg width="28" height="17" viewBox="0 0 28 17">
-            <use href="img/sprite.svg#vk"></use>
+            <use href="img/svg/stack/stack.svg#vk"></use>
           </svg>
         </a>
       </li>
       <li class="socials__item">
         <a class="socials__link socials__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
           <svg width="25" height="19" viewBox="0 0 25 19">
-            <use href="img/sprite.svg#youtube"></use>
+            <use href="img/svg/stack/stack.svg#youtube"></use>
           </svg>
         </a>
       </li>
       <li class="socials__item">
         <a class="socials__link socials__link--telegram" href="https://t.me/htmlacademy">
           <svg width="21" height="18" viewBox="0 0 21 18">
-            <use href="img/sprite.svg#tg"></use>
+            <use href="img/svg/stack/stack.svg#telegram"></use>
           </svg>
         </a>
       </li>
@@ -191,7 +197,7 @@
     Academy">HTML
         Academy
         <svg class="copyright__picture" role="img" width="27" height="34">
-        <use href="img/sprite.svg#htmlacademy-logo"></use>
+        <use href="img/svg/stack/stack.svg#htmlacademy-logo"></use>
       </svg>
     </a>
           </div>

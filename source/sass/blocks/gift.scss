@@ -22,10 +22,14 @@
   width: 280px;
   height: 290px;
   margin: 35px 20px 35px 20px;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-gift.png");
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-gift-mobdeskt.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-gift-mobdesk@2x.png");
+  }
 
   &::after {
     position: absolute;
@@ -34,7 +38,7 @@
     left: calc(100% - 180px);
     width: 78px;
     height: 80px;
-    background-image: url("../img/svg/gift.svg");
+    background-image: url("../img/svg/stack/stack.svg#gift");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -47,10 +51,14 @@
     height: 200px;
     margin: 0 auto 76px auto;
     padding: 0;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-gift.png");
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-gift-tablet.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-gift-tablet@2x.png");
+    }
 
     &::after {
       top: calc(100% - 139px);
@@ -66,10 +74,14 @@
     width: 245px;
     height: 289px;
     margin: 0;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-gift.png");
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-gift-mobdeskt.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-gift-mobdeskt@2x.png");
+    }
 
     &::after {
       top: calc(100% - 232px);
