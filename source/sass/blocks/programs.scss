@@ -206,11 +206,32 @@
   content: "";
   width: 32px;
   height: 10px;
-  background-image: url("../img/svg/stack/stack.svg#program-arrow");
+  mask-image: url("../img/svg/stack/stack.svg#program-arrow");
+  background-color: $black;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: 24px 10px;
   margin-left: 15px;
+}
+
+.programs__link:hover::after {
+  width: 32px;
+  height: 12px;
+}
+
+.programs__link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.programs__link:active::after {
+  width: 32px;
+  height: 12px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.order:active {
+  background-color: #5eaa2f;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 @media (min-width: $tablet-width) {

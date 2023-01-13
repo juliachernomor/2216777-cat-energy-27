@@ -32,7 +32,7 @@
       <ul class="nav__list site-list">
         <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
         <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог продукции</a></li>
-        <li class="site-list__item"><span class="site-list__link site-list__link--current">Подбор программы</span>
+        <li class="site-list__item"><span class="site-list__link--current">Подбор программы</span>
         </li>
       </ul>
     </div>
@@ -52,15 +52,15 @@
         <ul class="form__list group group--size">
           <li class="group__item field field1">
             <label class="field__label field__label--size" for="name">Имя:*</label>
-            <input class="field__input" type="text" name="name" placeholder="Барсик" id="name" required>
+            <input class="field__input error" type="text" name="name" placeholder="Барсик" id="name" required>
           </li>
           <li class="group__item field field1">
             <label class="field__label field__label--size" for="weight">Вес&nbsp;(кг):*</label>
-            <input class="field__input" type="text" name="weight" placeholder="7" id="weight" required>
+            <input class="field__input error" type="text" name="weight" placeholder="7" id="weight" required>
           </li>
           <li class="group__item field field1">
             <label class="field__label field__label--size" for="age">Возраст&nbsp;(лет):</label>
-            <input class="field__input" type="text" name="age" placeholder="7" id="age" required>
+            <input class="field__input error" type="text" name="age" placeholder="7" id="age" required>
           </li>
         </ul>
       </fieldset>
@@ -103,12 +103,14 @@
         <ul class="form__list group group--modify">
           <li class="group__item field field--modify">
             <label class="field__label field__label--intends" for="email">E-mail:*</label>
-            <input class="field__input field__input--intends" type="email" name="subscribe-email" placeholder="kuklachev@gmail.com" id="email"
+            <input class="field__input field__input--intends error" type="email" name="subscribe-email" placeholder="kuklachev@gmail.com" id="email"
               required>
+              <span class="field__email field__email-error"></span>
           </li>
           <li class="group__item field">
             <label class="field__label field__label--intends" for="phone">Телефон:*</label>
-            <input class="field__input field__input--intends" type="tel" name="weight" placeholder="8 (960) 900-60-90" id="phone" required>
+            <input class="field__input field__input--intends  error" type="tel" name="weight" placeholder="8 (960) 900-60-90" id="phone" required>
+            <span class="field__phone field__phone-error"></span>
           </li>
         </ul>
       </fieldset>

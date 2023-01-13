@@ -45,3 +45,20 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+.checkbox__input[type="checkbox"]:hover ~ .checkbox__control-mark {
+  border: 1px solid #bababa;
+}
+
+.checkbox__input[type="checkbox"]:focus ~ .checkbox__control-mark {
+  outline: 2px solid $special-dark-gray;
+}
+
+
+.checkbox__input[type="checkbox"]:disabled ~ .checkbox__control-mark {
+  opacity: 0.3;
+}
+
+.checkbox__input[type="checkbox"]:disabled ~ .checkbox__control-label {
+  opacity: 0.3;
+}

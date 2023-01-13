@@ -46,3 +46,20 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.radio__input[type="radio"]:hover ~ .radio__control-mark {
+  border: 1px solid #bababa;
+}
+
+.radio__input[type="radio"]:focus ~ .radio__control-mark {
+  outline: 2px solid $special-dark-gray;
+}
+
+
+.radio__input[type="radio"]:disabled ~ .radio__control-mark {
+  opacity: 0.3;
+}
+
+.radio__input[type="radio"]:disabled ~ .radio__control-label {
+  opacity: 0.3;
+}

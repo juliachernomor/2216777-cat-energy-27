@@ -295,6 +295,7 @@
   display: grid;
   grid-template-columns: var(--cat-progress-mobile) 4px 1fr;
   grid-template-rows: 256px;
+  background-color: none;
 
   &::after {
     content: "";
@@ -304,9 +305,46 @@
     width: 4px;
     height: 256px;
     background-color: #666666;
+    z-index:0;
+    cursor:pointer;
+  }
+
+  &:hover::after {
+    background-color: $basic-green;
+  }
+
+  &:active::after {
+    background-color: $basic-green2;
   }
 }
 
+.example__button {
+    position: absolute;
+    content: "";
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 2px solid $special-gray3;
+    background-color: $white;
+    color: $special-gray3; 
+    top: 40%;
+    right: 42.2%;
+    z-index:999999999;
+    cursor:pointer;
+}
+
+.example__list:hover > .example__button {
+  color: $basic-green;
+  border: 2px solid $basic-green;
+}
+
+.example__list:active> .example__button {
+  color: $basic-green2;
+  border: 2px solid $basic-green2;
+}
 
 @media (min-width: $tablet-width) {
   .example__list {
@@ -382,22 +420,9 @@
   }
 }
 
-.example__button {
-  position: absolute;
-  content: "";
-  width: 40px;
-  height: 40px;
-  background-image: url("../img/svg/stack/stack.svg#thumb");
-  background-color: $white;
-  border-radius: 100%;
-  top: 37%;
-  left: 44%;
-  z-index: 5;
-}
-
 @media (min-width: $tablet-width) {
   .example__button {
-    top: 37%;
-    left: 46.5%;
+    top: 45%;
+    left: 46%;
   }
 }

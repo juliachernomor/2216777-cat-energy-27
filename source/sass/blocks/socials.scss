@@ -25,3 +25,21 @@
     border: none;
   }
 }
+
+.socials__link--vkontakte,
+.socials__link--telegram,
+.socials__link--youtube {
+  color: $special-gray3;
+}
+
+.socials__link--vkontakte:hover,
+.socials__link--telegram:hover,
+.socials__link--youtube:hover {
+  color: $basic-green;
+}
+
+.socials__link--vkontakte:active,
+.socials__link--telegram:active,
+.socials__link--youtube:active {
+  opacity: 0.3;
+}

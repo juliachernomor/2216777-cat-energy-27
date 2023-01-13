@@ -12,9 +12,25 @@
   color: $special-dark-gray;
 }
 
+.copyright svg {
+  fill: $special-gray3;
+}
+
+.copyright:hover svg {
+  fill: $basic-green;
+}
+
+.copyright:active {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .copyright {
     width: 163px;
     padding: 0;
   }
 }
+
+
+
+

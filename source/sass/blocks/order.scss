@@ -19,6 +19,16 @@
   cursor: pointer;
 }
 
+
+.order:hover {
+  background-color: #5eaa2f;
+}
+
+.order:active {
+  background-color: #5eaa2f;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 @media (min-width: $tablet-width) {
   .order {
     padding: 9px 93px;
@@ -40,6 +50,16 @@
 
 .order--background {
   background-color: $special-white;
+}
+
+
+.order--background:hover {
+  background-color: $special-gray2;
+}
+
+.order--background:active {
+  background-color: $special-gray2;
+  color: rgba(68, 68, 68, 0.3);
 }
 
 .order--color {
