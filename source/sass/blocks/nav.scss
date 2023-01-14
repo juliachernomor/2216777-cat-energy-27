@@ -17,7 +17,7 @@
 @media (min-width: $desktop-width) {
   .nav {
     width: 478px;
-    height: 40px;
+    min-height: 40px;
     padding: 37px 110px 42px  132px;
     margin: 0;
     font-family: "Oswald", sans-serif;

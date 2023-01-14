@@ -2,7 +2,6 @@
   position: relative;
   display: grid;
   grid-template-columns: 140px 140px;
-  grid-template-rows: 74px 70px 40px;
   box-sizing: border-box;
   padding: 0 0 25px 0;
 }
@@ -23,7 +22,7 @@
   .card {
     display: flex;
     flex-direction: column;
-    height: 430px;
+    min-height: 430px;
     gap: 0;
     padding: 0 36px 49px 36px;
     background-color: $special-white;
@@ -32,7 +31,6 @@
 
 @media (min-width: $tablet-width) {
   .card:last-child {
-    margin-bottom: 68px;
     background-color: $white;
     border: 1px solid $gray;
   }
@@ -40,7 +38,7 @@
 
 @media (min-width: $desktop-width) {
   .card {
-    height: 431px;
+    min-height: 431px;
     gap: 0;
     padding: 0 30px 40px 35px;
     background-color: $gray;
@@ -50,7 +48,6 @@
 
 @media (min-width: $desktop-width) {
   .card:last-child {
-    margin-bottom: 75px;
     background-color: $white;
     border: 1px solid $gray;
   }
@@ -61,7 +58,7 @@
   grid-column: 1/2;
   grid-row: 1/3;
   padding-top: 33px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 @media (min-width: $tablet-width) {
@@ -144,6 +141,7 @@
     width: 316px;
     text-align: left;
     line-height: 20px;
+    padding-top: 0;
   }
 }
 
@@ -151,6 +149,7 @@
   .card__title {
     width: 145px;
     line-height: 21px;
+    padding-top: 0;
   }
 }
 
@@ -159,7 +158,7 @@
     grid-column: 1/2;
     width: 324px;
     text-align: left;
-    margin: 0;
+    margin: auto 0;
   }
 }
 
@@ -169,8 +168,10 @@
   grid-row: 2/3;
   position: relative;
   display: grid;
-  grid-template-columns: 70px 70px;
-  grid-template-rows: 16px 16px 16px;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 20px;
+  margin-bottom: 9px;
+  word-break: break-word;
   width: 140px;
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -180,17 +181,19 @@
 }
 
 .card__item--grid {
-  grid-template-rows: 16px;
   grid-template-columns: 140px 140px;
 }
 
 @media (min-width: $tablet-width) {
   .card__item {
+    width: 252px;
     margin-bottom: 32px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card__item {
+    width: 180px;
   }
 }
 
@@ -201,7 +204,7 @@
 @media (min-width: $tablet-width) {
   .card__term {
     position: relative;
-    width: 126px;
+    width: 116px;
     margin: 0;
     margin-bottom: 9px;
     border-bottom: $gray;
@@ -222,7 +225,6 @@
   .card__term--modify {
     width: 225px;
     text-align: right;
-    margin: auto;
 
     &::after {
       display: none;
@@ -232,7 +234,7 @@
 
 @media (min-width: $desktop-width) {
   .card__term {
-    width: 90px;
+    width: 80px;
 
     &::after {
       width: 169px;
@@ -244,6 +246,9 @@
   .card__term--modify {
     width: 206px;
     text-align: left;
+    display: flex;
+    align-items: center;
+    margin: auto 0;
   }
 }
 
@@ -256,7 +261,7 @@
   .card__description {
     display: flex;
     justify-content: end;
-    width: 126px;
+    width: 116px;
     margin: 0;
     margin-bottom: 9px;
   }
@@ -264,7 +269,7 @@
 
 @media (min-width: $desktop-width) {
   .card__description {
-    width: 90px;
+    width: 80px;
   }
 }
 
@@ -404,7 +409,7 @@
     grid-template-columns: 316px 316px;
     grid-template-rows: none;
     min-width: 704px;
-    height: 139px;
+    min-height: 139px;
     margin: 0;
     padding: 26px 38px 28px 38px;
     box-sizing: border-box;
@@ -426,7 +431,7 @@
     grid-template-columns: 324px 328px 244px;
     grid-template-rows: none;
     width: 896px;
-    height: 72px;
+    min-height: 72px;
     padding: 15px 0 17px 0;
     box-sizing: border-box;
     border-top: 1px solid $gray;
@@ -451,10 +456,10 @@
     grid-row: 1/2;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: start;
     flex-wrap: nowrap;
     width: 316px;
-    margin: auto;
+    margin: 0;
   }
 
   .card__item--intends::after {
@@ -467,8 +472,8 @@
     grid-column: 2/3;
     width: 328px;
     justify-content: space-between;
-    align-items: center;
-    margin-top: auto 0;
+    align-items: start;
+    margin: auto 0;
   }
 }
 
@@ -492,8 +497,9 @@
 @media (min-width: $desktop-width) {
   .card__description--location {
     display: flex;
+    align-items: center;
     justify-content: center;
     width: 122px;
-    margin: 0;
+    margin: auto 0;
   }
 }

@@ -8,17 +8,28 @@
 
 .radio__control-label {
   @include font-oswald-small-fsize16;
-  margin: 10px  0 20px 35px;
+  display: block;
+  margin: 10px  0 20px 45px;
   text-transform: uppercase;
   color: $special-black2;
 }
 
 @media (min-width: $tablet-width) {
   .radio__control-label {
-    margin: 88px;
-    margin-left: 60px;
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .radio:last-child > .radio__label > .radio__control-label {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .radio:first-child > .radio__label > .radio__control-label {
+    margin-top: 0;
   }
 }
 

@@ -1,6 +1,7 @@
 .contacts {
   display: grid;
-  grid-template-columns: 139px 139px;
+  grid-template-columns: 119px 1fr;
+  column-gap: 20px;
   width: 280px;
   margin: 0 auto;
   padding: 26px 20px;
@@ -33,6 +34,7 @@
 
 .contacts__welcome-title {
   @include ziro-intends;
+  margin: auto;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -46,6 +48,7 @@
     width: 172px;
     font-size: 20px;
     line-height: 26px;
+    margin: 0;
   }
 }
 
@@ -68,6 +71,8 @@
   .contacts__address {
     width: 160px;
     font-size: 16px;
+    margin: 0;
+    text-align: right;
   }
 }
 

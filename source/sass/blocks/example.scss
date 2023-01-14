@@ -12,10 +12,11 @@
     background-color: $white;
     border-top: 1px solid #e6e6e6;
 
+
     &::before {
       position: absolute;
       content: "";
-      top: 619px;
+      top: calc(100% - 462px);
       left: 50%;
       transform: translateX(-50%);
       display: block;
@@ -34,9 +35,7 @@
     border: none;
 
     &::before {
-      position: absolute;
-      content: "";
-      top: 212px;
+      display: none;
     }
   }
 }
@@ -66,26 +65,6 @@
   }
 }
 
-.example__wrapper-desktop-color {
-  min-width: 320px;
-  width: 100%;
-}
-
-@media (min-width: $tablet-width) {
-  .example__wrapper-desktop-color {
-    min-width: 768px;
-    width: 100%;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .example__wrapper-desktop-color {
-    min-width: 1440px;
-    width: 100%;
-    background-color: $gray;
-  }
-}
-
 .example__wrapper-desktop {
   min-width: 320px;
   width: 100%;
@@ -99,6 +78,19 @@
     width: 1220px;
     margin: 0 auto;
     padding: 0 110px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: calc(100% - 462px);
+      left: 50%;
+      transform: translateX(-50%);
+      display: block;
+      width: 100vw;
+      height: 462px;
+      background-color: $gray;
+      z-index: 1;
+    }
   }
 }
 
@@ -179,6 +171,7 @@
   color: $black;
   border: 1px solid $special-gray;
   border-radius: 3px;
+  word-break: break-word;
 }
 
 @media (min-width: $tablet-width) {
@@ -276,8 +269,8 @@
   .example__container {
     position: relative;
     width: 560px;
-    min-height: 660px;
-    margin: 0 auto 0 auto;
+    min-height: 512px;
+    margin: 0 auto 101px auto;
     padding: 0;
   }
 }
@@ -285,7 +278,7 @@
 @media (min-width: $desktop-width) {
   .example__container {
     min-height: 597px;
-    margin-top: -135px;
+    margin: -135px 0 0 0;
   }
 }
 
@@ -305,8 +298,8 @@
     width: 4px;
     height: 256px;
     background-color: #666666;
-    z-index:0;
-    cursor:pointer;
+    z-index: 0;
+    cursor: pointer;
   }
 
   &:hover::after {
@@ -319,21 +312,21 @@
 }
 
 .example__button {
-    position: absolute;
-    content: "";
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    border: 2px solid $special-gray3;
-    background-color: $white;
-    color: $special-gray3; 
-    top: 40%;
-    right: 42.2%;
-    z-index:999999999;
-    cursor:pointer;
+  position: absolute;
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 2px solid $special-gray3;
+  background-color: $white;
+  color: $special-gray3;
+  top: 40%;
+  right: 42.2%;
+  z-index: 999999999;
+  cursor: pointer;
 }
 
 .example__list:hover > .example__button {
@@ -341,7 +334,7 @@
   border: 2px solid $basic-green;
 }
 
-.example__list:active> .example__button {
+.example__list:active > .example__button {
   color: $basic-green2;
   border: 2px solid $basic-green2;
 }
@@ -416,7 +409,7 @@
 
 @media (min-width: $desktop-width) {
   .example__food-costs {
-    margin-right: 70px;
+    margin: 0 70px 75px 0;
   }
 }
 

@@ -79,17 +79,17 @@
   .additional-catalog__title {
     width: 706px;
     margin: 0 auto 80px auto;
-    padding: 0 30px;
+    padding: 68px 0 0 30px;
     font-size: 36px;
     line-height: 36px;
     border: none;
 
     &::after {
-      left: calc(100% - 300px);
+      left: calc(100% + 300px);
     }
 
     &::before {
-      right: calc(100% + 0px);
+      right: calc(100% - 0px);
     }
   }
 }
@@ -98,7 +98,7 @@
   .additional-catalog__title {
     width: 1220px;
     margin-bottom: 81px;
-    padding: 0;
+    padding-top: 75px;
 
     &::after {
       left: calc(100% - 845px);

@@ -20,28 +20,9 @@
     padding: 0;
     margin: 0 auto;
     margin-bottom: 82px;
-
-    &::after {
-      position: absolute;
-      content: "";
-      top: -26%;
-      left: 50%;
-      min-width: 1440px;
-      width: 100vh;
-      height: 696px;
-      background-image: url("../img/nutrition-cat-desktop.jpg");
-      background-repeat: no-repeat;
-      background-position: left;
-      background-size: 1044px 696px;
-      background-color: rgb(97, 164, 57);
-      overflow: hidden;
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/nutrition-cat-desktop@2x.jpg");
-      }
-    }
   }
 }
+
 
 .nutrition__color-wrapper {
   width: 100%;
@@ -71,13 +52,13 @@
 
 .nutrition__text-wrapper {
   width: 320px;
-  height: 302px;
+  min-height: 302px;
   margin: 0 auto;
   font-family: "Oswald", sans-serif;
   background-image: url("../img/nutrition-cat-mobile.png");
   background-repeat: no-repeat;
   background-size: 320px 302px;
-  background-position: center;
+  background-position: bottom;
   color: $white;
 
   @media (min-resolution: 2dppx) {
@@ -120,7 +101,7 @@
     justify-content: start;
     width: 1060px;
     padding: 0 190px;
-    margin: 36px auto 0 auto;
+    margin: 0 auto 0 auto;
   }
 }
 
@@ -150,7 +131,8 @@
 }
 
 .nutrition__description {
-  margin: 0 60px 29px 60px;
+  margin: 0 60px 0 60px;
+  padding-bottom: 164px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -161,7 +143,8 @@
 
 @media (min-width: $tablet-width) {
   .nutrition__description {
-    margin: 0 336px 20px 89px;
+    padding-bottom: 49px;
+    margin: 0 336px 0 89px;
     font-size: 20px;
     line-height: 20px;
     color: $black;
@@ -170,6 +153,7 @@
 
 @media (min-width: $desktop-width) {
   .nutrition__description {
+    padding-bottom: 0;
     display: block;
     margin: 0 116px 52px 80px;
     text-align: left;
@@ -199,7 +183,7 @@
     height: 499px;
     margin: 0;
     margin-left: 125px;
-    margin-top: -360px;
+    margin-top: -310px;
   }
 }
 

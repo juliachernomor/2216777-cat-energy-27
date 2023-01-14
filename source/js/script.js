@@ -1,3 +1,4 @@
+// меню
 let navMain = document.querySelector('.nav');
 let navToggle = document.querySelector('.nav__toggle');
 

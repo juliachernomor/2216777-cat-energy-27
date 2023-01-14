@@ -335,8 +335,8 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 626px;
-    padding: 0 71px;
+    width: 631px;
+    padding: 0 70px 0 67px;
     margin: 0;
   }
 }
@@ -362,7 +362,8 @@
 
 @media (min-width: $tablet-width) {
   .form__note {
-    margin: 0 102px  0 64px;
+    width: 284px;
+    margin: 0 0 0 64px;
     padding: 0;
   }
 }
@@ -375,8 +376,8 @@
 
 @media (min-width: $tablet-width) {
   .form__fieldset--intends1 {
-    width: 630px;
-    margin-bottom: 75px;
+    width: 628px;
+    min-height: 200px;
   }
 }
 
@@ -407,6 +408,13 @@
     width: 1220px;
     padding: 0 110px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form__radio-wrapper {
+    width: 628px;
+    min-height: 200px;
   }
 }
 
