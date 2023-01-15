@@ -2,7 +2,6 @@
   @include ziro-intends;
   position: relative;
   width: 320px;
-  margin: 0 auto;
   text-align: center;
   list-style-type: none;
 }
@@ -11,14 +10,15 @@
   .site-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 33px;
+    gap: 35px;
     width: 440px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .site-list {
-    width: 478px;
+    width: 480px;
+    gap: 35.5px;
   }
 }
 
@@ -72,7 +72,7 @@
   }
 
   .site-list__item--form {
-    width: 153px;
+    width: 152px;
   }
 }
 
@@ -138,7 +138,7 @@
     &::after {
       position: absolute;
       content: "";
-      top: calc(100% + 10px);
+      top: calc(100% + 7px);
       left: 0;
       height: 2px;
       background-color: $basic-green;
@@ -174,7 +174,7 @@
   .site-list__link--current1::after {
     position: absolute;
     content: "";
-    top: calc(100% + 10px);
+    top: calc(100% + 6px);
     left: 0;
     height: 2px;
     background-color: $white;

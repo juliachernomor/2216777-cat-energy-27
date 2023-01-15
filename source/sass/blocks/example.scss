@@ -44,7 +44,7 @@
   @include font-oswald-big;
   width: 280px;
   margin: 0 auto 40px auto;
-  padding: 25px 20px 0 20px;
+  padding: 25px 20px 0 21px;
 }
 
 @media (min-width: $tablet-width) {
@@ -117,17 +117,23 @@
     display: flex;
     flex-direction: column;
     width: 436px;
+    row-gap: 0;
     margin-bottom: 0;
     padding: 70px 0 0 0;
     z-index: 1;
   }
 }
 
-.example__description {
-  @include font-lato;
-  width: 280px;
-  margin: 0;
-  margin-bottom: 20px;
+@media (max-width: $mobile-width-only) {
+  .example__description {
+    @include font-lato;
+    width: 280px;
+    margin: 0;
+  }
+
+    br {
+  display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -138,11 +144,16 @@
     font-size: 16px;
     line-height: 24px;
   }
+
+  br {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .example__description {
-    width: 436px;
+    width: 445px;
+    margin-bottom: 54px;
   }
 }
 
@@ -163,14 +174,14 @@
 
 @media (min-width: $desktop-width) {
   .example__item-container {
-    row-gap: 14px;
+    row-gap: 0;
+    margin-bottom: 50px;
   }
 }
 
 .example__term {
-  width: 39px;
-  padding: 14px 42px 18px 42px;
-  margin-bottom: 34px;
+  padding: 13px 42px 0 43px;
+  margin: 20px 0 32px 0;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -178,7 +189,12 @@
   color: $black;
   border: 1px solid $special-gray;
   border-radius: 3px;
-  word-break: break-word;
+  text-transform: uppercase;
+}
+
+.example__term--padding {
+  width: 82px;
+  padding: 13px 19px 18px 21px;
 }
 
 @media (min-width: $tablet-width) {
@@ -196,15 +212,10 @@
   .example__term {
     width: 48px;
     padding: 15px 57px;
-    margin: 0;
+    margin-top: 15px;
     font-size: 30px;
     line-height: 37px;
   }
-}
-
-.example__term--padding {
-  width: 82px;
-  padding: 14px 21px 18px 21px;
 }
 
 @media (min-width: $tablet-width) {
@@ -229,8 +240,7 @@
 
 .example__total-cost {
   width: 188px;
-  padding: 0 36px;
-  margin: 0 auto 20px auto;
+  margin: 0 45px 20px 47px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -241,9 +251,10 @@
 
 @media (min-width: $tablet-width) {
   .example__total-cost {
+    display: block;
     width: 174px;
     padding: 0;
-    margin: auto 0;
+    margin: 12px 0 0 0;
     font-size: 20px;
     text-align: right;
   }
@@ -256,8 +267,8 @@
     flex-wrap: wrap;
     width: 366px;
     text-align: center;
-    row-gap: 14px;
     margin-bottom: 75px;
+    margin-left: 0;
   }
 }
 
@@ -328,14 +339,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   border-radius: 100%;
   border: 2px solid $special-gray3;
   background-color: $white;
   color: $special-gray3;
-  top: 40%;
-  right: 42.2%;
+  top: 42%;
+  right: 42%;
   z-index: 999999999;
   cursor: pointer;
 }
@@ -418,15 +429,30 @@
   height: 100%;
 }
 
+@media (min-width: $tablet-width) {
+  .example__cost {
+    display: block;
+    margin: 8px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__cost {
+    display: block;
+    margin: 0;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .example__food-costs {
-    margin: 0 70px 0 0;
+    width: 174px;
+    margin: 0 63px 0 0;
   }
 }
 
 @media (min-width: $tablet-width) {
   .example__button {
-    top: 45%;
-    left: 46%;
+    top: 46.5%;
+    left: 46.5%;
   }
 }

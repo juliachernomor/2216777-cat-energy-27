@@ -7,7 +7,7 @@
 
 @media (min-width: $tablet-width) {
   .nutrition {
-    min-height: 830px;
+    min-height: 808px;
     padding: 0 30px;
   }
 }
@@ -19,10 +19,9 @@
     min-height: 550px;
     padding: 0;
     margin: 0 auto;
-    margin-bottom: 82px;
+    margin-bottom: 75px;
   }
 }
-
 
 .nutrition__color-wrapper {
   width: 100%;
@@ -90,7 +89,7 @@
   .nutrition__image-wrapper {
     position: relative;
     width: 708px;
-    margin: 0 auto;
+    margin: 0;
   }
 }
 
@@ -107,14 +106,14 @@
 
 .nutrition__title {
   @include font-oswald-medium;
-  padding-top: 20px;
-  margin: 0 35px 25px 35px;
+  padding-top: 26px;
+  margin: 0 35px 25px 37px;
 }
 
 @media (min-width: $tablet-width) {
   .nutrition__title {
-    padding-top: 32px;
-    margin: 0 207px 41px 87px;
+    padding: 0;
+    margin: 0 207px 41px 58px;
     font-size: 60px;
     line-height: 60px;
     text-align: left;
@@ -125,7 +124,7 @@
 @media (min-width: $desktop-width) {
   .nutrition__title {
     width: 414px;
-    margin: 82px 116px 40px 80px;
+    margin: 72px 116px 40px 80px;
     padding: 0;
   }
 }
@@ -144,7 +143,7 @@
 @media (min-width: $tablet-width) {
   .nutrition__description {
     padding-bottom: 49px;
-    margin: 0 336px 0 89px;
+    margin: 0 336px 0 30px;
     font-size: 20px;
     line-height: 20px;
     color: $black;
@@ -164,15 +163,15 @@
   display: block;
   width: 280px;
   height: 270px;
-  margin: -135px auto 3px auto;
+  margin: -135px auto 2px auto;
   padding: 0;
 }
 
 @media (min-width: $tablet-width) {
   .nutrition__picture {
     width: 708px;
-    height: 609px;
-    margin: -70px auto 3px auto;
+    height: 608px;
+    margin: -50px auto 0 auto;
   }
 }
 
@@ -182,11 +181,11 @@
     width: 552px;
     height: 499px;
     margin: 0;
-    margin-left: 125px;
-    margin-top: -310px;
+    margin-left: 124px;
+    margin-top: -314px;
   }
 }
 
 .nutrition__link {
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
 }

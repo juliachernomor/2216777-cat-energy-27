@@ -37,6 +37,13 @@
 }
 
 @media (min-width: $tablet-width) {
+  .footer__socials {
+    margin-left: 5px;
+    margin-right: 126px;
+  }
+}
+
+@media (min-width: $tablet-width) {
   .footer__wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -46,7 +53,7 @@
     width: 708px;
     min-height: 34px;
     margin: 0 auto;
-    padding: 61px 30px 61px 30px;
+    padding: 57px 30px 61px 30px;
   }
 }
 
@@ -54,7 +61,7 @@
   .footer__wrapper {
     width: 1220px;
     margin: 0 auto;
-    padding: 57px 110px 58px 110px;
+    padding: 67px 110px 58px 110px;
   }
 }
 
@@ -74,7 +81,7 @@
   .footer__logo {
     display: inline-block;
     width: 128px;
-    margin-right: 414px;
+    margin-right: 412px;
   }
 }
 
