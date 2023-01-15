@@ -82,7 +82,9 @@
 @media (min-width: $desktop-width) {
   .group--modify {
     display: grid;
-    grid-template-columns: 569px 569px;
+    width: 1220px;
+    grid-template-columns: 571px 571px;
+    row-gap: 30px;
     column-gap: 78px;
     padding: 0 110px;
   }

@@ -337,7 +337,7 @@
     align-items: center;
     width: 631px;
     padding: 0 70px 0 67px;
-    margin: 0;
+    margin-bottom: 72px;
   }
 }
 
@@ -423,6 +423,12 @@
     width: 570px;
     min-height: 200px;
     margin: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form__fieldset--modify {
+    margin-bottom: 0;
   }
 }
 

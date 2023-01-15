@@ -8,9 +8,10 @@
   .nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     width: 440px;
     margin: auto 0;
+    padding-top: 18px;
   }
 }
 

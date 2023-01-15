@@ -23,6 +23,7 @@
   .additional-catalog__wrapper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 1220px;
     padding: 0 110px;
     margin: 0 auto;
@@ -135,8 +136,10 @@
     width: 896px;
     min-height: 288px;
     margin: 0;
+    margin-bottom: 86px;
     padding: 0;
     border: none;
+
   }
 }
 

@@ -181,7 +181,7 @@
 }
 
 .card__item--grid {
-  grid-template-columns: 140px 140px;
+  grid-template-columns: 130px 130px;
 }
 
 @media (min-width: $tablet-width) {
@@ -455,9 +455,10 @@
     grid-column: 2/3;
     grid-row: 1/2;
     display: flex;
-    justify-content: flex-end;
+    gap: 0;
+    justify-content: start;
     align-items: start;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     width: 316px;
     margin: 0;
   }
@@ -471,6 +472,7 @@
   .card__item--intends {
     grid-column: 2/3;
     width: 328px;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: start;
     margin: auto 0;

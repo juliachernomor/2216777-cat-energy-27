@@ -147,3 +147,9 @@
     margin: auto;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .field--modify {
+    width: 571px;
+  }
+}

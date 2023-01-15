@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   width: 300px;
   min-height: 66px;
-  margin: 0 auto;
+  margin: 0  auto;
   padding-left: 20px;
   background-color: $white;
 }
@@ -13,7 +13,8 @@
   .header {
     width: 708px;
     min-height: 52px;
-    padding: 25px 30px 42px 30px;
+    align-items: start;
+    padding: 0 30px 42px 30px;
   }
 }
 
@@ -68,6 +69,7 @@
     width: 174px;
     min-height: 52px;
     margin: 0;
+    flex-wrap: wrap;
   }
 }
 
