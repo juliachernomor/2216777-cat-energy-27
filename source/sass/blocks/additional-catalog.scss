@@ -6,7 +6,7 @@
 
 @media (min-width: $tablet-width) {
   .additional-catalog {
-    width: 768px;
+    min-width: 768px;
     width: 100%;
     border: none;
   }
