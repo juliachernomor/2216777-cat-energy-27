@@ -35,7 +35,7 @@
   &::after {
     position: absolute;
     content: "";
-    top: calc(100% - 220px);
+    top: calc(100% - 231px);
     left: calc(100% - 180px);
     width: 78px;
     height: 80px;
@@ -62,7 +62,7 @@
     }
 
     &::after {
-      top: calc(100% - 139px);
+      top: calc(100% - 143px);
       left: calc(100% - 630px);
       width: 80px;
       height: 82px;
@@ -109,6 +109,7 @@
   .gift__description {
     display: block;
     width: 161px;
+    text-align: left;
     padding: 71px 124px 69px 422px;
   }
 }
