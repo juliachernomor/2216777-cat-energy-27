@@ -25,22 +25,22 @@
   margin: 0;
 }
 
+@media (min-width: $tablet-width) {
+  .footer__socials {
+    margin-left: 5px;
+    margin-right: 126px;
+  }
+}
+
 .footer__copyright {
   margin: 0;
 }
 
 .footer__wrapper {
   width: 280px;
-  margin: 0 auto;
   min-height: 236px;
+  margin: 0 auto;
   padding: 0 20px;
-}
-
-@media (min-width: $tablet-width) {
-  .footer__socials {
-    margin-left: 5px;
-    margin-right: 126px;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -53,7 +53,7 @@
     width: 708px;
     min-height: 34px;
     margin: 0 auto;
-    padding: 55px 30px 61px 30px;
+    padding: 57px 30px 61px 30px;
   }
 }
 

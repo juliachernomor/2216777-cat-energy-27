@@ -25,10 +25,10 @@
     top: 95px;
     left: 110px;
     width: 405px;
+    min-height: 86px;
     padding: 58px 80px 0 80px;
     margin: 0;
     background-color: $white;
-    min-height: 86px;
     z-index: 5;
   }
 }
@@ -36,11 +36,11 @@
 .contacts__welcome-title {
   @include ziro-intends;
   margin: auto;
+  margin-bottom: 26px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  margin-bottom: 26px;
   text-transform: uppercase;
   color: $special-black;
 }
@@ -48,9 +48,9 @@
 @media (min-width: $tablet-width) {
   .contacts__welcome-title {
     width: 172px;
+    margin: 6px 0  60px 0;
     font-size: 20px;
     line-height: 26px;
-    margin: 6px 0  60px 0;
   }
 }
 
@@ -63,19 +63,19 @@
 
 .contacts__address {
   @include ziro-intends;
+  margin-bottom: 26px;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  margin-bottom: 26px;
   color: $special-dark-gray;
 }
 
 @media (min-width: $tablet-width) {
   .contacts__address {
     width: 160px;
-    font-size: 16px;
     margin: 0;
+    font-size: 16px;
     text-align: right;
   }
 
@@ -86,14 +86,13 @@
   }
 }
 
-
 @media (min-width: $desktop-width) {
   .contacts__address {
     display: flex;
     flex-direction: column;
-    margin: 0;
     align-items: start;
     width: 157px;
+    margin: 0;
     text-align: left;
   }
 

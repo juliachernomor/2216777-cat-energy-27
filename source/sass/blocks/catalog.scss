@@ -62,23 +62,22 @@
 
 .catalog__list {
   @include ziro-intends;
-  width: 280px;
-  padding: 0 20px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
   list-style-type: none;
 }
 
 @media (min-width: $tablet-width) {
   .catalog__list {
-    width: 708px;
-    padding: 0 30px;
-    margin: 0 auto;
     display: grid;
     grid-template-columns: 324px 324px;
     gap: 141px  60px;
+    width: 708px;
+    padding: 0 30px;
   }
 }
 

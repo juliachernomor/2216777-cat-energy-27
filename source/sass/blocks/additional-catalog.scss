@@ -6,7 +6,7 @@
 
 @media (min-width: $tablet-width) {
   .additional-catalog {
-    min-width: 768px;
+    width: 768px;
     width: 100%;
     border: none;
   }
@@ -57,20 +57,20 @@
     position: absolute;
     content: "";
     top: 46%;
+    left: calc(100% - 53px);
     height: 2px;
     width: 100000%;
     background-color: $basic-green;
-    left: calc(100% - 53px);
   }
 
   &::before {
     position: absolute;
     content: "";
     top: 46%;
+    right: calc(100% + 0px);
     height: 2px;
     width: 100000%;
     background-color: $basic-green;
-    right: calc(100% + 0px);
   }
 }
 
@@ -121,7 +121,6 @@
   .additional-catalog__list {
     width: 708px;
     min-height: 556px;
-    padding: 0;
     margin: 0 auto 69px auto;
     box-sizing: border-box;
     border-left: 1px solid $gray;
@@ -136,9 +135,7 @@
     min-height: 288px;
     margin: 0;
     margin-bottom: 86px;
-    padding: 0;
     border: none;
-
   }
 }
 
@@ -150,6 +147,5 @@
 @media (min-width: $tablet-width) {
   .additional-catalog__gift {
     width: 768px;
-    margin: 0 auto;
   }
 }

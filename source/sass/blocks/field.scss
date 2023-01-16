@@ -16,7 +16,6 @@
 @media (min-width: $desktop-width) {
   .field {
     width: 569px;
-    padding: 0;
   }
 }
 
@@ -26,7 +25,6 @@
   margin: 13px 0 14px 0;
   text-transform: uppercase;
   color: $special-dark-gray;
-
 }
 
 @media (min-width: $tablet-width) {
@@ -147,8 +145,8 @@
 .field__input--intends {
   margin-left: 10px;
   margin-bottom: 13px;
-  white-space: nowrap;
   padding: 13px 50px 14px 15px;
+  white-space: nowrap;
 }
 
 @media (min-width: $tablet-width) {
@@ -170,4 +168,3 @@
     width: 571px;
   }
 }
-

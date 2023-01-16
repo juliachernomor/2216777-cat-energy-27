@@ -19,7 +19,6 @@
   cursor: pointer;
 }
 
-
 .order:hover {
   background-color: #5eaa2f;
 }
@@ -32,7 +31,7 @@
 @media (min-width: $tablet-width) {
   .order {
     width: 62px;
-    padding: 9px 93px;
+    padding: 10px 93px;
     margin-left: 3px;
   }
 }
@@ -51,7 +50,6 @@
   }
 }
 
-
 @media (min-width: $desktop-width) {
   .order--modify {
     width: 192px;
@@ -63,7 +61,6 @@
 .order--background {
   background-color: $special-white;
 }
-
 
 .order--background:hover {
   background-color: $special-gray2;
@@ -98,7 +95,7 @@
 @media (min-width: $tablet-width) {
   .order--form-intends {
     width: 282px;
-    height: 52px;
+    min-height: 52px;
     box-sizing: border-box;
     padding: 13px 45px;
     font-size: 20px;
@@ -109,7 +106,6 @@
 @media (min-width: $desktop-width) {
   .order--form-intends {
     width: 568px;
-    height: 52px;
     padding: 13px 188px;
     margin-right: 28px;
     margin-left: 2px;

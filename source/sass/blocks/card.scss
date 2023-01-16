@@ -39,7 +39,6 @@
 @media (min-width: $desktop-width) {
   .card {
     min-height: 431px;
-    gap: 0;
     padding: 0 30px 40px 35px;
     background-color: $gray;
     border: none;
@@ -125,7 +124,6 @@
 
 @media (min-width: $desktop-width) {
   .card__pic--big {
-    display: block;
     width: 172px;
     height: 196px;
     margin: -80px 4px 47px 4px;
@@ -158,6 +156,15 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .card__title {
+    width: 145px;
+    line-height: 21px;
+    padding-top: 0;
+    margin-bottom: 24px;
+  }
+}
+
 .card__title--intends {
   width: 170px;
   padding-top: 10px;
@@ -168,18 +175,9 @@
   .card__title--intends {
     grid-column: 1/2;
     width: 316px;
-    text-align: left;
+    padding-top: 0;
     line-height: 20px;
-    padding-top: 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .card__title {
-    width: 145px;
-    line-height: 21px;
-    padding-top: 0;
-    margin-bottom: 24px;
+    text-align: left;
   }
 }
 
@@ -194,15 +192,15 @@
 
 .card__item {
   @include ziro-intends;
-  grid-column: 2/3;
-  grid-row: 2/3;
   position: relative;
   display: grid;
+  grid-column: 2/3;
+  grid-row: 2/3;
   grid-template-columns: 1fr 1fr;
   column-gap: 20px;
+  width: 140px;
   margin-bottom: 21px;
   word-break: break-word;
-  width: 140px;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -217,7 +215,7 @@
 @media (min-width: $tablet-width) {
   .card__item {
     width: 250px;
-    margin-bottom: 27px;
+    margin-bottom: 26px;
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -257,27 +255,6 @@
   }
 }
 
-.card__term--modify {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
-}
-
-@media (min-width: $tablet-width) {
-  .card__term--modify {
-    width: 220px;
-    text-align: right;
-    font-size: 16px;
-    line-height: 20px;
-    margin-top: 3px;
-
-    &::after {
-      display: none;
-    }
-  }
-}
-
 @media (min-width: $desktop-width) {
   .card__term {
     width: 80px;
@@ -288,12 +265,33 @@
   }
 }
 
+.card__term--modify {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+@media (min-width: $tablet-width) {
+  .card__term--modify {
+    width: 220px;
+    margin-top: 3px;
+    text-align: right;
+    font-size: 16px;
+    line-height: 20px;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
 @media (min-width: $desktop-width) {
   .card__term--modify {
-    width: 206px;
-    text-align: left;
     display: flex;
     align-items: center;
+    width: 206px;
+    text-align: left;
     margin: auto 0;
   }
 }
@@ -519,10 +517,10 @@
 @media (min-width: $desktop-width) {
   .card__item--intends {
     grid-column: 2/3;
-    width: 328px;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: start;
+    width: 328px;
     margin: auto 0;
   }
 }

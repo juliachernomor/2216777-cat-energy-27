@@ -55,9 +55,9 @@
 @media (min-width: $tablet-width) {
   .group--checkbox {
     display: grid;
-    width: 630px;
     grid-template-columns: 1fr 1fr;
     gap: 14px 56px;
+    width: 630px;
     padding: 0 67px 0 70px;
     margin-bottom: 32px;
   }
@@ -86,10 +86,10 @@
 @media (min-width: $desktop-width) {
   .group--modify {
     display: grid;
-    width: 1220px;
     grid-template-columns: 571px 571px;
     row-gap: 30px;
     column-gap: 78px;
+    width: 1220px;
     padding: 0 110px;
   }
 }

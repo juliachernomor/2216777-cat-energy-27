@@ -132,7 +132,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .site-list__link--current {
+  .site-list__main {
     position: relative;
 
     &::after {
@@ -166,20 +166,20 @@
 }
 
 @media (min-width: $desktop-width) {
-  .site-list__link--current1 {
+  .site-list__main--current {
     position: relative;
     color: $white;
-  }
 
-  .site-list__link--current1::after {
-    position: absolute;
-    content: "";
-    top: calc(100% + 6px);
-    left: 0;
-    height: 2px;
-    background-color: $white;
-    width: 100%;
-    z-index: 2;
+    &::after {
+      position: absolute;
+      content: "";
+      top: calc(100% + 6px);
+      left: 0;
+      height: 2px;
+      background-color: $white;
+      width: 100%;
+      z-index: 2;
+    }
   }
 }
 
