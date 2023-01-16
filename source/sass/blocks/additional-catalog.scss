@@ -31,8 +31,19 @@
 }
 
 .additional-catalog__wrapper-title {
-  min-width: 320px;
-  width: 100%;
+  width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-catalog__wrapper-title {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-catalog__wrapper-title {
+    width: 1440px;
+  }
 }
 
 @media (min-width: $tablet-width) {
