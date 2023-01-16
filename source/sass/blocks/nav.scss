@@ -8,17 +8,18 @@
   .nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     width: 440px;
     margin: auto 0;
+    padding-top: 18px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .nav {
-    width: 478px;
-    height: 40px;
-    padding: 37px 110px 42px  132px;
+    width: 479px;
+    min-height: 40px;
+    padding: 69px 110px 42px 131px;
     margin: 0;
     font-family: "Oswald", sans-serif;
     font-weight: 400;
@@ -47,12 +48,20 @@
   .nav--closed .nav__toggle::before {
     content: "";
     position: absolute;
-    top: 21px;
-    left: 21px;
+    top: 22px;
+    left: 22px;
     width: 24px;
     height: 1.5px;
     background-color: $black;
     box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
+  }
+
+  .nav--closed .nav__toggle:hover::before {
+    opacity: 0.5;
+  }
+
+  .nav--closed .nav__toggle:active::before {
+    opacity: 0.3;
   }
 }
 
@@ -78,6 +87,16 @@
 
   &::after {
     transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    opacity: 0.5;
+  }
+
+  &:active::before,
+  &:active::after {
+    opacity: 0.3;
   }
 }
 

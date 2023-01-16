@@ -5,13 +5,6 @@
   list-style-type: none;
 }
 
-@media (min-width: $tablet-width) {
-  .group {
-    width: 630px;
-    padding: 0;
-  }
-}
-
 @media (min-width: $desktop-width) {
   .group {
     @include ziro-intends;
@@ -19,15 +12,16 @@
   }
 }
 
-.group--intends {
-  padding: 27px 0 25px 0;
+.group--radio {
+  padding: 17px 0 25px 0;
 }
 
 @media (min-width: $tablet-width) {
   .group--radio {
     width: 628px;
+    min-height: 150px;
     box-sizing: border-box;
-    padding: 25px 28px 25px 28px;
+    padding: 25px 28px 30px 28px;
     border: 1px solid $light-gray;
   }
 }
@@ -35,6 +29,7 @@
 @media (min-width: $desktop-width) {
   .group--radio {
     width: 569px;
+    min-height: 146px;
     box-sizing: border-box;
     padding: 25px 28px 25px 28px;
     border: 1px solid $light-gray;
@@ -60,10 +55,11 @@
 @media (min-width: $tablet-width) {
   .group--checkbox {
     display: grid;
-    grid-template-columns: 344px 287px;
-    row-gap: 32px;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px 56px;
+    width: 630px;
     padding: 0 67px 0 70px;
-    margin-bottom: 54px;
+    margin-bottom: 32px;
   }
 }
 
@@ -72,22 +68,28 @@
     grid-template-columns: 305px 305px 305px 305px;
     column-gap: 20px;
     padding: 0 110px;
-    margin-bottom: 61px;
+    margin-bottom: 40px;
   }
+}
+
+.group--modify {
+  padding-bottom: 8px;
 }
 
 @media (min-width: $tablet-width) {
   .group--modify {
     width: 630px;
-    padding: 0 70px;
+    padding: 0 70px 0 70px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .group--modify {
     display: grid;
-    grid-template-columns: 569px 569px;
+    grid-template-columns: 571px 571px;
+    row-gap: 30px;
     column-gap: 78px;
+    width: 1220px;
     padding: 0 110px;
   }
 }

@@ -23,6 +23,7 @@
   .additional-catalog__wrapper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 1220px;
     padding: 0 110px;
     margin: 0 auto;
@@ -30,8 +31,19 @@
 }
 
 .additional-catalog__wrapper-title {
-  min-width: 320px;
-  width: 100%;
+  width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-catalog__wrapper-title {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-catalog__wrapper-title {
+    width: 1440px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -44,11 +56,9 @@
 
 .additional-catalog__title {
   position: relative;
-  display: block;
-  width: 320px;
+  width: 226px;
   margin: 0 auto;
-  padding: 25px 74px 36px 20px;
-  box-sizing: border-box;
+  padding: 23px 74px 36px 20px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -57,39 +67,41 @@
   &::after {
     position: absolute;
     content: "";
-    top: 50%;
+    top: 46%;
+    left: calc(100% - 53px);
     height: 2px;
     width: 100000%;
     background-color: $basic-green;
-    left: calc(100% - 54px);
   }
 
   &::before {
     position: absolute;
     content: "";
-    top: 50%;
+    top: 46%;
+    right: calc(100% + 0px);
     height: 2px;
     width: 100000%;
     background-color: $basic-green;
-    right: calc(100% + 0px);
   }
 }
 
 @media (min-width: $tablet-width) {
   .additional-catalog__title {
-    width: 706px;
-    margin: 0 auto 80px auto;
-    padding: 0 30px;
+    width: 339px;
+    margin: 66px 364px 80px 67px;
+    padding: 0;
     font-size: 36px;
     line-height: 36px;
     border: none;
 
     &::after {
-      left: calc(100% - 300px);
+      top: 50%;
+      left: calc(100% + 36px);
     }
 
     &::before {
-      right: calc(100% + 0px);
+      top: 50%;
+      right: calc(100% + 37px);
     }
   }
 }
@@ -97,8 +109,7 @@
 @media (min-width: $desktop-width) {
   .additional-catalog__title {
     width: 1220px;
-    margin-bottom: 81px;
-    padding: 0;
+    margin: 76px 0 81px 110px;
 
     &::after {
       left: calc(100% - 845px);
@@ -121,7 +132,6 @@
   .additional-catalog__list {
     width: 708px;
     min-height: 556px;
-    padding: 0;
     margin: 0 auto 69px auto;
     box-sizing: border-box;
     border-left: 1px solid $gray;
@@ -135,7 +145,7 @@
     width: 896px;
     min-height: 288px;
     margin: 0;
-    padding: 0;
+    margin-bottom: 86px;
     border: none;
   }
 }
@@ -148,6 +158,5 @@
 @media (min-width: $tablet-width) {
   .additional-catalog__gift {
     width: 768px;
-    margin: 0 auto;
   }
 }

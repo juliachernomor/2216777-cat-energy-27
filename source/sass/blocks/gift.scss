@@ -26,6 +26,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  background-color: $basic-green;
 
   @media (min-resolution: 2dppx) {
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-gift-mobdesk@2x.png");
@@ -34,7 +35,7 @@
   &::after {
     position: absolute;
     content: "";
-    top: calc(100% - 220px);
+    top: calc(100% - 231px);
     left: calc(100% - 180px);
     width: 78px;
     height: 80px;
@@ -61,7 +62,7 @@
     }
 
     &::after {
-      top: calc(100% - 139px);
+      top: calc(100% - 143px);
       left: calc(100% - 630px);
       width: 80px;
       height: 82px;
@@ -73,7 +74,7 @@
   .gift__wrapper {
     width: 245px;
     height: 289px;
-    margin: 0;
+    margin: auto;
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-gift-mobdeskt.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -108,6 +109,7 @@
   .gift__description {
     display: block;
     width: 161px;
+    text-align: left;
     padding: 71px 124px 69px 422px;
   }
 }
