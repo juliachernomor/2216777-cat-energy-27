@@ -13,10 +13,17 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .field {
+    width: 569px;
+    padding: 0;
+  }
+}
+
 .field__label {
   @include font-oswald-small-fsize16;
   max-width: 94px;
-  margin: 13px 0 28px 0;
+  margin: 13px 0 14px 0;
   text-transform: uppercase;
   color: $special-dark-gray;
 
@@ -25,7 +32,7 @@
 @media (min-width: $tablet-width) {
   .field__label {
     max-width: 117px;
-    margin: 10px 0 32px 0;
+    margin: 11px 0 11px 2px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -42,8 +49,8 @@
   flex-grow: 1;
   max-height: 45px;
   width: 100%;
-  padding: 14px 52px  13px 20px;
-  margin: auto 0 auto 13px;
+  padding: 14px 52px  11px 20px;
+  margin: 0 0 14px 14px;
   text-transform: uppercase;
   color: $special-dark-gray;
   border: 1px solid $light-gray;
@@ -67,10 +74,16 @@
     flex-grow: 1;
     max-height: 52px;
     width: 100%;
-    padding: 11px 20px  11px 20px;
-    margin: auto 0 auto 13px;
+    padding: 11px 20px 11px 19px;
+    margin: 0 0 18px 13px;
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field__input {
+    box-sizing: border-box;
   }
 }
 
@@ -83,8 +96,8 @@
   background-color: $black;
   background-repeat: no-repeat;
   background-size: 20px 20px;
-  left: calc(100% - 32px);
-  top: 47.5%;
+  left: calc(100% - 36px);
+  top: 20%;
 }
 
 .field__input:focus + .field__email {
@@ -99,7 +112,7 @@
 @media (min-width: $tablet-width) {
   .field__email {
     left: calc(100% - 36px);
-    top: 47.5%;
+    top: 23%;
   }
 }
 
@@ -112,8 +125,8 @@
   background-color: $black;
   background-repeat: no-repeat;
   background-size: 20px 20px;
-  left: calc(100% - 32px);
-  top: 47.5%;
+  left: calc(100% - 36px);
+  top: 20%;
 }
 
 .field__input:focus + .field__phone {
@@ -127,24 +140,28 @@
 @media (min-width: $tablet-width) {
   .field__phone {
     left: calc(100% - 36px);
-    top: 47.5%;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .field__phone {
-    left: calc(100% - 36px);
-    top: 47.5%;
+    top: 20%;
   }
 }
 
 .field__input--intends {
   margin-left: 10px;
+  margin-bottom: 13px;
+  white-space: nowrap;
+  padding: 13px 50px 14px 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .field__input--intends {
+    margin-left: 20px;
+    margin-bottom: 13px;
+    padding: 12px 50px 14px 19px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .field__input--intends {
-    margin: auto;
+    margin-left: 10px;
   }
 }
 
@@ -153,3 +170,4 @@
     width: 571px;
   }
 }
+

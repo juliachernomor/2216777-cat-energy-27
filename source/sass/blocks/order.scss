@@ -90,12 +90,9 @@
   }
 }
 
-.order--form-width {
-  width: 100%;
-}
-
 .order--form-intends {
-  padding: 7px 44px;
+  width: 280px;
+  padding: 10px 44px;
 }
 
 @media (min-width: $tablet-width) {
@@ -114,6 +111,7 @@
     width: 568px;
     height: 52px;
     padding: 13px 188px;
-    margin-right: 84px;
+    margin-right: 28px;
+    margin-left: 2px;
   }
 }

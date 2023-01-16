@@ -12,8 +12,8 @@
   }
 }
 
-.group--intends {
-  padding: 27px 0 25px 0;
+.group--radio {
+  padding: 17px 0 25px 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -21,7 +21,7 @@
     width: 628px;
     min-height: 150px;
     box-sizing: border-box;
-    padding: 25px 28px 25px 28px;
+    padding: 25px 28px 30px 28px;
     border: 1px solid $light-gray;
   }
 }
@@ -57,9 +57,9 @@
     display: grid;
     width: 630px;
     grid-template-columns: 1fr 1fr;
-    gap: 32px 56px;
+    gap: 14px 56px;
     padding: 0 67px 0 70px;
-    margin-bottom: 54px;
+    margin-bottom: 32px;
   }
 }
 
@@ -68,14 +68,18 @@
     grid-template-columns: 305px 305px 305px 305px;
     column-gap: 20px;
     padding: 0 110px;
-    margin-bottom: 61px;
+    margin-bottom: 40px;
   }
+}
+
+.group--modify {
+  padding-bottom: 8px;
 }
 
 @media (min-width: $tablet-width) {
   .group--modify {
     width: 630px;
-    padding: 0 70px;
+    padding: 0 70px 0 70px;
   }
 }
 
