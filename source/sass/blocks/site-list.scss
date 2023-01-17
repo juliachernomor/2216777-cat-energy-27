@@ -10,7 +10,7 @@
   .site-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 35px;
+    justify-content: start;
     width: 440px;
   }
 }
@@ -18,7 +18,7 @@
 @media (min-width: $desktop-width) {
   .site-list {
     width: 480px;
-    gap: 35.5px;
+    gap: 0;
   }
 }
 
@@ -55,7 +55,8 @@
 
 @media (min-width: $tablet-width) {
   .site-list__item {
-    @include ziro-intends;
+    margin: 0;
+    padding: 0;
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
@@ -65,14 +66,16 @@
 
   .site-list__item--main {
     width: 64px;
+    margin-right: 34px;
   }
 
   .site-list__item--catalog {
-    width: 154px;
+    width: 155px;
+    margin-right: 33px;
   }
 
   .site-list__item--form {
-    width: 152px;
+    width: 154px;
   }
 }
 
