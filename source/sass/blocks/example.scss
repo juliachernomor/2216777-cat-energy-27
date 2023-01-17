@@ -125,15 +125,21 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .example__description {
-    @include font-lato;
-    width: 280px;
-    margin: 0;
-  }
-
   br {
     display: none;
   }
+}
+
+@media (max-width: $tablet-width-only) {
+  br {
+    display: none;
+  }
+}
+
+.example__description {
+  @include font-lato;
+  width: 280px;
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -144,15 +150,11 @@
     font-size: 16px;
     line-height: 24px;
   }
-
-  br {
-    display: none;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .example__description {
-    width: 445px;
+    width: 448px;
     margin-bottom: 54px;
   }
 }
