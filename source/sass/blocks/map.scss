@@ -52,6 +52,7 @@
 }
 
 .map__interactive-map {
+  display: block;
   grid-column: 1/2;
   grid-row: 1/2;
   min-width: 320px;
@@ -59,6 +60,10 @@
   max-height: 362px;
   margin: 0 auto;
   z-index: 2;
+}
+
+.map__interactive-map--nojs {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {

@@ -8,9 +8,12 @@
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="preload" href="fonts/lato/lato-regular.woff2" as= "style">
+    <link rel="preload" href="fonts/lato/lato-regular.woff2" as="style">
     <link rel="preload" href="fonts/oswald/oswald-regular.woff2" as="style">
     <link rel="preload" href="fonts/oswald/oswald-medium.woff2" as="style">
+    <link rel="preload" href="fonts/lato/lato-regular.woff" as= "style">
+    <link rel="preload" href="fonts/oswald/oswald-regular.woff" as="style">
+    <link rel="preload" href="fonts/oswald/oswald-medium.woff" as="style">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page__body">
@@ -108,7 +111,8 @@
             <source
               type="image/png"
               media="(min-width:768px)"
-              srcset="img/food-box-tablet.png 1x, img/food-box-tablet@2x.png 2x">
+              srcset="img/food-box-tablet.png 1x, img/food-box-tablet@2x.png
+              2x">
             <img
               class="nutrition__picture"
               src="img/food-box-mobile.png"
@@ -179,8 +183,10 @@
           <div class="example__item">
             <p class="example__description">
               Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм
-              на Cat Energy Slim. Отличный результат <br>без изнуряющих тренировок!
-              При этом он не менял&nbsp;своих привычек и по-прежнему спит по 16 часов
+              на Cat Energy Slim. Отличный результат <br>без изнуряющих
+              тренировок!
+              При этом он не менял&nbsp;своих привычек и по-прежнему спит по 16
+              часов
               в день.
             </p>
             <div class="example__item-container">
@@ -199,21 +205,25 @@
           <div class="example__container">
             <h2 class="visually-hidden">Фотослайдер</h2>
             <div class="example__list slider">
-              <img
-                class="example__fat-cat slider__image"
-                src="img/fat-cat-mobile.png"
-                width="280"
-                height="256"
-                loading="lazy"
-                alt="Фото кота до начала питания.'">
-              <img
-                class="example__thin-cat slider__image"
-                src="img/thin-cat-mobile.png"
-                width="280"
-                height="256"
-                loading="lazy"
-                alt="Фото кота в конце питания.">
-              <span class="example__button"><svg class="thumb" width="24"
+              <div class="example__wrapper-image1">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/fat-cat-tabdeskt.webp 1x, img/fat-cat-tabdeskt@2x.webp 2x" width="560" height="512">
+                <source type="image/webp" srcset="img/fat-cat-mobile.webp 1x, img/fat-cat-mobile@2x.webp 2x" width="280" height="256">
+                <source type="image/png" media="(min-width:768px)" srcset="img/fat-cat-tabdeskt.png 1x, img/fat-cat-tabdeskt@2x.png 2x" width="560" height="512">
+              <img class="example__fat-cat slider__image" src="img/fat-cat-mobile.png" srcset="img/fat-cat-mobile@2x.png 2x" width="280" height="256"
+              loading="lazy" alt="Фото кота до начала питания.'">
+              </picture>
+              </div>
+            <div class="example__wrapper-image2">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/thin-cat-tabdeskt.webp 1x, img/thin-cat-tabdeskt@2x.webp 2x" width="560" height="512">
+                <source type="image/webp" srcset="img/thin-cat-mobile.webp 1x, img/thin-cat-mobile@2x.webp 2x" width="280" height="256">
+                <source type="image/png" media="(min-width:768px)" srcset="img/thin-cat-tabdeskt.png 1x, img/thin-cat-tabdeskt@2x.png 2x" width="560" height="512">
+                <img class="example__fat-cat slider__image" src="img/thin-cat-mobile.png" srcset="img/thin-cat-mobile@2x.png 2x" width="280" height="256"
+                loading="lazy"alt="Фото кота в конце питания.'">
+              </picture>
+            </div>
+                <span class="example__button"><svg class="thumb" width="24"
                   height="18" viewBox="0 0 24 18">
                   <use href="img/svg/stack/stack.svg#thumb"></use>
                 </svg>
@@ -246,44 +256,17 @@
         <h2 class="visually-hidden">Схема проезда</h2>
         <a class="map__link" href="https://yandex.ru/maps/-/CCUVNNTJ8D">
           <picture>
-            <source
-              type="image/webp"
-              media="(min-width: 1440px)"
-              srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
-            <source
-              type="image/webp"
-              media="(min-width: 768px)"
-              srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
-            <source
-              type="image/webp"
-              srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
-            <source
-              type="image/jpg"
-              media="(min-width:1440px)"
-              srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
-            <source
-              type="image/jpg"
-              media="(min-width:768px)"
-              srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
-            <img
-              class="map__static-image"
-              src="img/map-mobile.jpg"
-              width="320"
-              height="362"
-              srcset="img/map-mobile@2x.jpg"
-              loading="lazy"
-              alt="Мы на карте города.">
+            <source type="image/webp" media="(min-width: 1440px)"srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x" width="1440" height="400">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x" width="768" height="400">
+            <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x" width="320" height="362">
+            <source type="image/jpg" media="(min-width:1440px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x" width="1440" height="400">
+            <source type="image/jpg" media="(min-width:768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x" width="768" height="400">
+            <img class="map__static-image" src="img/map-mobile.jpg" width="320" height="362" srcset="img/map-mobile@2x.jpg" loading="lazy" alt="Мы на карте города.">
           </picture>
         </a>
-        <iframe
-          class="map__interactive-map noscroll"
-          src="https://yandex.ru/map-widget/v1/-/CCUfzEvoCD"
-          width="320"
-          height="362"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="map__interactive-map map__interactive-map--nojs noscroll " src="https://yandex.ru/map-widget/v1/-/CCUfzEvoCD" width="320" height="362" style="border: 0;"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
       </section>
       <div class="footer__wrapper">
         <a class="footer__logo logo logo--indents" href="#">
@@ -337,5 +320,6 @@
     </footer>
     <script src="js/script.js"></script>
     <!-- <script src="js/script-full.js"></script> -->
+    <script src="js/script-map.js"></script>
   </body>
 </html>

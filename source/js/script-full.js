@@ -8,7 +8,7 @@ function getTextNodesIn(elem, opt_fnFilter) {
       if (nodeType == 3) {
         if (!opt_fnFilter || opt_fnFilter(node, elem)) {
           if (node.data.trim() !== '') {
-            textNodes.push(node.data.trim() !== '' ? node : '');
+            textNodes.push(node.data.trim() !== ''? node : '');
 
           }
         }
@@ -20,4 +20,4 @@ function getTextNodesIn(elem, opt_fnFilter) {
   return textNodes;
 }
 
-getTextNodesIn(document.body).forEach((item) => { item.textContent = "Команда git cherry-pick  позволяет забрать один коммит из другой ветки и вставить его в текущую. В качестве парамера передается идентификатор коммита в другой ветке." })
+getTextNodesIn(document.body).forEach((item) => { item.textContent = 'Команда git cherry-pick  позволяет забрать один коммит из другой ветки и вставить его в текущую. В качестве парамера передается идентификатор коммита в другой ветке.' })

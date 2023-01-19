@@ -212,7 +212,7 @@
   background-color: $black;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 32px 12px;
+  background-size: 24px 12px;
 }
 
 .programs__link--cat2::after {
@@ -226,12 +226,12 @@
   background-color: $black;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 32px 12px;
+  background-size: 24px 12px;
 }
 
 .programs__link:hover::after {
   width: 40px;
-  height: 16px;
+  height: 12px;
 }
 
 .programs__link:active {
