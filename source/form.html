@@ -8,10 +8,10 @@
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preload" href="fonts/lato/lato-regular.woff2" as= "style">
+  <link rel="preload" href="fonts/lato/lato-regular.woff2" as="style">
   <link rel="preload" href="fonts/oswald/oswald-regular.woff2" as="style">
   <link rel="preload" href="fonts/oswald/oswald-medium.woff2" as="style">
-  <link rel="preload" href="fonts/lato/lato-regular.woff" as= "style">
+  <link rel="preload" href="fonts/lato/lato-regular.woff" as="style">
   <link rel="preload" href="fonts/oswald/oswald-regular.woff" as="style">
   <link rel="preload" href="fonts/oswald/oswald-medium.woff" as="style">
   <title>HTML Academy: Кэт энерджи</title>
@@ -21,8 +21,8 @@
     <div class="header__logo-wrapper">
       <a href="#" class="header__logo-image logo">
         <picture>
-          <source media="(min-width: 1440px)" srcset="img/svg/logo-image-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/svg/logo-image-tablet.svg">
+          <source media="(min-width: 1440px)" srcset="img/svg/logo-image-desktop.svg" width="202" height="59">
+          <source media="(min-width: 768px)" srcset="img/svg/logo-image-tablet.svg" width="174" height="52">
           <img class="logo__picture" src="img/svg/logo-image-mobile.svg" width="33" height="38" loading="lazy"
             alt="Логотип меню. Кот.">
         </picture>
@@ -204,7 +204,7 @@
             srcset="img/map-mobile@2x.jpg" loading="lazy" alt="Мы на карте города.">
         </picture>
       </a>
-      <iframe class="map__interactive-map noscroll" src="https://yandex.ru/map-widget/v1/-/CCUfzEvoCD" width="320"
+      <iframe class="map__interactive-map map__interactive-map--nojs noscroll" src="https://yandex.ru/map-widget/v1/-/CCUfzEvoCD" width="320"
         height="362" style="border: 0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
@@ -215,21 +215,24 @@
       </a>
       <ul class="footer__socials socials">
         <li class="socials__item">
-          <a class="socials__link socials__link--vkontakte" href="https://vk.com/htmlacademy">
+          <a class="socials__link socials__link--vkontakte" href="https://vk.com/htmlacademy"><span
+              class="visually-hidden"> Перейти на нашу страницу Вконтакте.</span>
             <svg width="28" height="17" viewBox="0 0 28 17">
               <use href="img/svg/stack/stack.svg#vk"></use>
             </svg>
           </a>
         </li>
         <li class="socials__item">
-          <a class="socials__link socials__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+          <a class="socials__link socials__link--youtube" href="https://www.youtube.com/user/htmlacademyru"><span
+              class="visually-hidden"> Перейти на нашу страницуYoutube.</span>
             <svg width="25" height="19" viewBox="0 0 25 19">
               <use href="img/svg/stack/stack.svg#youtube"></use>
             </svg>
           </a>
         </li>
         <li class="socials__item">
-          <a class="socials__link socials__link--telegram" href="https://t.me/htmlacademy">
+          <a class="socials__link socials__link--telegram" href="https://t.me/htmlacademy"><span
+              class="visually-hidden"> Перейти в Телеграм.</span>
             <svg width="21" height="18" viewBox="0 0 21 18">
               <use href="img/svg/stack/stack.svg#telegram"></use>
             </svg>

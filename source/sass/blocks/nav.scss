@@ -29,6 +29,29 @@
 }
 
 @media (min-width: $desktop-width) {
+  .nav--picture::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 50%;
+    min-width: 1440px;
+    width: 100vh;
+    min-height: 694px;
+    background-image: url("../img/nutrition-cat-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 1044px 696px;
+    background-color: rgb(97, 164, 57);
+    overflow: hidden;
+    z-index: 1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/nutrition-cat-desktop@2x.jpg");
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
   .nav--color {
     background-color: $white;
   }

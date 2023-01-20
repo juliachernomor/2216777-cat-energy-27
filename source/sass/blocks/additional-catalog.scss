@@ -101,11 +101,11 @@
 
 @media (min-width: $desktop-width) {
   .additional-catalog__title {
-    width: 1220px;
+    width: 339px;
     margin: 73px 0 81px 110px;
 
     &::after {
-      left: calc(100% - 845px);
+      left: calc(100% + 35px);
     }
 
     &::before {
