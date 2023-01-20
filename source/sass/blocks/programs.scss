@@ -206,7 +206,7 @@
   content: "";
   top: 2px;
   left: calc(100% + 14px);
-  width: 32px;
+  width: 24px;
   height: 12px;
   mask-image: url("../img/svg/stack/stack.svg#program-arrow");
   background-color: $black;
@@ -220,7 +220,7 @@
   content: "";
   top: 2px;
   left: calc(100% + 10px);
-  width: 32px;
+  width: 24px;
   height: 12px;
   mask-image: url("../img/svg/stack/stack.svg#program-arrow");
   background-color: $black;
@@ -230,7 +230,7 @@
 }
 
 .programs__link:hover::after {
-  width: 40px;
+  width: 32px;
   height: 12px;
 }
 
