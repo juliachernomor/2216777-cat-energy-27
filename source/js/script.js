@@ -13,3 +13,56 @@ navToggle.addEventListener('click', function () {
     navMain.classList.remove('nav--opened');
   }
 });
+
+
+
+const tlPreview = gsap.timeline({})
+
+tlPreview.from('.nutrition__wrapper',{
+   x:400,
+   duration:3,
+   opacity:0,
+   ease:"back.out(1.5)",
+ })
+
+ .from('.nutrition__link',{
+  x:-400,
+  duration:3,
+  opacity:0,
+  ease:"back.out(1.5)",
+},'<')
+
+.from('.advantages__title',{
+  x:-400,
+  duration:3,
+  opacity:0,
+  ease:"back.out(1.5)",
+})
+
+ .from('#advantages-list',{
+   stagger:0.1,
+   opacity:0,
+   y:200,
+   scrollTrigger:{
+       // markers:true,
+       trigger: '#advantages-list',
+       start: 'top 90%',
+       end:'30% 60%',
+       scrub:1.5,
+       toggleActions: 'play none none reverse',
+   }
+ })
+
+ .from('#example',{
+   stagger:0.1,
+   opacity:0,
+   y:100,
+   scrollTrigger:{
+       // markers:true,
+       trigger: '#example',
+       start: 'top 90%',
+       end:'30% 60%',
+       scrub:1.5,
+       toggleActions: 'play none none reverse',
+   }
+ })
