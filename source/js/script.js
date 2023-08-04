@@ -19,18 +19,18 @@ navToggle.addEventListener('click', function () {
 const tlPreview = gsap.timeline({})
 
 tlPreview.from('#nutrition',{
-   x:400,
-   duration:3,
-   opacity:0,
-   ease:"back.out(1.5)",
- })
+    x:400,
+    duration:3,
+    opacity:0,
+    ease:"back.out(1.5)",
+  })
 
- .from('.nutrition__link',{
-  x:-400,
-  duration:3,
-  opacity:0,
-  ease:"back.out(1.5)",
-},'<')
+  .from('.nutrition__link',{
+    x:-400,
+    duration:3,
+    opacity:0,
+    ease:"back.out(1.5)",
+  },'<')
 
 .from('.advantages__title',{
   x:-400,
@@ -45,49 +45,49 @@ tlPreview.from('#nutrition',{
 }
 })
 
- .from('#advantages-list',{
-   stagger:0.1,
-   opacity:0,
-   y:200,
-   scrollTrigger:{
-       // markers:true,
-       trigger: '#advantages-list',
-       start: 'top 90%',
-       end:'30% 60%',
-       scrub:1.5,
-       toggleActions: 'play none none reverse',
-   }
- })
+  .from('#advantages-list',{
+    stagger:0.1,
+    opacity:0,
+    y:200,
+    scrollTrigger:{
+      // markers:true,
+      trigger: '#advantages-list',
+      start: 'top 90%',
+      end:'30% 60%',
+      scrub:1.5,
+      toggleActions: 'play none none reverse',
+    }
+  })
 
- .from('#example',{
-   stagger:0.1,
-   opacity:0,
-   y:100,
-   scrollTrigger:{
-       // markers:true,
-       trigger: '#example',
-       start: 'top 90%',
-       end:'30% 60%',
-       scrub:1.5,
-       toggleActions: 'play none none reverse',
-   }
- })
+  .from('#example',{
+    stagger:0.1,
+    opacity:0,
+    y:100,
+    scrollTrigger:{
+      // markers:true,
+      trigger: '#example',
+      start: 'top 90%',
+      end:'30% 60%',
+      scrub:1.5,
+      toggleActions: 'play none none reverse',
+    }
+  })
 
- function parallax(){
-  const preview = document.querySelector('#secton-nutrition');
+  function parallax(){
+    const preview = document.querySelector('#secton-nutrition');
 
-  const initialX = preview.offsetLeft + preview.offsetWidth / 0.1;
-  const initialY = preview.offsetTop + preview.offsetHeight / 0.1;
+    const initialX = preview.offsetLeft + preview.offsetWidth / 0.1;
+    const initialY = preview.offsetTop + preview.offsetHeight / 0.1;
 
-  preview.addEventListener('mousemove', function(event) {
-     const mouseX = event.clientX - initialX;
-     const mouseY = event.clientY - initialY;
+    preview.addEventListener('mousemove', function(event) {
+      const mouseX = event.clientX - initialX;
+      const mouseY = event.clientY - initialY;
 
-     gsap.to('#nutrition', {
+      gsap.to('#nutrition', {
         rotationX: -mouseY * 0.2, // Изменение угла поворота по оси X
         rotationY: -mouseX * 0.2, // Изменение угла поворота по оси Y
         ease: 'power2.out'
-     });
+      });
   });
 
 }
