@@ -15,7 +15,6 @@ navToggle.addEventListener('click', function () {
 });
 
 
-
 const tlPreview = gsap.timeline({})
 
 tlPreview.from('#nutrition',{

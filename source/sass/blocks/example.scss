@@ -98,6 +98,8 @@
   width: 280px;
   margin: 0 auto;
   padding: 0 20px;
+  position: relative;
+  z-index: 4;
 }
 
 @media (min-width: $tablet-width) {
@@ -281,6 +283,7 @@
   margin: 0 auto;
   overflow: hidden;
   padding-bottom: 40px;
+  z-index: 4;
 }
 
 @media (min-width: $tablet-width) {

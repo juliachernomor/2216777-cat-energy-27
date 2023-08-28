@@ -1,0 +1,27 @@
+.bubbles {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.bubbles__object {
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  animation: anim infinite;
+}
+
+@keyframes anim {
+  0% {
+    transform: rotate(0) translateX(100px);
+  }
+
+  100% {
+    transform: rotate(360deg) translateX(100px);
+  }
+}

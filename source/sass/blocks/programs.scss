@@ -1,4 +1,5 @@
 .programs {
+  position: relative;
   width: 280px;
   margin: 0 auto;
   padding: 0 20px;
@@ -49,6 +50,7 @@
   display: grid;
   grid-template-columns: 92px 188px;
   background-color: $special-white;
+  z-index: 4;
 }
 
 .programs__item--cat1::before {
