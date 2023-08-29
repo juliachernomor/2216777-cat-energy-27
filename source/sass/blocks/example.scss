@@ -42,9 +42,12 @@
 
 .example__title {
   @include font-oswald-big;
+  position: relative;
   width: 280px;
   margin: 0 auto 40px auto;
   padding: 25px 20px 0 21px;
+  background-color: $white;
+  z-index: 4;
 }
 
 @media (min-width: $tablet-width) {
@@ -68,6 +71,8 @@
 .example__wrapper-desktop {
   min-width: 320px;
   width: 100%;
+  position: relative;
+  z-index: 4;
 }
 
 @media (min-width: $desktop-width) {
@@ -99,7 +104,6 @@
   margin: 0 auto;
   padding: 0 20px;
   position: relative;
-  z-index: 4;
 }
 
 @media (min-width: $tablet-width) {

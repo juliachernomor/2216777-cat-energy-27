@@ -78,8 +78,11 @@
 
 .nutrition__title {
   @include font-oswald-medium;
+  position: relative;
   padding-top: 26px;
   margin: 0 35px 25px 37px;
+  background-color: $white;
+  z-index: 4;
 }
 
 @media (min-width: $tablet-width) {
@@ -102,6 +105,7 @@
 }
 
 .nutrition__description {
+  position: relative;
   margin: 0 60px 0 60px;
   padding-bottom: 164px;
   font-family: "Oswald", "Arial", sans-serif;
@@ -110,6 +114,8 @@
   line-height: 14px;
   color: $white;
   text-transform: uppercase;
+  background-color: $white;
+  z-index: 4;
 }
 
 @media (min-width: $tablet-width) {

@@ -22,8 +22,9 @@
 
 .advantages__title {
   @include font-oswald-big;
-  margin: 20px 0 42px 1px;
   position: relative;
+  margin: 20px 0 42px 1px;
+  background-color: $white;
   z-index: 4;
 }
 
@@ -44,12 +45,14 @@
 
 .advantages__list {
   @include ziro-intends;
+  position: relative;
   display: grid;
   grid-template-columns: 280px;
   row-gap: 22px;
   list-style-type: none;
-  position: relative;
+  background-color: $white;
   z-index: 4;
+
 
   &:last-child {
     margin-top: 0;
@@ -78,6 +81,7 @@
 }
 
 .advantages__item {
+  position: relative;
   display: grid;
   grid-template-columns: 60px 200px;
   column-gap: 21px;
