@@ -26,15 +26,16 @@
 }
 
 .nutrition__color-wrapper {
+  position: relative;
   width: 100%;
   min-width: 320px;
   background-image: linear-gradient(to right, #64a73c calc(50%), #63a63a calc(100%));
+  z-index: 1;
 }
 
 @media (min-width: $tablet-width) {
   .nutrition__color-wrapper {
     margin-left: 29px;
-    background-color: $white;
     background-image: none;
   }
 }
@@ -72,7 +73,6 @@
     margin: 0;
     padding: 0;
     background-image: none;
-    background-color: $white;
   }
 }
 
@@ -81,7 +81,6 @@
   position: relative;
   padding-top: 26px;
   margin: 0 35px 25px 37px;
-  background-color: $white;
   z-index: 4;
 }
 
@@ -114,7 +113,6 @@
   line-height: 14px;
   color: $white;
   text-transform: uppercase;
-  background-color: $white;
   z-index: 4;
 }
 
@@ -134,17 +132,19 @@
     display: block;
     margin: 0 116px 52px 80px;
     text-align: left;
+    background-color: $white;
   }
 }
 
 
 .nutrition__image-wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   min-height: 178px;
   width: 280px;
   margin: 0 auto;
-  z-index: 1;
+  z-index: 5;
 }
 
 
@@ -182,11 +182,13 @@
 }
 
 .nutrition__picture {
+  position: relative;
   display: block;
   width: 280px;
   height: 270px;
   margin: -135px auto 2px auto;
   padding: 0;
+  z-index: 9;
 }
 
 @media (min-width: $tablet-width) {
